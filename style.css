@@ -6,3 +6,38 @@ body
 {
     height:2560px;
 }
+footer
+{
+    position: absolute;
+    top:2500px;
+}
+.FirstRow
+{
+ position: absolute;
+ top: 240px;
+}
+.SecondGenre
+{
+    position: absolute;
+    top: 820px;
+}
+.SecondRow
+{
+    position: absolute;
+    top: 900px;
+}
+
+.ThridRow
+{
+    position: absolute;
+    top: 1550px;
+}
+.ThirdGenre
+{
+    position: absolute;
+    top: 1480px;
+}
+.logo
+{
+    right: 900px;
+}
