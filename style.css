@@ -8,10 +8,10 @@ body
 }
 footer
 {
-    display:flex;
-    
+    position: absolute;
+    top:2500px;
 }
-.FirstRow
+/* .FirstRow
 {
  position: absolute;
  top: 240px;
@@ -36,12 +36,38 @@ footer
 {
     position: absolute;
     top: 1480px;
-}
-.logo
+} */
+.header
 {
-    right: 900px;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.ImgBg:hover {
+    scale: 1.1;
+    filter: brightness(30%);
 }
-footer
-{
-    top:2500px;
+
+.ImgBg {
+    width: 225px;
+    height: 400px;
+    transition: all 400ms;
+}
+
+.Metallica {
+    position: relative;
+}
+
+.ImgLogo {
+    position: absolute; /* Позиционируем картинку поверх */
+    margin: -230px 22px;
+    width: 80%;
+    height: 20%;
+    opacity: 0; /* Исходно скрыто */
+    transition: all 400ms;
+}
+
+.Metallica:hover .ImgLogo {
+    scale: 1.3;
+    opacity: 1; /* При наведении картинка становится видимой */
 }
