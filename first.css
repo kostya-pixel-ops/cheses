@@ -4,62 +4,43 @@ body
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
     background-size: 1920px 5000px;
 }
-.logo
+.HeaderFle
 {
-    position: absolute;
-    right: 900px;
+    width: 900px;
 }
 .back
 {
-    height: 3650px;
-    width: 1200px;
     position: absolute;
-    top:200px;
-    right:350px;
+    height: 3500px;
+    width: 1200px;
+    top: 250px;
     
 }
 .mainInfo
 {
-    position: absolute;
-    top:350px;
-    right:400px;
-}
-.Name1
-{
-    position: absolute;
-    top: 270px;
-    left: 420px;
+    position: relative;
+    top:170px;
+    right:-662px;
+ 
 }
 .Name2
 {
-    position: absolute;
-    top: 358px;
-    right: 450px;
+    position: relative;
+    top:84px;
+    right:-64px;
 }
 .back2
 {
-    position: absolute;
-    top:397px;
-    right:400px;
     height: 450px;
+    position: relative;
+    top: 217px;
+    right: -278px;
 }
-.back3{
-    position: absolute;
-    top: 840px;
-    right:400px;
-    height: 360px;
-}
-.back4
-{
-    position: absolute;
-    top:1200px;
-    right: 400px;
-}
+
 .Text1
 {
-    position: absolute;
+
     width: 666px;
     height: 900px;
-    top: 350px;
-    left:420px;
+
 }
