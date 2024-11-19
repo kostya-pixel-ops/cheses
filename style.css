@@ -13,8 +13,8 @@ footer
 }
 /* .FirstRow
 {
- position: absolute;
- top: 240px;
+    position: absolute;
+    top: 240px;
 }
 .SecondGenre
 {
@@ -42,11 +42,6 @@ footer
     width: 900px;
 }
 
-.Metallica:hover .ImgBg {
-    scale: 1.1;
-    filter: brightness(30%);
-}
-
 .ImgBg {
     width: 225px;
     height: 400px;
@@ -57,7 +52,17 @@ footer
     position: relative;
 }
 
-.ImgLogo {
+.Metallica:hover .ImgBg {
+    scale: 1.1;
+    filter: brightness(30%);
+}
+
+.Metallica:hover .MetallicaLogo {
+    scale: 1.3;
+    opacity: 1; /* При наведении картинка становится видимой */
+}
+
+.MetallicaLogo {
     position: absolute; /* Позиционируем картинку поверх */
     margin: -230px 22px;
     width: 80%;
@@ -66,11 +71,29 @@ footer
     transition: all 400ms;
 }
 
-.Metallica:hover .ImgLogo {
-    scale: 1.3;
+.Scorpions {
+    position: relative;
+}
+
+.Scorpions:hover .ImgBg {
+    scale: 1.1;
+    filter: brightness(20%);
+}
+
+.Scorpions:hover .ScorpionsLogo {
+    scale: 1.05;
     opacity: 1; /* При наведении картинка становится видимой */
 }
+
+.ScorpionsLogo {
+    position: absolute; /* Позиционируем картинку поверх */
+    opacity: 0; /* Исходно скрыто */
+    margin: -230px 0;
+    scale: 0.8;
+    transition: all 400ms;
+}
+
 .genre1
 {
-   padding-left: 77px;
+    padding-left: 77px;
 }
