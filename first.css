@@ -20,7 +20,7 @@ body
 {
     position: relative;
     top:170px;
-    right:-662px;
+    right:-728px;
  
 }
 .Name2
@@ -28,19 +28,33 @@ body
     position: relative;
     top:84px;
     right:-64px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .back2
 {
     height: 450px;
     position: relative;
     top: 217px;
-    right: -278px;
+    right: -457px;
 }
-
+.back3
+{
+    position: relative;
+    height: 300px;
+    top: 713px;
+    right: -185px
+}
+.back4
+{
+    position: relative;
+    top: 666px;
+    right:86px;
+}
 .Text1
 {
-
+    position: absolute;
     width: 666px;
     height: 900px;
-
+    top:170px;
+    right: 465px;
 }
