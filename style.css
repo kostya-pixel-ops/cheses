@@ -8,8 +8,8 @@ body
 }
 footer
 {
-    position: absolute;
-    top:2500px;
+    display:flex;
+    
 }
 .FirstRow
 {
@@ -40,4 +40,8 @@ footer
 .logo
 {
     right: 900px;
+}
+footer
+{
+    top:2500px;
 }
