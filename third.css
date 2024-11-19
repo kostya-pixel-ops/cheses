@@ -1,0 +1,65 @@
+body
+{
+    height: 4000px;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
+    background-size: 1920px 5000px;
+}
+.logo
+{
+    position: absolute;
+    right: 900px;
+}
+.back
+{
+    height: 3650px;
+    width: 1200px;
+    position: absolute;
+    top:200px;
+    right:350px;
+    
+}
+.mainInfo
+{
+    position: absolute;
+    top:350px;
+    right:400px;
+}
+.Name1
+{
+    position: absolute;
+    top: 270px;
+    left: 420px;
+}
+.Name2
+{
+    position: absolute;
+    top: 358px;
+    right: 450px;
+}
+.back2
+{
+    position: absolute;
+    top:397px;
+    right:400px;
+    height: 450px;
+}
+.back3{
+    position: absolute;
+    top: 840px;
+    right:400px;
+    height: 360px;
+}
+.back4
+{
+    position: absolute;
+    top:1200px;
+    right: 400px;
+}
+.Text1
+{
+    position: absolute;
+    width: 666px;
+    height: 900px;
+    top: 350px;
+    left:420px;
+}
