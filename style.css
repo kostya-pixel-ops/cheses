@@ -43,7 +43,7 @@ footer
     justify-content: space-around;
 } 
 
-.ImgBg:hover {
+.Metallica:hover .ImgBg {
     scale: 1.1;
     filter: brightness(30%);
 }
