@@ -81,7 +81,7 @@ footer
 }
 
 .Scorpions:hover .ScorpionsLogo {
-    scale: 1.05;
+    scale: 1;
     opacity: 1; /* При наведении картинка становится видимой */
 }
 
@@ -96,4 +96,215 @@ footer
 .genre1
 {
     padding-left: 77px;
+}
+
+.Skillet
+{
+    position: relative;
+}
+.Skillet:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SkilletLogo
+{
+    position: absolute;
+    top: -15px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Skillet:hover .SkilletLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Pantera
+{
+    position: relative;
+}
+.Pantera:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.PanteraLogo
+{
+    position: absolute;
+    top: -6px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Pantera:hover .PanteraLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Rammstein:hover .RammsteinLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Rammstein
+{
+    position: relative;
+}
+.Rammstein:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.RammsteinLogo
+{
+    position: absolute;
+    top: -6px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Rammstein:hover .RammsteinLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Biggie:hover .BiggieLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Biggie
+{
+    position: relative;
+}
+.Biggie:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.BiggieLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Biggie:hover .BiggieLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+.Dre:hover .DreLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Dre
+{
+    position: relative;
+}
+.Dre:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.DreLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Dre:hover .DreLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+.Eminem:hover .EminemLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Eminem
+{
+    position: relative;
+}
+.Eminem:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.EminemLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Eminem:hover .EminemLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+.Pac:hover .PacLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Pac
+{
+    position: relative;
+}
+.Pac:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.PacLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Pac:hover .PacLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Kendrick:hover .KendrickLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Kendrick
+{
+    position: relative;
+}
+.Kendrick:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.KendrickLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Kendrick:hover .KendrickLogo
+{
+    scale: 1;
+    opacity: 1;
 }
