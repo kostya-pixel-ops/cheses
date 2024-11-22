@@ -477,7 +477,8 @@ footer
     font-size: 2em;
     transition: 0.35s;
 }
-.Logo1 {
+.Logo1
+ {
     height: 90px;
     margin-top: 7px;
 }
