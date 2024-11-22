@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 body
 {
-    height: 4000px;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
-    background-size: 1920px 5000px;
+    height: 4900px;
+ 
+    background-size: 1920px 4900px;
+
+    background: -webkit-linear-gradient(188deg, #1b5c34,#000000);background: linear-gradient(188deg, #237c45,#000000);
 }
 .HeaderFle
 {
@@ -20,7 +22,7 @@ body
 .back
 {
     position: absolute;
-    height: 3500px;
+    height: 4500px;
     width: 1200px;
     top: 250px;
     
@@ -28,13 +30,21 @@ body
 .back2
 {
     height: 450px;
-   
+    width: 336px;
 }
 .back3
 {
 
     height: 300px;
-  
+    width: 336px;
+}
+.back4
+{
+    width: 336px;
+}
+.mainInfo
+{
+    width: 336px;
 }
 .Text1
 {
@@ -46,7 +56,7 @@ body
 }
 .Name2
 {
-    position: absolute;
+      position: absolute;
     top: 70px;
     left:45px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -60,8 +70,147 @@ body
     font-style: normal;
     letter-spacing: 1px;
     font-size: 2em;
+    transition: 0.35s;
+    height: 50px;
 }
 .Logo1 {
     height: 90px;
     margin-top: 7px;
+}
+.HeaderKnopka:hover
+{
+    color:white;
+}
+.Wiki
+{
+    margin-left: 1px;
+    margin-top: 2px;
+    height: 444px;
+}
+.Text2
+{
+    position: absolute;
+    width: 999px;
+    height: 1500px;
+    top:1600px;
+    right: 150px;
+}
+.Navig
+{
+    position: absolute;
+    top: 1053px;
+    right: 108px;
+    background-color: rgb(0, 0, 0);
+    width: 336px;
+    height: 410px;
+    border-color: green;
+    border-width: 1px;
+}
+.back5
+{
+    width: 336px;
+}
+.Text21
+{
+    position: absolute;
+    width: 666px;
+    height: 1500px;
+    top:1160px;
+    right: 486px;
+}
+
+
+.nav1
+{
+    transition: 0.35s;
+    width: 100px;
+}
+.nav1:hover
+{
+    background-color: rgba(77, 204, 65, 0.397);
+}
+.nav2
+{
+    transition: 0.35s;
+    width: 200px;
+}
+.nav2:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav3
+{
+    transition: 0.35s;
+    width: 190px;
+}
+.nav3:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav4
+{
+    transition: 0.35s;
+    width: 215px;
+}
+.nav4:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav5
+{
+    transition: 0.35s;
+    width: 80px;
+}
+.nav5:hover
+{
+    background-color: rgba(77, 204, 65, 0.397);
+}
+.nav6
+{
+    transition: 0.35s;
+    width: 40px;
+}
+.nav6:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+   
+}
+.nav7
+{
+    transition: 0.35s;
+    width: 50px;
+}
+.nav7:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav8
+{
+    transition: 0.35s;
+    width: 75px;
+    border-radius: 5%;
+}
+.nav8:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav9
+{
+    transition: 0.35s;
+    width: 185px;
+    border-radius: 5%;
+}
+.nav9:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
+}
+.nav10
+{
+    transition: 0.35s;
+    width: 85px;
+    border-radius: 5%;
+}
+.nav10:hover
+{
+    background-color:  rgba(77, 204, 65, 0.397);
 }
