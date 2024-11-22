@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 body
 {
-    height: 4000px;
+    height: 8000px;
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
-    background-size: 1920px 5000px;
+    background-size: 1920px 8000px;
 }
 .HeaderFle
 {
@@ -17,10 +17,14 @@ body
     width: 384px;
     height: 1200px;
 }
+.mainInfo
+{
+    width: 336px;
+}
 .back
 {
     position: absolute;
-    height: 3500px;
+    height: 7600px;
     width: 1200px;
     top: 250px;
     
@@ -28,13 +32,44 @@ body
 .back2
 {
     height: 450px;
+    width: 336px;
    
+}
+.LyricsButton
+{
+    top:1471px;
+    right:240px;
+    position: absolute;
+    border-width: 1px;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-color: red;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.35s;
+}
+.LyricsButton:hover
+{
+    color:black;
+    background-color: white;
 }
 .back3
 {
 
-    height: 300px;
+    height: 150px;
+    width: 336px;
   
+}
+.back4
+{
+    width: 336px;
+}
+.back5
+{
+    width: 336px;
 }
 .Text1
 {
@@ -49,8 +84,21 @@ body
     position: absolute;
     width: 1100px;
     height: 900px;
-    top: 1120px;
+    top: 1480px;
     right: 50px;
+}
+.Text21
+{
+    position: absolute;
+    width: 690px;
+    height: 900px;
+    top:1120px;
+    left:50px;
+}
+.back6
+{
+    width: 336px;
+
 }
 .Name2
 {
@@ -62,20 +110,119 @@ body
 .HeaderKnopka
 {
     width: 120px;
-    height: 50px;
+    height: 55px;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
     letter-spacing: 1px;
     font-size: 2em;
     border-width: 2px;
     border-color: black;
     background-color: black;
-    
+    transition: 0.35s;
+}
+.HeaderKnopka:hover
+{
+    background-color: white;
+    border-color: white;
+    color: black;
 }
 .Logo1 {
     height: 90px;
     margin-top: 7px;
 }
+.EmPhoto
+{
+    position: absolute;
+    top: 50px;
+}
+.Navig
+{
+    position: absolute;
+    top: 1102px;
+    right: 108px;
+    background-color: rgb(0, 0, 0);
+    width: 336px;
+    height: 370px;
+    border-color: red;
+    border-width: 1px;
+}
+
+
+.nav1
+{
+    transition: 0.35s;
+    width: 280px;
+}
+.nav1:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav2
+{
+    transition: 0.35s;
+    width: 200px;
+}
+.nav2:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav3
+{
+    transition: 0.35s;
+    width: 210px;
+}
+.nav3:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav4
+{
+    transition: 0.35s;
+    width: 120px;
+}
+.nav4:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav5
+{
+    transition: 0.35s;
+    width: 200px;
+}
+.nav5:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav6
+{
+    transition: 0.35s;
+    width: 150px;
+}
+.nav6:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+   
+}
+.nav7
+{
+    transition: 0.35s;
+    width: 260px;
+}
+.nav7:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+.nav8
+{
+    transition: 0.35s;
+    width: 190px;
+    border-radius: 5%;
+}
+.nav8:hover
+{
+    background-color: rgba(255, 0, 0, 0.438);
+}
+

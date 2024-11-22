@@ -475,8 +475,13 @@ footer
     font-style: normal;
     letter-spacing: 1px;
     font-size: 2em;
+    transition: 0.35s;
 }
 .Logo1 {
     height: 90px;
     margin-top: 7px;
+}
+.HeaderKnopka:hover
+{
+    color:rgb(255, 117, 129);
 }
