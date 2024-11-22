@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 
 body
 {
@@ -46,6 +47,7 @@ footer
     width: 225px;
     height: 400px;
     transition: all 400ms;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.267);
 }
 
 .Metallica {
@@ -96,7 +98,9 @@ footer
 .genre1
 {
     padding-left: 77px;
+    color: white
 }
+
 
 .Skillet
 {
@@ -461,4 +465,18 @@ footer
 {
     scale: 1;
     opacity: 1;
+}
+.HeaderKnopka
+{
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+.Logo1 {
+    height: 90px;
+    margin-top: 7px;
 }
