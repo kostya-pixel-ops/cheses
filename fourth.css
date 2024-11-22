@@ -1,65 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 body
 {
     height: 4000px;
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
     background-size: 1920px 5000px;
 }
-.logo
+.HeaderFle
+{
+    width: 900px;
+}
+.flex2
 {
     position: absolute;
-    right: 900px;
+    top:160px;
+    right:60px;
+    width: 384px;
+    height: 1200px;
 }
 .back
 {
-    height: 3650px;
+    position: absolute;
+    height: 3500px;
     width: 1200px;
-    position: absolute;
-    top:200px;
-    right:350px;
+    top: 250px;
     
-}
-.mainInfo
-{
-    position: absolute;
-    top:350px;
-    right:400px;
-}
-.Name1
-{
-    position: absolute;
-    top: 270px;
-    left: 420px;
-}
-.Name2
-{
-    position: absolute;
-    top: 358px;
-    right: 450px;
 }
 .back2
 {
-    position: absolute;
-    top:397px;
-    right:400px;
     height: 450px;
+   
 }
-.back3{
-    position: absolute;
-    top: 840px;
-    right:400px;
-    height: 360px;
-}
-.back4
+.back3
 {
-    position: absolute;
-    top:1200px;
-    right: 400px;
+
+    height: 300px;
+  
 }
 .Text1
 {
     position: absolute;
     width: 666px;
     height: 900px;
-    top: 350px;
-    left:420px;
+    top:170px;
+    right: 485px;
+}
+.Name2
+{
+    position: absolute;
+    top: 70px;
+    left:45px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.HeaderKnopka
+{
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+.Logo1 {
+    height: 90px;
+    margin-top: 7px;
 }
