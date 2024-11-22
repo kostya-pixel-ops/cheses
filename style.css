@@ -308,3 +308,157 @@ footer
     scale: 1;
     opacity: 1;
 }
+
+
+
+
+
+
+
+.greenday:hover .greendayLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.greenday
+{
+    position: relative;
+}
+.greenday:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.greendayLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.greenday:hover .greendayLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+.Michael:hover .MichaelLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Michael
+{
+    position: relative;
+}
+.Michael:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.MichaelLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Michael:hover .MichaelLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+.abba:hover .abbaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.abba
+{
+    position: relative;
+}
+.abba:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.abbaLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.abba:hover .abbaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+.Sum:hover .SumLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Sum
+{
+    position: relative;
+}
+.Sum:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SumLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Sum:hover .SumLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+
+
+
+.RukiV:hover .RukiVLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.RukiV
+{
+    position: relative;
+}
+.RukiV:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.RukiVLogo
+{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.RukiV:hover .RukiVLogo
+{
+    scale: 1;
+    opacity: 1;
+}
