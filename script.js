@@ -320,7 +320,7 @@ const trackImage = document.getElementById('trackImage');
 const fullscreenImageContainer = document.getElementById('fullscreenImageContainer');
 const fullscreenImage = document.getElementById('fullscreenImage');
 const showPlayerButton = document.getElementById('showPlayerButton');
-const musicPlayer = document.getElementById('./musicPlayer');
+const musicPlayer = document.getElementById('musicPlayer');
 
 // Кнопки переключения песен
 const nextButton = document.getElementById('nextButton');
@@ -424,7 +424,7 @@ function applyPlayerColor(imageSrc) {
   getDominantColor(imageSrc, (color) => {
     const lessBrightColor = decreaseBrightness(color); // Уменьшаем яркость
 
-    const player = document.getElementById("./musicPlayer");
+    const player = document.getElementById("musicPlayer");
     player.style.backgroundColor = lessBrightColor; // Устанавливаем уменьшенную яркость для фона
     player.style.boxShadow = `0 4px 8px ${lessBrightColor}`;
 
