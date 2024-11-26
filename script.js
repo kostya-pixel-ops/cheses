@@ -452,7 +452,6 @@ const songs = [
   },
 
 ];  
-
 let playedSongs = []; // Массив уже воспроизведенных песен
 let currentSongIndex = null; // Индекс текущей песни
 let audio = new Audio(); // Создаем объект аудио
@@ -488,6 +487,7 @@ function getRandomSongIndex() {
   playedSongs.push(randomIndex);
   return randomIndex;
 }
+
 // Функция для обновления изображения в полноэкранном режиме
 function updateFullscreenImage(newImageSrc) {
   if (!fullscreenImageContainer.classList.contains('hidden')) {
@@ -504,7 +504,7 @@ function loadSong(index) {
   document.getElementById('trackName').textContent = song.name;
   document.getElementById('trackArtist').textContent = song.artist;
   trackImage.src = song.image;
-  
+
   // Обновляем полноэкранное изображение, если нужно
   updateFullscreenImage(song.image);
 
@@ -589,7 +589,7 @@ function applyPlayerColor(imageSrc) {
 function playNextSong() {
   const nextSongIndex = getRandomSongIndex();
   loadSong(nextSongIndex);
-  audio.play();
+  audio.load();
 }
 
 // Функция для воспроизведения предыдущей песни
@@ -598,7 +598,7 @@ function playPrevSong() {
     playedSongs.pop(); // Убираем текущую песню из истории
     const prevSongIndex = playedSongs[playedSongs.length - 1];
     loadSong(prevSongIndex);
-    audio.play();
+    audio.load();
   }
 }
 
@@ -633,16 +633,6 @@ audio.addEventListener('ended', () => {
   playNextSong();
 });
 
-// Показать плеер при нажатии на картинку
-showPlayerButton.addEventListener('click', () => {
-  showPlayerButton.classList.add('clicked');
-  setTimeout(() => {
-    musicPlayer.classList.add('show');
-  }, 300);
-  setTimeout(() => {
-    showPlayerButton.classList.remove('clicked');
-  }, 500);
-});
 
 // Показать или скрыть плеер при нажатии на картинку
 showPlayerButton.addEventListener('click', () => {
@@ -685,13 +675,14 @@ closeFullscreenImageButton.addEventListener('click', () => {
   document.body.classList.remove('no-scroll');  // Разрешаем прокрутку страницы
 });
 
-// Увеличение изображения на весь экран
+// Увеличение изображения при клике
 trackImage.addEventListener('click', () => {
-  fullscreenImage.src = trackImage.src;
   fullscreenImageContainer.classList.remove('hidden');
-  document.body.classList.add('no-scroll');
+  fullscreenImage.src = trackImage.src;
+  document.body.classList.add('no-scroll');  // Блокируем прокрутку страницы
 });
 
-// Загружаем первую песню
-const firstSongIndex = getRandomSongIndex();
-loadSong(firstSongIndex);
+// Инициализация плеера при загрузке
+if (songs.length > 0) {
+  loadSong(getRandomSongIndex());
+}
