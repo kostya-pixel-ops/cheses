@@ -644,6 +644,18 @@ showPlayerButton.addEventListener('click', () => {
   }, 500);
 });
 
+// Показать или скрыть плеер при нажатии на картинку
+showPlayerButton.addEventListener('click', () => {
+  if (musicPlayer.classList.contains('hidden')) {
+    musicPlayer.classList.remove('hidden');
+    musicPlayer.classList.add('show');
+  } else {
+    musicPlayer.classList.add('hidden');
+    musicPlayer.classList.remove('show');
+  }
+  audio.pause();
+  playIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />`;
+});
 
 // Воспроизведение/пауза
 playPauseButton.addEventListener('click', () => {
