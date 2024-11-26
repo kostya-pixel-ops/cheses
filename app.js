@@ -90,18 +90,32 @@ window.addEventListener("wheel", (event) => {
     let textMain = document.getElementById("text-display")
 
 
-    document.getElementById("text-display").addEventListener("DOMSubtreeModified", (event)=>{
-        if(textMain.textContent === 'Заходи на сайт!')   
-            {
-                buttona.style.opacity = '1';
-                buttona.style.visibility = 'visible';
-            }
-            else
-            {
-                buttona.style.opacity = '0';
-                buttona.style.visibility = 'hidden';
-            }
+
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+          if (mutation.type === "characterData" || mutation.type === "childList") {
+            if(textMain.textContent === 'Заходи на сайт!')   
+                {
+                    buttona.style.opacity = '1';
+                    buttona.style.visibility = 'visible';
+                }
+                else
+                {
+                    buttona.style.opacity = '0';
+                    buttona.style.visibility = 'hidden';
+                }
+          }
+        }
+      });
+    
+      // Настраиваем параметры наблюдения
+      observer.observe(editableDiv, {
+        characterData: true, // Для отслеживания изменений текста узлов
+        childList: true,    // Для отслеживания добавления/удаления дочерних узлов
+        subtree: true       // Для отслеживания изменений в дочерних элементах
     });
+
+
 
     
    
