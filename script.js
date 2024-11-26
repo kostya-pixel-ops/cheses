@@ -499,7 +499,7 @@ function updateFullscreenImage(newImageSrc) {
 function loadSong(index) {
   const song = songs[index];
   currentSongIndex = index;
-
+  progressBar.value = 0;
   audio.src = song.file;
   document.getElementById('trackName').textContent = song.name;
   document.getElementById('trackArtist').textContent = song.artist;
@@ -590,6 +590,7 @@ function playNextSong() {
   const nextSongIndex = getRandomSongIndex();
   loadSong(nextSongIndex);
   audio.load();
+  audio.play();
 }
 
 // Функция для воспроизведения предыдущей песни
@@ -599,6 +600,7 @@ function playPrevSong() {
     const prevSongIndex = playedSongs[playedSongs.length - 1];
     loadSong(prevSongIndex);
     audio.load();
+    audio.play();
   }
 }
 
