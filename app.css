@@ -29,9 +29,7 @@ html, body {
 }
 .ButtonN
 {
-    position: absolute;
-    top: 530px;
-    right: 900px;
+    margin-top: 170px;
     opacity: 0;
     visibility: hidden;
     color: black;
@@ -47,6 +45,16 @@ html, body {
     border-width: 1px;
     border-style: solid;
     transition: 0.25s;
+}
+.ButtonDiv
+{
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
 }
 .ButtonN:hover
 {
