@@ -115,6 +115,7 @@ window.addEventListener("wheel", (event) => {
         subtree: true       // Для отслеживания изменений в дочерних элементах
     });
 
+    
 
 
     
