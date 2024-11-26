@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUNE.HAVEN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+
+</head>
+<body class="bg-neutral-900 animka1">
+<!--   БАШКА -->
+    <header class="bg-neutral-950 flex z-10 fixed justify-around w-full h-28 border-b-2 border-neutral-800">
+        <div class="flex  justify-between HeaderFle">
+            <a href="./index.html" class="text-slate-50  mt-7 justify-start HeaderKnopka">Главная</a>
+            <a>
+                <img id="showPlayerButton" src="./imgs/TuneHavenLogo.png" alt="Музыка" class="cursor-pointer hover:opacity-80 transition-opacity duration-300 Logo1">
+              
+                <!-- Музыкальный плеер -->
+                <div id="musicPlayer" class="hidden fixed bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                  <!-- Левая часть: Логотип -->
+                  <div class="flex items-center space-x-4">
+                    <img id="trackImage" src="track1.jpg" alt="Track Image" class="w-12 h-12 rounded-lg cursor-pointer">
+                    <div>
+                      <p id="trackName" class="text-lg font-bold">Track 1</p>
+                      <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                    </div>
+                  </div>
+              
+                  <!-- Центральная часть: Элементы управления -->
+                  <div class="flex flex-col items-center w-1/2">
+                    <div class="flex items-center space-x-4 mb-2">
+                      <button id="prevButton" class="text-gray-400 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                      </button>
+                      <button id="playPauseButton" class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                        </svg>
+                      </button>
+                      <button id="nextButton" class="text-gray-400 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- Прогресс-бар и время -->
+                    <div class="flex items-center space-x-2">
+                      <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                      <input type="range" id="progressBar" class="w-full bg-gray-600 rounded-lg appearance-none">
+                      <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                    </div>
+                  </div>
+              
+                  <!-- Правая часть: Регулятор громкости -->
+                  <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                    </svg>
+                    <input type="range" id="volumeControl" class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1" step="0.1">
+                  </div>
+                </div>
+              
+                <!-- Полупрозрачный фон для изображения -->
+                <div id="fullscreenImageContainer" class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                  <button id="closeFullscreenImage" class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                    X
+                  </button>
+                  <img id="fullscreenImage" src="" alt="Fullscreen Track Image" class="rounded-lg shadow-lg">
+                </div>
+                
+                <script src="./script.js"></script></a>
+            <a href="#" class="text-slate-50 mt-7 HeaderKnopka">О нас</a>
+        </div>
+    </header>
+    
+
+
+    <!-- внутрянка -->
+    <main class="pt-48">
+        <div class="top-20 topper"></div>
+        <div class="flex flex-col justify-around gap-y-10 ">
+                <div class="justify-between mr-auto genre1">
+                    <p class="font-bold text-2xl ">Rock/Metal</p>
+                </div>
+            <div class="flex justify-around"  >
+                <div class="flex Metallica">
+                    <a href="./first.html" class="">
+                        <img class="ImgBg" id="MetallicaPad" src="./imgs/MetallicaBg.png">
+                        <img class="MetallicaLogo" src="./imgs/MetallicaLogo.png">
+                    </a>
+                </div>
+                    <div class="flex Skillet">
+                    <a href="./second.html">
+                        <img class="ImgBg" src="./imgs/SkilletBg.png">
+                        <img src="./imgs/SkilletLogo.png" width="300" class="SkilletLogo">
+                    </a>
+                    </div>
+                    <div class="flex Pantera">
+                        <a href="./third.html">
+                            <img class="ImgBg" src="./imgs/PanteraBg.png">
+                            <img src="./imgs/PanteraLogo.png" class="PanteraLogo">
+                        </a>
+                    </div>
+                <div class="flex Scorpions">
+                    <a href="./fourth.html">
+                        <img class="ImgBg" src="./imgs/ScorpionsBg.png">
+                        <img class="ScorpionsLogo" src="./imgs/ScorpionsLogo.png" alt="">
+                    </a>
+                </div>
+                <div class="flex Rammstein">
+                    <a href="./fifth.html">
+                        <img class="ImgBg" src="./imgs/RammsteinBg.png">
+                        <img src="./imgs/RammsteinLogo.png" class="RammsteinLogo">
+                        
+                    </a>
+                </div>
+            </div>
+    
+          
+            <p class="font-bold text-2xl ml-2 genre1">Hip-Hop/Rap</p>
+            <div class="flex justify-around">
+                <div class="flex Biggie">
+                    <a href="./sixth.html">
+                        <img class="ImgBg" src="./imgs/BiggieBg.png">
+                        <img src="./imgs/BiggieLogo.png" class="BiggieLogo">
+                    </a>
+                </div>
+                <div class="flex Dre">
+                    <a href="./seventh.html">
+                        <img class="ImgBg" src="./imgs/dreBg.png">
+                        <img src="./imgs/DreLogo.png" class="DreLogo">
+                    </a>
+                </div>
+                <div class="flex Eminem">
+                    <a href="./eight.html">                    
+                        <img class="ImgBg" src="./imgs/EminemBg.png">
+                        <img src="./imgs/EminemLogo.png" class="EminemLogo">
+                    </a>
+                </div>
+                <div class="flex Pac">
+                    <a href="./ninth.html">
+                        <img class="ImgBg" src="./imgs/PacBg.png">
+                        <img src="./imgs/PacLogo.png" class="PacLogo">
+                    </a>
+                </div>
+                <div class="flex Kendrick">
+                    <a href="./tenth.html">
+                        <img class="ImgBg" src="./imgs/KendrickBg.png">
+                        <img src="./imgs/KendrickLogo.png" class="KendrickLogo">
+                    </a>
+                 </div>
+            </div>
+              
+            <p class="font-bold text-2xl ml-2 genre1">Pop</p>
+            <div class="flex justify-around">
+
+                <div class="flex greenday">
+                    <a href="#">
+                        <img class="ImgBg" src="./imgs/GreenDayBg.png">
+                        <img src="./imgs/GreenDayLogo.png" class="greendayLogo">
+                    </a>
+                </div>
+               
+                <div class="flex Michael">
+                    <a href="#">
+                        <img class="ImgBg" src="./imgs/MichaelBg.png">
+                        <img src="./imgs/MichaelLogo.png" class="MichaelLogo">
+                    </a>
+                </div>
+
+                <div class="flex abba"> 
+                    <a href="#">
+                        <img class="ImgBg" src="./imgs/abbaBg.png">
+                        <img src="./imgs/abbaLogo.png" class="abbaLogo">
+                    </a>
+                </div>
+                <div class="flex Sum">
+                     <a href="#">
+                        <img class="ImgBg" src="./imgs/Sum41Bg.png">
+                        <img src="./imgs/Sum41Logo.png" class="SumLogo">
+                    </a>
+                </div>
+
+                <div class="flex RukiV">
+                <a href="#">
+                    <img class="ImgBg" src="./imgs/rukiBg.png">
+                    <img src="./imgs/rukiLogo.png" class="RukiVLogo">
+                </a>
+                </div>
+            </div>
+        </div>    
+    </main>
+    
+
+<!--   ПОДВАЛ -->
+    <footer class="w-full h-20 bg-black">
+        <div class="flex flex-row gap-12 text-slate-100 text-xl text-center ml-12 mt-5 ">
+            <p>Никита</p>
+            <p>Артур</p>
+            <p>Саша</p>
+            <p>Костя</p>
+            <p>Жанель</p>
+        </div>
+    </footer>
+</body>
+</html>
