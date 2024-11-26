@@ -421,10 +421,10 @@ const songs = [
   image: "./Photo/Снимок экрана 2024-11-25 165321.png",
   },
 {
-  name: "Swimming Pool(Drank)",
+  name: "TV Off",
   artist: "Kendrick Lamar",
-  file: "./music/Kendrick Lamar - Swimming Pool(Drank).mp3",
-  image: "./Photo/Снимок экрана 2024-11-25 171259.png",
+  file: "./music/Kendrick Lamar - TV Off.mp3",
+  image: "./Photo/Kendrick-Lamar-GNX-cover.jpg",
   },
 {
   name: "Not Like Us",
