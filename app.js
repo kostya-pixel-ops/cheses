@@ -85,9 +85,6 @@ window.addEventListener("wheel", (event) => {
     }
 });
 
-
-
-
     let editableDiv = document.getElementById("text-display");
     let buttona = document.getElementById('nigga')
     let textMain = document.getElementById("text-display")

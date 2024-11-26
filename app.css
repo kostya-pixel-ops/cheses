@@ -47,12 +47,10 @@ html, body {
     border-width: 1px;
     border-style: solid;
     transition: 0.25s;
-    
 }
 .ButtonN:hover
 {
     color: white;
     background-color: rgb(73, 73, 73);
     border-color: rgb(73, 73, 73);
-
 }
