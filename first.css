@@ -12,56 +12,32 @@ body
 {
     width: 900px;
 }
-.flex2
-{
-    position: absolute;
-    top:160px;
-    right:60px;
-    width: 384px;
-    height: 1200px;
-}
 .back
 {
     position: absolute;
+    margin-top: 150px;
     height: 4500px;
     width: 1200px;
     top: 250px;
     
 }
-.back2
-{
-    height: 450px;
-    width: 336px;
-}
-.back3
-{
 
-    height: 300px;
+.MainBox {
     width: 336px;
+    float: right;
+    margin-right: 108px;
+    margin-top: -58px;
 }
-.back4
-{
-    width: 336px;
+.Name2 {
+    margin-top: 40px;
+    margin-left: 40px;
 }
-.mainInfo
-{
-    width: 336px;
+
+.Maaain {
+    
 }
-.Text1
-{
-    position: absolute;
-    width: 666px;
-    height: 900px;
-    top:230px;
-    right: 485px;
-}
-.Name2
-{
-      position: absolute;
-    top: 70px;
-    left:45px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
+
 .HeaderKnopka
 {
     width: 100px;
@@ -75,7 +51,7 @@ body
     height: 50px;
 }
 .Logo1 {
-    height: 90px;
+    height: 85px;
     margin-top: 7px;
 }
 .HeaderKnopka:hover
@@ -88,17 +64,8 @@ body
     margin-top: 2px;
     height: 444px;
 }
-.Text2
-{
-    position: absolute;
-    width: 999px;
-    height: 1500px;
-    top:1660px;
-    right: 150px;
-}
 .Navig
 {
-    position: absolute;
     top: 1053px;
     right: 108px;
     background-color: rgb(0, 0, 0);
@@ -107,18 +74,7 @@ body
     border-color: slategray;
     border-width: 1px;
 }
-.back5
-{
-    width: 336px;
-}
-.Text21
-{
-    position: absolute;
-    width: 666px;
-    height: 1500px;
-    top:1220px;
-    right: 486px;;
-}
+
 
 
 .nav1
