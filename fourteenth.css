@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
+body
+{
+    height: 6450px;
+ 
+    background-size: 1920px 6450px;
+    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
+     сколько height, чтобы он не обрезалчя */
+  
+}
+.HeaderFle
+{
+    width: 900px;
+}
+.back
+{
+    position: absolute;
+    margin-top: 0px;
+    height: 6050px;
+    width: 1200px;
+    top: 250px;
+    background-color: #8b896f;
+/* тут  цвет главной херни по середине, которая самая большая*/
+}
+.MainBox {
+    width: 336px;
+    float: right;
+    margin-right: 108px;
+    margin-top: 160px;
+}
+.Name2 {
+    position: absolute;
+    top:-35px;
+    left: -65px;
+}
+.Text1
+{
+    width: 666px;
+    padding-top: 172px;
+    margin-left: 50px;
+    height: 1200px;
+    /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
+}
+.Text2
+{
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.Text12
+{
+   
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.HeaderKnopka
+{
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2em;
+    transition: 0.35s;
+    height: 50px;
+}
+.Logo1 {
+    height: 85px;
+    margin-top: 7px;
+}
+.HeaderKnopka:hover
+{
+    color:black
+     /*  тут стилизуйте под группу*/
+}
+.Wiki
+{
+    margin-left: 1px;
+    margin-top: 2px;
+    height: 444px;
+}
+.Navig
+{
+    top: 1053px;
+    right: 108px;
+    background-color: rgb(0, 0, 0);
+    width: 336px;
+    height: 330px;
+    border-width: 1px;
+}
+
+
+ /* ТУТ ПОД ГРУППУ ТОЖЕ СТИЛИЗУЙТЕ, ЭТО КНОПКИ В НАВИГАЦИИ ПРИ НАВЕДЕНИИ МЕНЯЮТ ЦВЕТ, НУ ЧТОБЫ ЗНАЛИ*/
+.nav1:hover
+{
+    background-color: rgb(255, 255, 221);
+    width: 135px;
+    color: black;
+}
+.nav2:hover
+{
+    background-color:  rgb(255, 255, 221);
+    width: 160px;
+    color: black;
+}
+.nav3:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 60px
+}
+.nav4:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 185px
+}
+.nav5:hover
+{
+    background-color: rgb(255, 255, 221);
+    color: black;
+    width: 147px
+}
+.nav6:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 110px
+   
+}
+.nav7:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 175px;
+}
+.nav8:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 55px;
+}
+
+.nav1
+{
+    transition: 0.35s;
+}
+.nav2
+{
+    transition: 0.35s;
+}
+.nav3
+{
+    transition: 0.35s;
+}
+.nav4
+{
+    transition: 0.35s;
+}
+.nav5
+{
+    transition: 0.35s;
+}
+.nav6
+{
+    transition: 0.35s;
+}
+.nav7
+{
+    transition: 0.35s;
+}
+.nav8
+{
+    transition: 0.35s;
+}
