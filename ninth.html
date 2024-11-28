@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./ninth.css">
 </head>
 <body>
+                <!--вот тут основной в хэдере цвет-->                                                     <!--вот тут темнее основного цвета тоже-->
     <header class="bg-yellow-400 flex z-10 fixed justify-around w-full h-24 border-b border-yellow-300">
         <div class="flex  justify-between HeaderFle">
             <a href="./main.html" class="text-white justify-start mt-5 HeaderKnopka">Главная</a>
@@ -17,31 +18,40 @@
     </header>
     <main>
         <div class="flex justify-around items-center">
+                                        <!--вот тут темнее основного цвета тоже-->
             <div class="back  border border-yellow-300"> 
                 <div class="Maaain">
+                                <!--тут лого группы или чела  -->
                     <img src="./imgs/PacLogo.png" class="h-64 ml-24 Name2">
                         <div class="BoxofMainBox">
                             <div class="MainBox">
+                                                    <!--Тут цвет под исполнителя    а тут границу, немного темнее основного цвета-->
                                 <div class="mainInfo bg-amber-100 h-12 border border-yellow-300 flex justify-center">
                                     <h1 class="font-semibold text-black text-2xl pt-1">2PAC</h1>
                                 </div>
                                 <div class="back2 bg-black border border-yellow-300">
                                  <!-- СЮДА ФОТКУ -->
+                                                <!-- здесь картинка челов которая справа большая  -->
                                     <img src="./imgs/TupacBithc.jpg" width="332" class="Wiki">
                                 </div>
+                                                     <!-- тут ставишь цвет под исполнителя и границу темнее, ну как сверху короче  -->
                                 <div class="back4 bg-amber-100 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
                                     <h1>Информация</h1>
                                 </div>
                                 <div class="back3 bg-neutral-900 text-white  border border-yellow-300 justify-end">
                                     <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
+                                        <!--  если тут будет слишком много, будет уходить за границу класс back3 height меняй в css -->
                                         <p>• Имя при рождении: Lesane Parish Crooks</p>
                                         <p>• Дата рождения: 16 июня 1971</p> 
                                         <p>• Дата смерти: Дата смерти 13 сентября 1996(25 лет)</p> 
                                         <p>• Лейблы: Death Row Records, Interscope Records и Amaru Entertainment</p>          
                                 </div>
+                                        <!--  ну тут как выше цвета настраивай -->
                                 <div class="back5 bg-amber-100 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
                                         <h1>Навигация</h1>
                                 </div>
+                                            <!-- в href после # пишешь id который поставила, ниже напишу побольше, а ну и цвет границы, если слишком много 
+                                             в навигации, класс Navig height меняй.  -->
                                 <div class="flex flex-col gap-4 pr-5 bg-neutral-900 text-white border border-yellow-300 Navig">
                                      <a href="#Childhood" class="mt-3 ml-5 nav1">Детство и юность</a>
                                      <a href="#Fame" class="ml-5 nav2">Восхождение к славе</a>
@@ -57,8 +67,15 @@
                             </div>      
                          </div>  
                     </div>
-
+                            <!-- самое главное, text1 это тот текст, который идёт параллельно правой колонки, с инфой артиста, там всё настроено
+                             только надо писать по ГОСТу,  p - class="font-light text-xl", а ЗАГАЛОВКАМ надо h1 с классом class="font-bold text-2xl", 
+                             текст писать внутри div'а, очевидно, но всё же-->
                     <div class="Text1 flex text-left flex-col text-white gap-5">
+
+                                <!--  айдишки ставишь чтобы +- понятно было, они по кнопке сверху перемещают на этот текст,
+                                   здесь childhood, по кнопке будет на этот текст перемещать,
+                                    иногда текста, которые ниже, перемещают тебя выше чем надо, это может запутать, но можно айди, что ниже, ставить на один выше, 
+                                    поэксперементируй шобы норм было, ну или так оставь.-->
                         <p class="font-light text-xl" id="Childhood"> 
                             <b>Ту́пак Ама́ру Шаку́р</b>
                                 — американский рэпер, продюсер и актёр. Считается одним из величайших хип-хоп-исполнителей в истории. По состоянию на 2015 год,
@@ -85,6 +102,10 @@
                                 был осуждён за убийство школьного учителя при попытке ограбления в 1968 году, однако позже наказание было отменено.
                             </p>
                     </div>
+
+                     <!-- здесь текст который переходит от узкой части в широкую, чтобы он на всю страничку был, 
+                      если текст заходит за тот, что выше, в классе Text12 меняй  -> padding-top, текст писать внутри div'а, очевидно, но всё же    -->
+                                   
                     <div class="Text12 flex text-left flex-col gap-5 text-white">
                         <p class="font-light text-xl">Его отчим, Мутулу, четыре года 
                             находился в списке самых разыскиваемых преступников ФБР. Мутулу был арестован в 1986 за вооружённое ограбление, в ходе которого были убиты двое полицейских
@@ -92,6 +113,10 @@
                              из исправительного учреждения. Шакур имеет младшую единоутробную сестру по имени Секайва и старшего сводного брата через первый брак отчима,
                               Моприма.</p>
                     </div>
+
+                     <!-- а этот текст уже ниже переходного текста, опять же, если заходит за тот что выше, padding-top
+                      но в классе Text2 уже, текст писать внутри div'а, очевидно, но всё же -->
+                         
                     <div class="Text2 flex text-left flex-col gap-5 text-white">
                         <p class="text-xl font-light">
                             В возрасте 12 лет Шакур вступил в 127-й уличный ансамбль Гарлема, впоследствии сыграв роль Молодого Трэвиса в пьесе A Raisin in the Sun. 
@@ -256,19 +281,7 @@
     </main>
 
  
-            <div class="Text2 flex text-left flex-col text-white gap-5">
-
-                <h1 class="font-bold text-2xl" >  </h1>
-                <h1 class="font-bold text-2xl" >  </h1>
-                <h1 class="font-bold text-2xl" >  </h1>
-                <h1 class="font-bold text-2xl" >  </h1>
-                <p class="font-light text-xl"></p>
-                <p class="font-light text-xl"></p>
-                <p class="font-light text-xl"></p>
-                <p class="font-light text-xl"></p>
-
-                      
-            </div>
+   
 
                                 
 
