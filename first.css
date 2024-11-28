@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 4900px;
+    height: 8300px;
  
     background-size: 1920px 4900px;
 
     background: white;
+
+    color: white;
 }
 .HeaderFle
 {
@@ -15,8 +17,8 @@ body
 .back
 {
     position: absolute;
-    margin-top: 150px;
-    height: 4500px;
+    margin-top: 0px;
+    height: 8000px;
     width: 1200px;
     top: 250px;
     
@@ -33,8 +35,16 @@ body
     margin-left: 40px;
 }
 
-.Maaain {
-    
+.Shortcut {
+    position: absolute;
+}
+.Text1 {
+    width: 666px;
+    margin-left: 50px;
+}
+.Text2 {
+    width: 1020px;
+    margin-left: 50px;
 }
 
 
