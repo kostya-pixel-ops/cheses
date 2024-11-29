@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 6450px;
+    height: 4313px;
  
     background-size: 1920px 6450px;
     background: linear-gradient(133deg, rgba(33,29,28,1) 0%, rgba(182,109,32,1) 56.99999999999999%, rgba(254,197,45,1) 100%);
@@ -18,7 +18,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 6050px;
+    height: 3313px;
     width: 1200px;
     top: 250px;
     background-color: #000000;
@@ -32,8 +32,9 @@ body
 }
 .Name2 {
     position: absolute;
-    top:-35px;
-    left: -65px;
+    top: -103px;
+    left: -120px;
+    scale: 1.3;
 }
 .Text1
 {
@@ -91,7 +92,7 @@ body
     right: 108px;
     background: rgb(52, 14, 2);
     width: 336px;
-    height: 330px;
+    height: 370px;
     border-width: 1px;
 }
 
@@ -100,51 +101,51 @@ body
 .nav1:hover
 {
     background-color: rgb(255, 255, 221);
-    width: 135px;
+    
     color: black;
 }
 .nav2:hover
 {
     background-color:  rgb(255, 255, 221);
-    width: 160px;
+    
     color: black;
 }
 .nav3:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 60px
+    
 }
 .nav4:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 185px
+    
 }
 .nav5:hover
 {
     background-color: rgb(255, 255, 221);
     color: black;
-    width: 147px
+    
 }
 .nav6:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 110px
+    
    
 }
 .nav7:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 175px;
+    
 }
 .nav8:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 55px;
+    
 }
 
 .nav1
