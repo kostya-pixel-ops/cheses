@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 9000px;
- 
-    background-size: 1920px 9000px;
+    height: 9400px;
+    filter: sepia(30%);
+    background-size: 1920px 9400px;
     background: rgb(223,174,116);
     background: linear-gradient(100deg, rgba(223,174,116,1) 0%, rgba(166,134,108,1) 55%, rgba(233,186,144,1) 86%); 
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
@@ -19,7 +19,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 8500px;
+    height: 9000px;
     width: 1200px;
     top: 250px;
     background-color: #70707050;
@@ -57,9 +57,18 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 110px;
+    padding-top: 30px;
     margin-left: 50px;
 }
+.mainInfo
+{
+    background-color: #b39575;
+}
+.back3
+{
+    background-color: #b39575;
+}
+
 .HeaderKnopka
 {
     width: 100px;
@@ -91,63 +100,76 @@ body
 {
     top: 1053px;
     right: 108px;
-    background-color: rgb(0, 0, 0);
+    background-color: #b39575;
     width: 336px;
-    height: 330px;
+    height: 420px;
     border-width: 1px;
 }
-
+.left
+{
+    float: left;
+     box-shadow: 5px 5px 5px 5px rgba(12, 12, 12, 0.322);
+     margin-right: 20px;
+}
 
  /* ТУТ ПОД ГРУППУ ТОЖЕ СТИЛИЗУЙТЕ, ЭТО КНОПКИ В НАВИГАЦИИ ПРИ НАВЕДЕНИИ МЕНЯЮТ ЦВЕТ, НУ ЧТОБЫ ЗНАЛИ*/
 .nav1:hover
 {
     background-color: rgb(255, 255, 221);
-    width: 135px;
+    width: 160px;
     color: black;
 }
 .nav2:hover
 {
     background-color:  rgb(255, 255, 221);
-    width: 160px;
+    width: 270px;
     color: black;
 }
 .nav3:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 60px
+    width: 100px
 }
 .nav4:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 185px
+    width: 300px
 }
 .nav5:hover
 {
     background-color: rgb(255, 255, 221);
     color: black;
-    width: 147px
+    width: 300px
 }
 .nav6:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 110px
+    width: 130px
    
 }
 .nav7:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 175px;
+    width: 70px;
 }
 .nav8:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 55px;
+    width: 175px;
 }
+.nav9:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+    width: 160px;
+}
+
+
 
 .nav1
 {
@@ -178,6 +200,10 @@ body
     transition: 0.35s;
 }
 .nav8
+{
+    transition: 0.35s;
+}
+.nav9
 {
     transition: 0.35s;
 }
