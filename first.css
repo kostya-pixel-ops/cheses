@@ -2,13 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 8300px;
  
+    height: 12400px;
+
     background-size: 1920px 4900px;
 
     background: white;
 
     color: white;
+
+}
+#Reload {
+    color:chocolate;
+}
+#CliffLightning {
+    color:cyan;
+}
+#GrgInc {
+    color: gray;
+}
+#MasterofPuppets {
+    color: orangered;
+}
+#Black {
+    color: darkslategray;
+}
+#Black:hover {
+    color: darkcyan;
+}
+#KillemAll {
+    color: red;
+}
+#JusticeAll 
+{
+    color: greenyellow;
+}
+#Load {
+    color: brown;
+}
+#DMagnetic {
+    color: lightgrey;
+}
+#StAnger {
+    color: red;
 }
 .HeaderFle
 {
@@ -18,7 +54,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 8000px;
+    height: 12000px;
     width: 1200px;
     top: 250px;
     
@@ -83,6 +119,15 @@ body
     height: 410px;
     border-color: slategray;
     border-width: 1px;
+}
+
+.left {
+    float: left;
+    margin: 7px, 7px, 7px, 0;
+}
+.right {
+    float: right;
+    margin: 7px, 7px, 0, 7px;
 }
 
 
