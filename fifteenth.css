@@ -5,7 +5,7 @@ body
     height: 6450px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    background: linear-gradient(109.6deg, rgba(129, 20, 96, 0.93) 44.2%, rgb(241, 84, 181) 55.8%);  
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
@@ -21,8 +21,11 @@ body
     height: 6050px;
     width: 1200px;
     top: 250px;
-    background-color: #8b896f;
+    background-color: #000000;
 /* тут  цвет главной херни по середине, которая самая большая*/
+.back6 {
+    height: 200px;
+}
 }
 .MainBox {
     width: 336px;
@@ -32,30 +35,24 @@ body
 }
 .Name2 {
     position: absolute;
-    top:-35px;
-    left: -65px;
+        margin-top: -100px;
+        margin-left: 80px;
 }
 .Text1
 {
     width: 666px;
-    padding-top: 172px;
+    padding-top: 185px;
     margin-left: 50px;
     height: 1200px;
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
-.Text2
-{
-    width: 1020px;
-    /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 20px;
-    margin-left: 50px;
-}
+
 .Text12
 {
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 50px;
+    padding-top: 35px;
     margin-left: 50px;
 }
 .HeaderKnopka
