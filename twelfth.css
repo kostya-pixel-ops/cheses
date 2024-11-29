@@ -2,11 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 9000px;
+    height: 6450px;
  
-    background-size: 1920px 9000px;
-    background: rgb(223,174,116);
-    background: linear-gradient(100deg, rgba(223,174,116,1) 0%, rgba(166,134,108,1) 55%, rgba(233,186,144,1) 86%); 
+    background-size: 1920px 6450px;
+    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
@@ -19,13 +18,12 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 8500px;
+    height: 6050px;
     width: 1200px;
     top: 250px;
-    background-color: #70707050;
+    background-color: #8b896f;
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
-
 .MainBox {
     width: 336px;
     float: right;
@@ -49,7 +47,7 @@ body
 {
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 0px;
+    padding-top: 20px;
     margin-left: 50px;
 }
 .Text12
@@ -57,7 +55,7 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 110px;
+    padding-top: 50px;
     margin-left: 50px;
 }
 .HeaderKnopka
@@ -78,7 +76,7 @@ body
 }
 .HeaderKnopka:hover
 {
-    color: white
+    color:black
      /*  тут стилизуйте под группу*/
 }
 .Wiki

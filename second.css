@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 body
 {
-    height: 4000px;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
-    background-size: 1920px 5000px;
+    height: 5500px;
+    background: linear-gradient(109.6deg, rgba(30, 12, 94, 0.93) 44.2%, rgb(144, 84, 241) 55.8%);  
+    background-size: 1920px 7000px;
 }
 .HeaderFle
 {
@@ -17,10 +17,11 @@ body
     width: 384px;
     height: 1200px;
 }
+
 .back
 {
     position: absolute;
-    height: 3500px;
+    height: 5000px;
     width: 1200px;
     top: 250px;
     
@@ -33,16 +34,34 @@ body
 .back3
 {
 
-    height: 300px;
+    height: 150px;
   
+}
+
+.back5 {
+    height: 200px;
+}
+.back6 {
+    height: 160px;
 }
 .Text1
 {
     position: absolute;
     width: 666px;
     height: 900px;
-    top:170px;
-    right: 485px;
+    top: 200px;
+    right: 455px;
+}
+.Text2 {
+    position: absolute;
+    width: 1020px;
+    height: 900px;
+    top: 1360px;
+    right: 100px;
+}
+.Name4 {
+        margin-top: -100px;
+        margin-left: 80px;
 }
 .Name2
 {
