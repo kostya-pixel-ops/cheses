@@ -1,66 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 4900px;
  
-    background-size: 1920px 4900px;
-    background: -webkit-linear-gradient(188deg, #1b5c34,#000000);background: linear-gradient(188deg, #237c45,#000000);
+    height: 5800px;
+ 
+    background-size: 1920px 5800px;
+    background: rgb(179,214,184);
+    background: linear-gradient(130deg, rgba(179,214,184,1) 0%, rgba(128,172,90,1) 54%, rgba(68,105,70,1) 86%); 
+  
 }
 .HeaderFle
 {
     width: 900px;
 }
-.flex2
-{
-    position: absolute;
-    top:160px;
-    right:60px;
-    width: 384px;
-    height: 1200px;
-}
 .back
 {
     position: absolute;
-    height: 4500px;
+    margin-top: 0px;
+    height: 5500px;
     width: 1200px;
     top: 250px;
-    
+    background-color: rgba(51, 68, 50, 0.678);
+  
+/* тут  цвет главной херни по середине, которая самая большая*/
 }
-.back2
-{
-    height: 450px;
+.MainBox {
     width: 336px;
+    float: right;
+    margin-right: 108px;
+    margin-top: 160px;
+}
+.Name2 {
+    position: absolute;
+    top:-80px;
+    left: -57px;
 }
 .back3
 {
-
-    height: 300px;
-    width: 336px;
     background-color: #020f07;
-    
-}
-.back4
-{
-    width: 336px;
-}
-.mainInfo
-{
-    width: 336px;
 }
 .Text1
 {
-    position: absolute;
     width: 666px;
-    height: 900px;
-    top:170px;
-    right: 485px;
+    padding-top: 172px;
+    margin-left: 50px;
+    height: 1200px;
+    /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
-.Name2
+.left
 {
-      position: absolute;
-    top: 70px;
-    left:45px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float:left;
+    box-shadow: 5px 5px 5px 5px rgba(12, 12, 12, 0.322);
+    margin-right: 20px;
+}
+.right
+{
+    float: right;
+    box-shadow: 5px 5px 5px 5px rgba(12, 12, 12, 0.322);
+    margin-left: 20px;
+}
+.Text2
+{
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 280px;
+    margin-left: 50px;
+}
+.Text12
+{
+   
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
 }
 .HeaderKnopka
 {
@@ -75,12 +88,13 @@ body
     height: 50px;
 }
 .Logo1 {
-    height: 90px;
+    height: 85px;
     margin-top: 7px;
 }
 .HeaderKnopka:hover
 {
-    color:white;
+    color:white
+     /*  тут стилизуйте под группу*/
 }
 .Wiki
 {
@@ -88,130 +102,127 @@ body
     margin-top: 2px;
     height: 444px;
 }
-.Text2
-{
-    position: absolute;
-    width: 999px;
-    height: 1500px;
-    top:1600px;
-    right: 150px;
-}
 .Navig
 {
-    position: absolute;
     top: 1053px;
     right: 108px;
-    background-color: #020f07;
     width: 336px;
-    height: 410px;
-    border-color: green;
+    height: 430px;
+    background-color: #020f07;
     border-width: 1px;
 }
-.back5
-{
-    width: 336px;
-}
-.Text21
-{
-    position: absolute;
-    width: 666px;
-    height: 1500px;
-    top:1160px;
-    right: 486px;
-}
 
+
+ /* ТУТ ПОД ГРУППУ ТОЖЕ СТИЛИЗУЙТЕ, ЭТО КНОПКИ В НАВИГАЦИИ ПРИ НАВЕДЕНИИ МЕНЯЮТ ЦВЕТ, НУ ЧТОБЫ ЗНАЛИ*/
+.nav1:hover
+{
+    background-color: rgb(186, 230, 184);
+    
+    color: black;
+}
+.nav2:hover
+{
+    background-color:  rgb(186, 230, 184);
+    
+    color: black;
+}
+.nav3:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+    
+}
+.nav4:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+  
+}
+.nav5:hover
+{
+    background-color: rgb(186, 230, 184);
+    color: black;
+ 
+}
+.nav6:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+  
+   
+}
+.nav7:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+    
+}
+.nav8:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+
+}
+.nav9:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+
+}
+.nav10:hover
+{
+    background-color:  rgb(186, 230, 184);
+    color: black;
+
+}
 
 .nav1
 {
     transition: 0.35s;
-    width: 100px;
-}
-.nav1:hover
-{
-    background-color: rgba(77, 204, 65, 0.397);
+    width: 95px;
 }
 .nav2
 {
     transition: 0.35s;
-    width: 200px;
-}
-.nav2:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 180px;
 }
 .nav3
 {
     transition: 0.35s;
-    width: 190px;
-}
-.nav3:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 180px;
 }
 .nav4
 {
     transition: 0.35s;
-    width: 215px;
-}
-.nav4:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 200px;
 }
 .nav5
 {
     transition: 0.35s;
-    width: 80px;
-}
-.nav5:hover
-{
-    background-color: rgba(77, 204, 65, 0.397);
+    width: 75px;
 }
 .nav6
 {
     transition: 0.35s;
     width: 40px;
 }
-.nav6:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
-   
-}
 .nav7
 {
     transition: 0.35s;
-    width: 50px;
-}
-.nav7:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 45px;
 }
 .nav8
 {
     transition: 0.35s;
-    width: 75px;
-    border-radius: 5%;
-}
-.nav8:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 70px;
 }
 .nav9
 {
     transition: 0.35s;
-    width: 185px;
-    border-radius: 5%;
-}
-.nav9:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
+    width: 170px;
 }
 .nav10
 {
+    width: 80px;
     transition: 0.35s;
-    width: 85px;
-    border-radius: 5%;
-}
-.nav10:hover
-{
-    background-color:  rgba(77, 204, 65, 0.397);
 }
