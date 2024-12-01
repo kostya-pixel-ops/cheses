@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
 
+
 body
 {
     height:2560px;
@@ -31,6 +32,8 @@ footer
     height: 400px;
     transition: all 400ms;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.267);
+    
+    
 }
 .Metallica {
     position: relative;
