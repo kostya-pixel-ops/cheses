@@ -9,7 +9,7 @@
 </head>
 <body>
                 <!--вот тут основной в хэдере цвет-->                                                     <!--вот тут темнее основного цвета тоже-->
-    <header class="bg-yellow-400 flex z-10 fixed justify-around w-full h-24 border-b border-yellow-300">
+    <header class="bg-red-900 flex z-10 fixed justify-around w-full h-24 border-b border-red-900">
         <div class="flex  justify-between HeaderFle">
             <a href="./main.html" class="text-white justify-start mt-5 HeaderKnopka">Главная</a>
             <a href="#" class="logo"><img src="./imgs/TuneHavenLogo.png" class="Logo1"></a>
@@ -26,8 +26,8 @@
                         <div class="BoxofMainBox">
                             <div class="MainBox">
                                                     <!--Тут цвет под исполнителя    а тут границу, немного темнее основного цвета-->
-                                <div class="mainInfo bg-amber-100 h-12 border border-yellow-300 flex justify-center">
-                                    <h1 class="font-semibold text-black text-2xl pt-1">2PAC</h1>
+                                <div class="mainInfo bg-red-800 h-12 border border-yellow-300 flex justify-center">
+                                    <h1 class="font-semibold text-black text-2xl pt-1">Rammstein</h1>
                                 </div>
                                 <div class="back2 bg-black border border-yellow-300">
                                  <!-- СЮДА ФОТКУ -->
@@ -35,7 +35,7 @@
                                     <img src="./imgs/rammstein02.jpg" width="332" class="Wiki">
                                 </div>
                                                      <!-- тут ставишь цвет под исполнителя и границу темнее, ну как сверху короче  -->
-                                <div class="back4 bg-amber-100 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
+                                <div class="back4 bg-red-800 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
                                     <h1>Информация</h1>
                                 </div>
                                 <div class="back3 bg-neutral-900 text-white  border border-yellow-300 justify-end">
@@ -51,7 +51,7 @@
                                         <p>• Кристоф Шнайдер</p> 
                                 </div>
                                         <!--  ну тут как выше цвета настраивай -->
-                                <div class="back5 bg-amber-100 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
+                                <div class="back5 bg-red-800 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
                                         <h1>Навигация</h1>
                                 </div>
                                             <!-- в href после # пишешь id который поставила, ниже напишу побольше, а ну и цвет границы, если слишком много 
@@ -60,16 +60,14 @@
                                      <a href="#Childhood" class="mt-3 ml-5 nav1">Начало</a>
                                      <a href="#Fame" class="ml-5 nav2">Название группы</a>
                                      <a href="#ninefive" class="ml-5 nav3">Herzeleid (1995)</a>
-                                     <a href="#ninefive" class="ml-5 nav4"> Sehnsucht (1997)</a>
+                                     <a href="#ninenega" class="ml-5 nav4"> Sehnsucht (1997)</a>
                                      <a href="#Big" class="ml-5 nav5">Mutter (2001)</a>
                                      <a href="#last" class="ml-5 nav6">Reise, Reise (2004)</a>
                                      <a href="#posmet" class="ml-5 nav7">Rosenrot (2005)</a>
                                      <a href="#gibel" class="ml-5 nav8">Liebe ist für alle da (2009)</a>
-                                     <a href="#lol" class="ml-5 nav8">Rammstein in Amerika и одноимённый альбом (2019)</a>
                                      <a href="#Nefor" class="ml-5 nav8">Zeit (2022)</a>
-                                     <a href="#gaban" class="ml-5 nav8">Эстетика и стиль</a>
+                                     <a href="#gaban" class="ml-5 nav8">Концерты</a>
                                      <a href="#halva" class="ml-5 nav8">Критика</a>
-                                     <a href="#vse" class="ml-5 nav8">Заключение</a>
                                 </div>
 
                                 
@@ -83,17 +81,18 @@
 
                              <!-- СОВЕТ! большие текста разбивайте на два или три, в смысле вместо одного p, добавьте два, разделите текст на два, и вторую часть во второй p, 
                               референс: другие статьи-->
-                    <div class="Text1 flex text-left flex-col text-white gap-5">
+                    <div class="Text1 flex text-left flex-col text-white gap-5" id="Childhood">
 
                                 <!--  айдишки ставишь чтобы +- понятно было, они по кнопке сверху перемещают на этот текст,
                                    здесь childhood, по кнопке будет на этот текст перемещать,
                                     иногда текста, которые ниже, перемещают тебя выше чем надо, это может запутать, но можно айди, что ниже, ставить на один выше, 
                                     поэксперементируй шобы норм было, ну или так оставь.-->
-                        <p class="font-light text-xl" id="Childhood"> 
+                        <p class="font-light text-xl" id="Fame"> 
 
                             <!-- А, И ТУТ ПЕРВАЯ САМАЯ ФИГНЯ, НАЗВАНИЕ ГРУППЫ И НЕБОЛЬШОЕ ОПИСАНИЕ, С ВИКИ ИЛИ ГДЕ ИНФУ ИЩЕТЕ, ПОСМОТРИТЕ КАК МЫ ДЕЛАЛИ, ВОТ ЧЁТ ТАКОЕ, 
                              это пример, можно это убрать -->
                             <b>Rammstein</b>
+
                              — немецкая индустриальная метал-группа, основанная в 1994 году в Берлине.Группа стала известна благодаря 
                              мощному звучанию, провокационным текстам на немецком языке и зрелищным концертам с обилием пиротехники. 
                              Дебютный альбом Herzeleid (1995) принёс им успех в Германии, а с выходом Sehnsucht (1997) они получили 
@@ -103,30 +102,181 @@
                              подчёркивает искусство и выражение эмоций. Они остаются одной из самых влиятельных и успешных групп в 
                              своём жанре.
                         </p>
-                        <h1 class="font-bold text-2xl" >Название группы</h1>
+                        <h1 class="font-bold text-2xl" id="ninefive">Название группы</h1>
                             <p class="font-light text-xl" >
                                 Название Rammstein связано с авиабазой Рамштайн в Германии, где в 1988 году во время авиашоу произошла трагедия, 
                                 унесшая жизни сотен людей. Первоначально название задумывалось как «Раммштайн» (с двойной "м"), но позже его сократили 
                                 до Rammstein. Это слово также ассоциируется с "каменным тараном" (ramming stone), что отражает мощь и агрессивный 
                                 стиль группы.
                             </p>
-                            <h1 class="font-bold text-2xl" >Herzeleid (1995)</h1>
-                            <p class="font-light text-xl" >
+                            <h1 class="font-bold text-2xl" id="ninenega"><a href="https://youtu.be/70tvVuj4v5g?si=O-S72vsg0ua8zyYu" class="hover:text-gray-500 transition duration-200">Herzeleid (1995)</a></h1>
+                            <p class="font-light text-xl leading-relaxed">
+                                <img 
+                                  src="imgs/Снимок экрана 2024-12-01 182646.png" 
+                                  alt="Обложка альбома Herzeleid" 
+                                  class="float-left w-[300px] h-auto mr-4 mb-2 rounded-lg shadow-lg"
+                                />
                                 Первый альбом Herzeleid ("Боль сердца") стал основой стиля Rammstein: мощный индустриальный металл, 
                                 мрачная атмосфера и провокационная эстетика. Альбом записан в Швеции с продюсером Якобом Хелльнером. 
-                                Треки "Du Riechst So Gut" и "Seemann" стали популярными, первая вдохновлена романом "Парфюмер".
-                            </p>
+                                Треки  <a href="https://youtu.be/rrmsJhf89MY?si=-mxbVTfMyksCEMtE" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Du Riechst So Gut" </a>  и 
+                                <a href="https://youtu.be/srN1GsnBui8?si=Dg453pWuXSIB1BNx" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Seemann" </a>стали популярными, первая 
+                                вдохновлена романом "Парфюмер".Обложка, изображающая 
+                                участников с обнажёнными торсами, вызвала критику за "арийскую" эстетику, но группа опровергла связи с политикой. 
+                                Название альбома выбрано для отражения эмоциональной боли, а визуальный стиль символизирует единство участников.
+                              </p>
+                              <h1 class="font-bold text-2xl" id="Big"><a href="https://youtu.be/ZXjNjuLOi_k?si=LH4gAeDBehG1IVoh" class="hover:text-gray-500 transition duration-200">Sehnsucht (1997)</a></h1>
+                              <p class="font-light text-xl leading-relaxed">
+                                  <img 
+                                  src="imgs/Снимок экрана 2024-12-01 184002.png" 
+                                  alt="Обложка альбома Herzeleid" 
+                                  class="float-right w-[300px] h-auto ml-4 mb-2 rounded-lg shadow-lg"
+                                  />
+                                  Sehnsucht ("Тоска") вывел Rammstein на международный уровень. Хит <a href="https://youtu.be/W3q8Od5qJio?si=5aldlfr2ciyGxn1Q" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Du Hast"</a> стал визитной карточкой 
+                                  группы благодаря игре слов ("ты имеешь" и "ты ненавидишь") и энергичному клипу. <a href="https://youtu.be/x2rQzv8OWEY?si=bRkdHGgmskyxblmb" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Engel"</a>, вдохновлённая 
+                                  фильмом "От заката до рассвета", закрепила успех группы.
+                                  Обложка, созданная Готтфридом Хельнвайном, изображает участников с металлическими элементами, 
+                                  подчёркивая индустриальный стиль. Альбом стал первым немецкоязычным диском с платиновым статусом в США. 
+                                  Концертное шоу во время тура сопровождалось пиротехникой, что стало фирменной чертой Rammstein.
+                                </p>
                     </div>
 
                      <!-- здесь текст который переходит от узкой части в широкую, чтобы он на всю страничку был, 
                       если текст заходит за тот, что выше, в классе Text12 меняй  -> padding-top, текст писать внутри div'а, очевидно, но всё же    -->
                                    
                     <div class="Text12 flex text-left flex-col gap-5 text-white">
+                        <h1 class="font-bold text-2xl" id="last"><a href="https://youtu.be/tWULao8P6jA?si=taDLZqGdkqref4JU" class="hover:text-gray-500 transition duration-200">Mutter (2001)</a></h1>
                         <p class="font-light text-xl">
-                            
-
-
+                            <img 
+                                  src="imgs/Снимок экрана 2024-12-01 185140.png" 
+                                  alt="Обложка альбома Herzeleid" 
+                                  class="float-left w-[300px] h-auto mr-4 mb-2 rounded-lg shadow-lg"
+                                />
+                            Третий альбом, Mutter (2001), стал переломным моментом в карьере Rammstein. Название, переводящееся как "Мать",
+                             отражает центральную тему альбома — одиночество и поиск идентичности. Песни <a href="https://youtu.be/StZcUAPRRac?si=YKeyZEJCil8irwcU" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Sonne"</a>, 
+                             <a href="https://youtu.be/EOnSh3QlpbQ?si=nPkbcG-i7DDvL7ou" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Ich Will"</a>
+                             и  <a href="https://youtu.be/gNdnVVHfseA?si=2PTbtTosUXKK3lEH" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Mutter"</a>
+                             расширили аудиторию группы благодаря мелодичности и глубокому содержанию.
+                             <a href="https://youtu.be/StZcUAPRRac?si=YKeyZEJCil8irwcU" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Sonne"</a> была задумана как гимн для выхода Виталия Кличко на ринг. В клипе участники группы изображают гномов, 
+                             прислуживающих Снежной 
+                             Королеве, что стало сатирической переработкой сказки. <a href="https://youtu.be/EOnSh3QlpbQ?si=nPkbcG-i7DDvL7ou" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Ich Will"</a>критически осмысляет манипуляции медиа, а 
+                             клип показывает участников группы в роли преступников, устраивающих захват для привлечения внимания прессы. 
+                             Заглавная песня <a href="https://youtu.be/gNdnVVHfseA?si=2PTbtTosUXKK3lEH" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Mutter"</a> рассказывает историю человека, лишённого материнской любви, и стала одной из самых 
+                             эмоциональных композиций группы.
+                             Альбом записывался на французском озере, что помогло создать более атмосферное звучание. Концертный тур в 
+                             поддержку Mutter закрепил репутацию Rammstein как мастеров сценических шоу. Огнемёты, взрывы и костюмы с 
+                             огненными струями стали ключевыми элементами их выступлений.
+                             Mutter подтвердил статус Rammstein как одной из ведущих групп жанра, объединив мощное звучание, 
+                             провокационные тексты и визуальное великолепие.
                         </p>
+                        <h1 class="font-bold text-2xl" id="posmet"><a href="https://youtu.be/Qs8c6FCwkbk?si=o7F3S1ayjCyOQnTo" class="hover:text-gray-500 transition duration-200">Reise, Reise (2004)</a></h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 190141.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-right w-[300px] h-auto ml-4 mb-2 rounded-lg shadow-lg"
+                                />
+                                Reise, Reise (2004) стал экспериментальным альбомом Rammstein, где группа расширила свои музыкальные 
+                                горизонты. Песня  <a href="https://youtu.be/PBvwcH4XX6U?si=Ggn_RAyUYXvQP9-S" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >Mein Teil </a>вызвала общественный резонанс, будучи вдохновлённой реальной историей 
+                                каннибализма, а сатирическая <a href="https://youtu.be/Rr8ljRgcJNM?si=nus5JWE1AK73xXfu" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >Amerika</a> обыграла тему американизации мира, что подчёркивалось клипом с 
+                                астронавтами на Луне. Лиричная <a href="https://youtu.be/LIPc1cfS-oQ?si=HL7rvnHiGYhiWeuJ" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >Ohne dich</a> раскрыла более эмоциональную сторону коллектива.
+                                Альбом получил платиновый статус, а его тур охватил Европу, Северную и Южную Америку, а также Азию. 
+                                Группа выступала в таких крупных городах, как Берлин, Париж, Лондон, Москва, Нью-Йорк и Буэнос-Айрес, 
+                                собирая многотысячные стадионы. Шоу запомнились невероятной энергетикой, пиротехникой и смелыми 
+                                сценическими постановками, укрепив репутацию Rammstein как мастеров зрелищных выступлений, объединяющих 
+                                провокацию, музыку и яркое шоу.
+                        </p>
+                        <h1 class="font-bold text-2xl" id="gibel"><a href="https://youtu.be/af59U2BRRAU?si=sMGTOPspoe7rtKSR" class="hover:text-gray-500 transition duration-200">Rosenrot (2005)</a></h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 190900.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-left w-[300px] h-auto mr-4 mb-2 rounded-lg shadow-lg"
+                                />
+                                Rosenrot (2005) стал пятым студийным альбомом Rammstein и продолжением их мрачного и провокационного 
+                                творчества. Название, переводящееся как «Розово-красный», отсылает к немецкой народной сказке, что 
+                                добавляет альбому атмосферу трагической романтики. Хотя альбом включает переработанные треки из Reise, 
+                                Reise (2004), он сохраняет собственную идентичность. Одной из ключевых композиций стала <a href="https://youtu.be/z0wK6s-6cbo?si=r-nrmi8EI6zQX3Vz" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Benzin"</a>, 
+                                взрывной трек, исследующий разрушительные стороны человеческой натуры, который быстро стал хитом. 
+                                Заглавная песня "Rosenrot" погружает слушателя в историю любви и трагедии, а драматичная <a href="https://youtu.be/vPj6Gz_sh4c?si=ab0v7RqkptRD1MsM" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Spring"</a> 
+                                усиливает настроение альбома. Необычными для группы стали <a href="https://youtu.be/f4ZU7YkVnx0?si=fJNL9DpaT3Sstqxk" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Stirb nicht vor mir (Don't Die Before I Do)"</a> 
+                                с дуэтом Тилля Линдеманна и шведской певицы Шарлотты Венделиус, а также испаноязычная <a href="https://youtu.be/V-lcQbPRZKs?si=f2N0Yf2Fswkv21AF" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Te quiero puta!"</a>, 
+                                вдохновлённая мотивами марьячи. Альбом получил высокие оценки за разнообразие и смелые эксперименты, 
+                                хотя его популярность не превзошла успех Reise, Reise. Несмотря на отсутствие полноценного тура, треки, 
+                                такие как "Benzin", прочно закрепились в сет-листах, сопровождаясь эффектной пиротехникой и яркими 
+                                сценическими постановками. Rosenrot стал доказательством того, что Rammstein остаются верны своей 
+                                уникальной эстетике, сочетая тяжёлый звук с экспериментальными элементами.
+                        </p>
+                        <h1 class="font-bold text-2xl" id="Nefor"><a href="hhttps://youtu.be/3dWTJSyX6BQ?si=-ekwNPWMjfXzHx_0" class="hover:text-gray-500 transition duration-200">Liebe ist für alle da (2009)</a></h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 192029.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-right w-[300px] h-auto ml-4 mb-2 rounded-lg shadow-lg"
+                             />
+                             Liebe ist für alle da (2009) стал одним из самых провокационных альбомов Rammstein. Название, переводящееся 
+                             как «Любовь для всех», отражает тематику альбома — исследование человеческих желаний и тёмных сторон 
+                             отношений. Скандальный клип на <a href="https://youtu.be/X1v6pKPN3VQ?si=D4XGYDiH-tbw4y4v" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Pussy"</a> с откровенными сценами привлёк огромный интерес, а песня 
+                             <a href="https://youtu.be/IxuEtL7gxoM?si=7aLEysiJSDmA21JA" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Ich Tu Dir Weh"</a>, посвящённая теме садомазохизма, вызвала цензуру в Германии, что только увеличило 
+                             популярность альбома.
+                             Тур в поддержку альбома охватил Европу, Америку и другие регионы, став одним из самых масштабных шоу группы. 
+                             Концерты впечатляли пиротехникой, сложными постановками и эффектными выступлениями, включая театральные 
+                             элементы, такие как «пытки» на сцене во время  <a href="https://youtu.be/IxuEtL7gxoM?si=7aLEysiJSDmA21JA" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Ich Tu Dir Weh"</a>. Этот альбом и тур подтвердили репутацию 
+                             Rammstein как мастеров провокации и незабываемых шоу.
+                        </p>
+                        <h1 class="font-bold text-2xl" id="gaban"><a href="https://youtu.be/EbHGS_bVkXY?si=YK8xV0d8R2qR_Ifi" class="hover:text-gray-500 transition duration-200">Zeit (2022)</a></h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 192944.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-left w-[300px] h-auto mr-4 mb-2 rounded-lg shadow-lg"
+                             />
+                             Zeit (2022), созданный во время пандемии COVID-19, стал одним из самых философских альбомов Rammstein. 
+                             Название, переводящееся как «Время», отражает главные темы — скоротечность жизни и размышления о неизбежности.
+                              Заглавная песня <a href="https://youtu.be/IxuEtL7gxoM?si=7aLEysiJSDmA21JA" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Zeit"</a> получила высокую оценку за глубокий текст и символичный клип, показывающий рождение, 
+                              смерть и возрождение.
+                              Сатирическая <a href="https://youtu.be/hBTNyJ33LWI?si=MnhBc1mNrmvlEOwH" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >"Zick Zack"</a> обыгрывает одержимость внешностью, а её клип добавляет иронии. Тур в поддержку 
+                              альбома впечатлил масштабными шоу, где "Zeit" сопровождалась сильной эмоциональной подачей и световыми 
+                              эффектами. Концерты объединили новые треки с классическими хитами, подтвердив статус группы как мастеров 
+                              зрелищных выступлений.
+                        </p>
+                        <h1 class="font-bold text-2xl" id="gaban"><a href="https://youtu.be/nkveXCBUWGs?si=KQi6p1GWWY57jA_8" class="hover:text-gray-500 transition duration-200">Концерты</a></h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 193822.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-right w-[450px] h-auto ml-4 mb-2 rounded-lg shadow-lg"
+                             />
+                             Концерты Rammstein — это грандиозные шоу, объединяющие музыку, пиротехнику и театральность. 
+                             Каждое выступление превращается в захватывающий спектакль: огнемёты, лазеры, взрывы и масштабные 
+                             декорации создают невероятную атмосферу. Концерт в Москве на стадионе <a href="https://youtu.be/SqcNbRt3yCc?si=Cg1gqwj_XTI0-y_U" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200" >«Лужники»</a> в 2019 году стал 
+                             настоящим событием, где исполнение <a href="https://youtu.be/NeQM1c-XCDc?si=jEc2XIYk8ZyEtCzd" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200">"Deutschland"</a> и 
+                             <a href="https://youtu.be/StZcUAPRRac?si=lZlzUMKx_vMxIC2A" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200">"Sonne"</a> сопровождалось зрелищными визуальными 
+                             эффектами и мощной энергетикой. В Париже и <a href="https://youtu.be/-zX840ljHbE?si=E6Di2mws_MrUyIV8" class="text-gray-400 hover:underline hover:text-gray-600 transition duration-200">Буэнос-Айресе</a> зрители хором подпевали каждой песне, 
+                             превращая выступления в массовый праздник. Rammstein удаётся соединить провокацию, эмоциональность 
+                             и техническое мастерство, делая их шоу незабываемыми для поклонников по всему миру.
+                        </p>
+                        <h1 class="font-bold text-2xl" id="halva">Критика</h1>
+                        <p class="font-light text-xl">
+                            <img 
+                            src="imgs/Снимок экрана 2024-12-01 194724.png" 
+                            alt="Обложка альбома Herzeleid" 
+                            class="float-left w-[450px] h-auto mr-4 mb-2 rounded-lg shadow-lg"
+                             />
+                             Rammstein часто сталкивались с критикой за свои провокационные решения, которые вызывали как восхищение, 
+                             так и ненависть. Одним из самых скандальных эпизодов стал клип на "Pussy" (2009), где откровенные сцены 
+                             фактически пересекали границу между клипом и порнографией. Видео вызвало возмущение общественных организаций, 
+                             а в некоторых странах было запрещено. Песня "Ich Tu Dir Weh", исследующая тему садомазохизма, также вызвала 
+                             споры. Она была запрещена в Германии, что вынудило группу выпустить цензурированную версию альбома, но это 
+                             только увеличило интерес к композиции.
+                             Клип на "Deutschland" (2019) вызвал волну негодования из-за переосмысления нацистской истории, включая сцены, 
+                             связанные с концлагерями. Несмотря на то, что видео передавало критику исторического прошлого, многие 
+                             восприняли его как неуважение к памяти жертв. Театральные элементы концертов, такие как использование 
+                             фаллоимитаторов в номере "Bück Dich", также неоднократно становились поводом для скандалов, включая арест
+                              участников в США за "непристойное поведение". Тем не менее, Rammstein всегда утверждали, что их искусство 
+                              провоцирует дискуссии и вызывает сильные эмоции, что лишь усиливает их влияние на мировой сцене.
+                             
+                        </p>
+
                     </div>
 
                      <!-- а этот текст уже ниже переходного текста, опять же, если заходит за тот что выше, padding-top
@@ -135,9 +285,9 @@
                     <div class="Text2 flex text-left flex-col gap-5 text-white">
                        
     
-                        <h1 class="font-bold text-2xl" >      </h1>
+                        <h1 class="font-bold text-2xl" ></h1>
                             <p class="text-xl font-light">
-                           
+
 
                             </p>
                             
@@ -149,5 +299,11 @@
             </div>
         </div>
     </main>
-
+<!-- Кнопка "Наверх" -->
+<a href="#" class="scroll-to-top">
+    &#8679;
+  </a>
+<script src="./Rammstain.js"></script>    
+</body>
+</html>
  
