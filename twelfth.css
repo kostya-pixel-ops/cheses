@@ -5,7 +5,7 @@ body
     height: 6450px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    background: linear-gradient(0deg, #ce3d3d 0%, #f6e6e6 100%);
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
@@ -21,7 +21,7 @@ body
     height: 6050px;
     width: 1200px;
     top: 250px;
-    background-color: #8b896f;
+    background-color: #680e0e;
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
 .MainBox {
@@ -55,8 +55,38 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 130px;
+    margin-left: 50px;
+}
+.Text3
+{
+    width: 1000px;
+    /* вот эту херну менять если заходит за верхний текст*/
     padding-top: 50px;
     margin-left: 50px;
+}
+.Text4
+{
+    width: 1000px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
+}
+.Text5
+{
+    width: 1000px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
+
+}
+.Text6
+{
+    width: 1000px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
+
 }
 .HeaderKnopka
 {
@@ -127,25 +157,8 @@ body
     color: black;
     width: 147px
 }
-.nav6:hover
-{
-    background-color:  rgb(255, 255, 221);
-    color: black;
-    width: 110px
-   
-}
-.nav7:hover
-{
-    background-color:  rgb(255, 255, 221);
-    color: black;
-    width: 175px;
-}
-.nav8:hover
-{
-    background-color:  rgb(255, 255, 221);
-    color: black;
-    width: 55px;
-}
+
+
 
 .nav1
 {
@@ -164,18 +177,6 @@ body
     transition: 0.35s;
 }
 .nav5
-{
-    transition: 0.35s;
-}
-.nav6
-{
-    transition: 0.35s;
-}
-.nav7
-{
-    transition: 0.35s;
-}
-.nav8
 {
     transition: 0.35s;
 }

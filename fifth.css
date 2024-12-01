@@ -1,55 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 4000px;
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);  
-    background-size: 1920px 5000px;
+    height: 6450px;
+ 
+    background-size: 1920px 6450px;
+    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
+     сколько height, чтобы он не обрезалчя */
+  
 }
 .HeaderFle
 {
     width: 900px;
 }
-.flex2
-{
-    position: absolute;
-    top:160px;
-    right:60px;
-    width: 384px;
-    height: 1200px;
-}
 .back
 {
     position: absolute;
-    height: 3500px;
+    margin-top: 0px;
+    height: 6050px;
     width: 1200px;
     top: 250px;
-    
+    background-color: #8b896f;
+/* тут  цвет главной херни по середине, которая самая большая*/
 }
-.back2
-{
-    height: 450px;
-   
+.MainBox {
+    width: 336px;
+    float: right;
+    margin-right: 108px;
+    margin-top: 160px;
 }
-.back3
-{
-
-    height: 300px;
-  
+.Name2 {
+    position: absolute;
+    top: -112px;
+    left: 32px;
+    scale: 1.4;
 }
 .Text1
 {
-    position: absolute;
     width: 666px;
-    height: 900px;
-    top:170px;
-    right: 485px;
+    padding-top: 172px;
+    margin-left: 50px;
+    height: 1200px;
+    /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
-.Name2
+.Text2
 {
-    position: absolute;
-    top: 70px;
-    left:45px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.Text12
+{
+   
+    width: 1020px;
+    /* вот эту херну менять если заходит за верхний текст*/
+    padding-top: 50px;
+    margin-left: 50px;
 }
 .HeaderKnopka
 {
@@ -60,8 +68,115 @@ body
     font-style: normal;
     letter-spacing: 1px;
     font-size: 2em;
+    transition: 0.35s;
+    height: 50px;
 }
 .Logo1 {
-    height: 90px;
+    height: 85px;
     margin-top: 7px;
+}
+.HeaderKnopka:hover
+{
+    color:black
+     /*  тут стилизуйте под группу*/
+}
+.Wiki
+{
+    margin-left: 1px;
+    margin-top: 2px;
+    height: 444px;
+}
+.Navig
+{
+    top: 1053px;
+    right: 108px;
+    background-color: rgb(0, 0, 0);
+    width: 336px;
+    height: 570px;
+    border-width: 1px;
+}
+
+
+ /* ТУТ ПОД ГРУППУ ТОЖЕ СТИЛИЗУЙТЕ, ЭТО КНОПКИ В НАВИГАЦИИ ПРИ НАВЕДЕНИИ МЕНЯЮТ ЦВЕТ, НУ ЧТОБЫ ЗНАЛИ*/
+.nav1:hover
+{
+    background-color: rgb(255, 255, 221);
+   
+    color: black;
+}
+.nav2:hover
+{
+    background-color:  rgb(255, 255, 221);
+    
+    color: black;
+}
+.nav3:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+ 
+}
+.nav4:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+
+}
+.nav5:hover
+{
+    background-color: rgb(255, 255, 221);
+    color: black;
+
+}
+.nav6:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+ 
+   
+}
+.nav7:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+
+}
+.nav8:hover
+{
+    background-color:  rgb(255, 255, 221);
+    color: black;
+
+}
+
+.nav1
+{
+    transition: 0.35s;
+}
+.nav2
+{
+    transition: 0.35s;
+}
+.nav3
+{
+    transition: 0.35s;
+}
+.nav4
+{
+    transition: 0.35s;
+}
+.nav5
+{
+    transition: 0.35s;
+}
+.nav6
+{
+    transition: 0.35s;
+}
+.nav7
+{
+    transition: 0.35s;
+}
+.nav8
+{
+    transition: 0.35s;
 }
