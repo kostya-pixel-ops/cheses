@@ -2,13 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 8300px;
  
+    height: 12400px;
+
     background-size: 1920px 4900px;
 
     background: white;
 
     color: white;
+
+}
+#Reload {
+    color:chocolate;
+}
+#CliffLightning {
+    color:cyan;
+}
+#CliffLightning:hover {
+    color:lightcyan;
+    text-shadow: blue 2px 2px 6px;
+}
+#GrgInc {
+    color: gray;
+}
+#MasterofPuppets {
+    color: orangered;
+}
+#Black {
+    color: darkslategray;
+}
+#Black:hover {
+    color: darkcyan;
+}
+#KillemAll {
+    color: red;
+}
+#JusticeAll 
+{
+    color: greenyellow;
+    transition: all 300ms;
+}
+#JusticeAll:hover 
+{
+    color: white;
+    text-shadow: greenyellow 0 0 6px;
+}
+#Load {
+    color: brown;
+}
+#DMagnetic {
+    color: lightgrey;
+}
+#DMagnetic:hover {
+    text-shadow: 3px 3px white;
+}
+#StAnger {
+    color: red;
+}
+#S72 {
+    color: yellow;
+    transition: all 100ms ease-in;
+}
+#S72:hover {
+    text-shadow: 10px 1px 2px white;
+}
+#Hardwired {
+    color:burlywood;
+    transition: all 300ms ease-in;
+}
+#Hardwired:hover {
+    color: azure;
+    text-shadow: 2px 2px 0px red, -2px -2px 0 blue, 1px 1px 2px green;
+}
+#Up {
+    color: darkgrey;
+}
+#Up:hover {
+    color: white;
+}
+.MetallicaLittleLg {
+    align-self: flex-end;
+    justify-self: flex-end;
 }
 .HeaderFle
 {
@@ -18,7 +92,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 8000px;
+    height: 12000px;
     width: 1200px;
     top: 250px;
     
@@ -83,6 +157,15 @@ body
     height: 410px;
     border-color: slategray;
     border-width: 1px;
+}
+
+.left {
+    float: left;
+    margin: 7px, 7px, 7px, 0;
+}
+.right {
+    float: right;
+    margin: 7px, 7px, 0, 7px;
 }
 
 
