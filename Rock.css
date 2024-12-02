@@ -1,0 +1,1040 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&family=Oswald:wght@200..700&display=swap');
+
+
+body
+{
+    height:3070px;
+}
+.animka1
+{
+    animation: 1.2s show ease-in-out;
+}
+@keyframes show 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+footer
+{
+    position: absolute;
+    top:4500px;
+}
+.HeaderFle
+{
+    width: 900px;
+}
+.ImgBg {
+    width: 225px;
+    height: 400px;
+    transition: all 400ms;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.267);
+ }
+.Metallica {
+    position: relative;
+}
+.Metallica:hover .ImgBg {
+    scale: 1.1;
+    filter: brightness(30%);
+}
+.Metallica:hover .MetallicaLogo {
+    scale: 1.3;
+    opacity: 1; /* При наведении картинка становится видимой */
+}
+.MetallicaLogo {
+    position: absolute; /* Позиционируем картинку поверх */
+    margin: -230px 22px;
+    width: 80%;
+    height: 20%;
+    opacity: 0; /* Исходно скрыто */
+    transition: all 400ms;
+}
+.Scorpions {
+    position: relative;
+}
+
+.Scorpions:hover .ImgBg {
+    scale: 1.1;
+    filter: brightness(20%);
+}
+.Scorpions:hover .ScorpionsLogo {
+    scale: 1;
+    opacity: 1; /* При наведении картинка становится видимой */
+}
+.ScorpionsLogo {
+    position: absolute; /* Позиционируем картинку поверх */
+    opacity: 0; /* Исходно скрыто */
+    margin: -230px 0;
+    scale: 0.8;
+    transition: all 400ms;
+}
+.Biggie:hover .BiggieLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Biggie
+{
+    position: relative;
+}
+.Biggie:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.BiggieLogo
+{
+    position: absolute;
+    top: 160px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Biggie:hover .BiggieLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Dre:hover .DreLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Dre
+{
+    position: relative;
+}
+.Dre:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.DreLogo
+{
+    position: absolute;
+    top: 120px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Dre:hover .DreLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Eminem:hover .EminemLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Eminem
+{
+    position: relative;
+}
+.Eminem:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.EminemLogo
+{
+    position: absolute;
+    top: 135px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Eminem:hover .EminemLogo
+{
+    scale: 1.15;
+    opacity: 1;
+}
+.Pac:hover .PacLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Pac
+{
+    position: relative;
+}
+.Pac:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.PacLogo
+{
+    position: absolute;
+    top: 140px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Pac:hover .PacLogo
+{
+    scale: 1.80;
+    opacity: 1;
+}
+.Kendrick:hover .KendrickLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Kendrick
+{
+    position: relative;
+}
+.Kendrick:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.KendrickLogo
+{
+    position: absolute;
+    top: 120px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Kendrick:hover .KendrickLogo
+{
+    scale: 1.30;
+    opacity: 1;
+}
+
+.genre1
+{
+    padding-left: 77px;
+    color: white;
+    
+}
+.Skillet
+{
+    position: relative;
+}
+.Skillet:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SkilletLogo
+{
+    position: absolute;
+    top: -15px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Skillet:hover .SkilletLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Pantera
+{
+    position: relative;
+}
+.Pantera:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.PanteraLogo
+{
+    position: absolute;
+    top: -6px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Pantera:hover .PanteraLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Rammstein:hover .RammsteinLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Rammstein
+{
+    position: relative;
+}
+.Rammstein:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.RammsteinLogo
+{
+    position: absolute;
+    top: -6px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Rammstein:hover .RammsteinLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.greenday:hover .greendayLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.greenday
+{
+    position: relative;
+}
+.greenday:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.greendayLogo
+{
+    position: absolute;
+    top: 140px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.greenday:hover .greendayLogo
+{
+    scale: 1.70;
+    opacity: 1;
+}
+.Michael:hover .MichaelLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Michael
+{
+    position: relative;
+}
+.Michael:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.MichaelLogo
+{
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Michael:hover .MichaelLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.abba:hover .abbaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.abba
+{
+    position: relative;
+}
+.abba:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.abbaLogo
+{
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.abba:hover .abbaLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Sum:hover .SumLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Sum
+{
+    position: relative;
+}
+.Sum:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SumLogo
+{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Sum:hover .SumLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.RukiV:hover .RukiVLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.RukiV
+{
+    position: relative;
+}
+.RukiV:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.RukiVLogo
+{
+    position: absolute;
+    top: -20px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.RukiV:hover .RukiVLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Alisa:hover .AlisaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Alisa
+{
+    position: relative;
+}
+.Alisa:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.AlisaLogo
+{
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Alisa:hover .AlisaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Aria:hover .AriaLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Aria
+{
+    position: relative;
+}
+.Aria:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.AriaLogo
+{
+    position: absolute;
+    top: 170px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Aria:hover .AriaLogo
+{
+    scale: 1.70;
+    opacity: 1;
+}
+.Bi:hover .BiLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Bi
+{
+    position: relative;
+}
+.Bi:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.BiLogo
+{
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Bi:hover .BiLogo
+{
+    scale: 1.80;
+    opacity: 1;
+}
+.Kino:hover .KinoLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Kino
+{
+    position: relative;
+}
+.Kino:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.KinoLogo
+{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Kino:hover .KinoLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Park:hover .ParkLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Park
+{
+    position: relative;
+}
+.Park:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.ParkLogo
+{
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Park:hover .ParkLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Linkin:hover .LinkinLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Linkin 
+{
+    position: relative;
+}
+.Linkin:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.LinkinLogo
+{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Linkin:hover .LinkinLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Syteam:hover .SyteamLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Syteam
+{
+    position: relative;
+}
+.Syteam:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SyteamLogo
+{
+    position: absolute;
+    top: 110px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Syteam:hover .SyteamLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Limp:hover .LimpLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Limp
+{
+    position: relative;
+}
+.Limp:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.LimpLogo
+{
+    position: absolute;
+    top: 85px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Limp:hover .LimpLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Slipknot:hover .SlipknotLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Slipknot
+{
+    position: relative;
+}
+.Slipknot:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SlipknotLogo
+{
+    position: absolute;
+    top: 130px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Slipknot:hover .SlipknotLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Slayer:hover .SlayerLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Slayer
+{
+    position: relative;
+}
+.Slayer:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.SlayerLogo
+{
+    position: absolute;
+    top: 110px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Slayer:hover .SlayerLogo
+{
+    scale: 1.15;
+    opacity: 1;
+}
+.kish:hover .kishLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.kish 
+{
+    position: relative;
+}
+.kish:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.kishLogo
+{
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.kish:hover .kishLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Radio:hover .RadioLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Radio
+{
+    position: relative;
+}
+.Radio:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.RadioLogo
+{
+    position: absolute;
+    top: 80px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Radio:hover .RadioLogo
+{
+    scale: 1.10;
+    opacity: 1;
+}
+.Weezer:hover .WeezerLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Weezer
+{
+    position: relative;
+}
+.Weezer:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.WeezerLogo
+{
+    position: absolute;
+    top: 120px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Weezer:hover .WeezerLogo
+{
+    scale: 1.90;
+    opacity: 1;
+}
+.Megadef:hover .MegadefLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Megadef
+{
+    position: relative;
+}
+.Megadef:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.MegadefLogo
+{
+    position: absolute;
+    top: 180px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Megadef:hover .MegadefLogo
+{
+    scale: 1.20;
+    opacity: 1;
+}
+.Aerosmith:hover .AerosmithLogo
+{
+    scale: 1;
+    opacity: 1;
+}
+.Aerosmith
+{
+    position: relative;
+}
+.Aerosmith:hover .ImgBg
+{
+    scale:1.1;
+    filter: brightness(20%);
+}
+.AerosmithLogo
+{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    scale: 0.5;
+    transition: 0.5s;
+}
+.Aerosmith:hover .AerosmithLogo
+{
+    scale: 1.25;
+    opacity: 1;
+} 
+
+.HeaderKnopka
+{
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2em;
+    transition: 0.35s;
+}
+.Logo1
+ {
+    height: 90px;
+    margin-top: 7px;
+}
+.HeaderKnopka:hover
+{
+    color:rgb(255, 117, 129);
+}
+
+/* Подсветка с RGB-анимацией */
+.glowing-border {
+  animation: rgbGlow 3s infinite;
+}
+
+@keyframes rgbGlow {
+  0% { box-shadow: 0 0 20px #ff0000; }
+  33% { box-shadow: 0 0 20px #00ff00; }
+  66% { box-shadow: 0 0 20px #0000ff; }
+  100% { box-shadow: 0 0 20px #ff0000; }
+}
+
+/* Основной стиль для плеера */
+#musicPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 1rem; /* Уменьшен отступ от края */
+  left: 8px;
+  right: 8px;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
+  z-index: 1000;
+  max-width: 900px; /* Фиксированная ширина для больших экранов */
+  margin: 0 auto; /* Центрирование */
+}
+
+
+/* Стиль для кнопки закрытия полноэкранного изображения */
+#closeFullscreenImage {
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#closeFullscreenImage:hover {
+  background-color: #333;
+}
+
+
+/* Фиксируем размеры для внутренних элементов */
+#musicPlayer img {
+  width: 48px;
+  height: 48px;
+}
+
+#musicPlayer .flex {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* Центрируем контролы */
+#musicPlayer .audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Громкость и прогресс бар */
+#musicPlayer input[type="range"] {
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  background-color: #fff6f6;
+  border-radius: 4px;
+  height: 4px;
+}
+
+#musicPlayer input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Адаптивность для маленьких экранов */
+@media screen and (max-width: 768px) {
+  #musicPlayer {
+    flex-direction: row; /* Горизонтальная ориентация */
+    padding: 10px; /* Меньше отступов */
+    max-width: calc(100% - 16px); /* Уменьшаем ширину */
+  }
+  
+  /* Убираем громкость и прогресс-бар */
+  #musicPlayer input[type="range"],
+  #musicPlayer .flex.items-center.space-x-2 {
+    display: none;
+  }
+
+  /* Смещаем кнопки паузы и навигации вправо */
+  #musicPlayer .flex.items-center.space-x-4.mb-2 {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  /* Адаптируем размеры для маленьких экранов */
+  #musicPlayer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #musicPlayer .audio-controls {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #musicPlayer {
+    padding: 8px;
+    bottom: 0.5rem; /* Еще меньше отступ */
+  }
+
+  #musicPlayer img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+  #musicPlayer .audio-controls {
+    gap: 8px;
+  }
+
+  #musicPlayer input[type="range"] {
+    max-width: 120px;
+  }
+
+  #musicPlayer img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+@media screen and (max-width: 480px) {
+  #musicPlayer {
+    padding: 8px;
+    bottom: 0.5rem; /* Еще меньше отступ */
+  }
+
+  #musicPlayer img {
+    width: 36px;
+    height: 36px;
+  }
+
+  #musicPlayer input[type="range"] {
+    max-width: 100px;
+  }
+}
+/* Полный экран изображения */
+#fullscreenImage {
+  transition: transform 0.3s ease-in-out;
+  width: auto;
+  height: auto;
+  max-width: 50%; /* Изображение для больших экранов */
+  max-height: 90%;
+}
+/* Полный экран изображения */
+#fullscreenImage {
+  transition: transform 0.3s ease-in-out;
+  width: auto;
+  height: 1000px;
+  max-width: 40%; /* Уменьшено до 40% экрана */
+  max-height: 50%; /* Уменьшено до 70% высоты экрана */
+}
+
+@media screen and (max-width: 768px) {
+  #fullscreenImage {
+    max-width: 70%; /* Для телефонов */
+    max-height: 40%;
+  }
+}
+/* Стили для картинки, которая будет открывать плеер */
+#showPlayerButton {
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Плавная анимация */
+}
+
+/* Оставляем стиль для плеера при показе */
+#musicPlayer.show {
+  display: flex;
+}
+
+/* Убираем скрытый плеер */
+#musicPlayer {
+  display: none;
+}
