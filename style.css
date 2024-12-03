@@ -7,6 +7,10 @@
 body
 {
     height:2560px;
+    @media (max-width: 768px) {
+      
+        height:3700px;
+      };
 }
 .animka1
 {
@@ -19,8 +23,7 @@ body
 }
 footer
 {
-    position: absolute;
-    top:2500px;
+  
 }
 .HeaderFle
 {
@@ -32,9 +35,14 @@ footer
     height: 400px;
     transition: all 400ms;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.267);
-    
+
+    @media (max-width: 768px) {
+        height: auto;
+        width: 20vh;
+      };
     
 }
+
 .Metallica {
     position: relative;
 }
