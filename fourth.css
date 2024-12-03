@@ -3,21 +3,24 @@
 body
 {
  
-    height: 12400px;
+    height: 5500px;
 
     background-size: 1920px 4900px;
 
-    background: white;
+    background: black;
 
     color: white;
+
+    background-image: url(./imgs/Scorpions/BG.jpg);
+    background-size: 60%;
 
 }
 
 #Up {
-    color: darkgrey;
+    color: rgb(158, 22, 22);
 }
 #Up:hover {
-    color: white;
+    color: rgb(212, 35, 35);
 }
 
 .HeaderFle
@@ -28,7 +31,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 12000px;
+    height: 5200px;
     width: 1200px;
     top: 250px;
     
@@ -57,7 +60,6 @@ body
     margin-left: 50px;
 }
 
-
 .HeaderKnopka
 {
     width: 100px;
@@ -69,6 +71,7 @@ body
     font-size: 2em;
     transition: 0.35s;
     height: 50px;
+    color: rgb(158, 22, 22);
 }
 .Logo1 {
     height: 85px;
@@ -76,7 +79,7 @@ body
 }
 .HeaderKnopka:hover
 {
-    color:white;
+    color:rgb(221, 57, 57);
 }
 .Wiki
 {
@@ -90,8 +93,8 @@ body
     right: 108px;
     background-color: rgb(0, 0, 0);
     width: 336px;
-    height: 410px;
-    border-color: slategray;
+    height: 336px;
+    border-color: rgb(158, 22, 22);
     border-width: 1px;
 }
 
@@ -112,7 +115,7 @@ body
 }
 .nav1:hover
 {
-    background-color: rgba(104, 125, 147, 0.651);
+    background-color: rgb(158, 22, 22);
 }
 .nav2
 {
@@ -120,7 +123,7 @@ body
 }
 .nav2:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav3
 {
@@ -128,7 +131,7 @@ body
 }
 .nav3:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav4
 {
@@ -136,7 +139,7 @@ body
 }
 .nav4:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav5
 {
@@ -144,7 +147,7 @@ body
 }
 .nav5:hover
 {
-    background-color: rgba(104, 125, 147, 0.651);
+    background-color: rgb(158, 22, 22);
 }
 .nav6
 {
@@ -152,7 +155,7 @@ body
 }
 .nav6:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
    
 }
 .nav7
@@ -161,7 +164,7 @@ body
 }
 .nav7:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav8
 {
@@ -169,7 +172,7 @@ body
 }
 .nav8:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav9
 {
@@ -177,7 +180,7 @@ body
 }
 .nav9:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
 .nav10
 {
@@ -185,5 +188,5 @@ body
 }
 .nav10:hover
 {
-    background-color:  rgba(104, 125, 147, 0.651);
+    background-color:  rgb(158, 22, 22);
 }
