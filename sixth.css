@@ -5,6 +5,9 @@ body
     height: 9400px;
     filter: sepia(30%);
     background-size: 1920px 9400px;
+    @media (max-width: 768px) {
+        height: 13000px;
+    }
     background: rgb(223,174,116);
     background: linear-gradient(100deg, rgba(223,174,116,1) 0%, rgba(166,134,108,1) 55%, rgba(233,186,144,1) 86%); 
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
@@ -24,6 +27,11 @@ body
     width: 1200px;
     top: 250px;
     background-color: #70707050;
+    @media (max-width: 768px) {
+        width: 100%;
+        height:13000px;
+        
+    }
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
 
@@ -32,6 +40,9 @@ body
     float: right;
     margin-right: 108px;
     margin-top: 160px;
+    @media (max-width: 768px) {
+        margin-right: 30px;
+    }
 }
 .Name2 {
     position: absolute;
@@ -44,6 +55,9 @@ body
     padding-top: 172px;
     margin-left: 50px;
     height: 1200px;
+    @media (max-width: 768px) {
+        width: 320px;
+    }
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
 .Text2
@@ -52,6 +66,9 @@ body
     /* вот эту херну менять если заходит за верхний текст*/
     padding-top: 0px;
     margin-left: 50px;
+    @media (max-width: 768px) {
+        width: 320px;
+    }
 }
 .Text12
 {
@@ -60,6 +77,10 @@ body
     /* вот эту херну менять если заходит за верхний текст*/
     padding-top: 30px;
     margin-left: 50px;
+    @media (max-width: 768px) {
+        width: 320px;
+        padding-top: 2300px;
+    }
 }
 .mainInfo
 {
@@ -213,3 +234,229 @@ body
 
 
 
+/* Стили для кнопки "Наверх" */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    text-decoration: none;
+    background-color: #808080; /* Серый фон */
+    color: white; /* Белая стрелка */
+    width: 60px; /* Увеличиваем ширину кнопки */
+    height: 60px; /* Увеличиваем высоту кнопки */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    font-size: 49px; /* Увеличиваем размер стрелки */
+    line-height: 55px; /* Выравниваем стрелку по центру по вертикали */
+    text-align: center; /* Выравниваем стрелку по центру по горизонтали */
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, background-color 0.3s;
+  }
+  
+  .scroll-to-top.show {
+    display: block;
+    opacity: 1;
+  }
+  
+  .scroll-to-top.hide {
+    opacity: 0;
+  }
+  
+  /* Эффект при наведении */
+  .scroll-to-top:hover {
+    background-color: #606060; /* Темнее серый фон при наведении */
+    cursor: pointer;
+  }
+
+
+  .glowing-border {
+    animation: rgbGlow 3s infinite;
+  }
+  
+  @keyframes rgbGlow {
+    0% { box-shadow: 0 0 20px #ff0000; }
+    33% { box-shadow: 0 0 20px #00ff00; }
+    66% { box-shadow: 0 0 20px #0000ff; }
+    100% { box-shadow: 0 0 20px #ff0000; }
+  }
+  
+  /* Основной стиль для плеера */
+  #musicPlayer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 500px;
+    background-color: #f9f9f9;
+    padding: 12px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
+    z-index: 1000;
+    max-width: 400px; /* Фиксированная ширина для больших экранов */
+    margin: 15px auto; /* Центрирование */
+  }
+  
+  
+  /* Стиль для кнопки закрытия полноэкранного изображения */
+  #closeFullscreenImage {
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #closeFullscreenImage:hover {
+    background-color: #333;
+  }
+  
+  
+  /* Фиксируем размеры для внутренних элементов */
+  #musicPlayer img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  #musicPlayer .flex {
+    flex: 1;
+    max-width: 100%;
+  }
+  
+  /* Центрируем контролы */
+  #musicPlayer .audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  /* Громкость и прогресс бар */
+  #musicPlayer input[type="range"] {
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    background-color: #fff6f6;
+    border-radius: 4px;
+    height: 4px;
+  }
+  
+  #musicPlayer input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+  /* Адаптивность для маленьких экранов */
+  @media screen and (max-width: 768px) {
+    #musicPlayer {
+      flex-direction: row; /* Горизонтальная ориентация */
+      padding: 10px; /* Меньше отступов */
+      max-width: calc(100% - 16px); /* Уменьшаем ширину */
+    }
+    
+    /* Убираем громкость и прогресс-бар */
+    #musicPlayer input[type="range"],
+    #musicPlayer .flex.items-center.space-x-2 {
+      display: none;
+    }
+  
+    /* Смещаем кнопки паузы и навигации вправо */
+    #musicPlayer .flex.items-center.space-x-4.mb-2 {
+      justify-content: flex-end;
+      width: 100%;
+    }
+  
+    /* Адаптируем размеры для маленьких экранов */
+    #musicPlayer img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    #musicPlayer .audio-controls {
+      gap: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #musicPlayer {
+      padding: 8px;
+      bottom: 0.5rem; /* Еще меньше отступ */
+    }
+  
+    #musicPlayer img {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  
+    #musicPlayer .audio-controls {
+      gap: 8px;
+    }
+  
+    #musicPlayer input[type="range"] {
+      max-width: 120px;
+    }
+  
+    #musicPlayer img {
+      width: 40px;
+      height: 40px;
+    }
+  
+  
+  @media screen and (max-width: 480px) {
+    #musicPlayer {
+      padding: 8px;
+      bottom: 0.5rem; /* Еще меньше отступ */
+    }
+  
+    #musicPlayer img {
+      width: 36px;
+      height: 36px;
+    }
+  
+    #musicPlayer input[type="range"] {
+      max-width: 100px;
+    }
+  }
+  /* Полный экран изображения */
+  #fullscreenImage {
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    height: auto;
+    max-width: 50%; /* Изображение для больших экранов */
+    max-height: 90%;
+  }
+  /* Полный экран изображения */
+  #fullscreenImage {
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+    height: 1000px;
+    max-width: 40%; /* Уменьшено до 40% экрана */
+    max-height: 50%; /* Уменьшено до 70% высоты экрана */
+  }
+  
+  @media screen and (max-width: 768px) {
+    #fullscreenImage {
+      max-width: 70%; /* Для телефонов */
+      max-height: 40%;
+    }
+  }
+  /* Стили для картинки, которая будет открывать плеер */
+  #showPlayerButton {
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Плавная анимация */
+  }
+  
+  /* Оставляем стиль для плеера при показе */
+  #musicPlayer.show {
+    display: flex;
+  }
+  
+  /* Убираем скрытый плеер */
+  #musicPlayer {
+    display: none;
+  }
