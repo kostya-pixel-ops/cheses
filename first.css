@@ -5,6 +5,10 @@ body
  
     height: 12400px;
 
+    @media (max-width: 768px) {
+      
+      height: 34800px;
+    };
     background-size: 1920px 4900px;
 
     background: white;
@@ -86,14 +90,22 @@ body
 }
 .HeaderFle
 {
-    width: 900px;
+    width: 300px;
 }
 .back
 {
     position: absolute;
     margin-top: 0px;
     height: 12000px;
+    @media (max-width: 768px) {
+      
+      height: 34800px;
+    };
     width: 1200px;
+    @media (max-width: 768px) {
+      
+      width: 100%;
+    };
     top: 250px;
     
 }
@@ -103,6 +115,10 @@ body
     float: right;
     margin-right: 108px;
     margin-top: -58px;
+    @media (max-width: 768px) {
+      
+      margin-right: 30px;
+    };
 }
 .Name2 {
     margin-top: 40px;
@@ -114,10 +130,18 @@ body
 }
 .Text1 {
     width: 666px;
+    @media (max-width: 768px) {
+      
+      width: 320px;
+    };
     margin-left: 50px;
 }
 .Text2 {
     width: 1020px;
+    @media (max-width: 768px) {
+      
+      width: 320px;
+    };
     margin-left: 50px;
 }
 
