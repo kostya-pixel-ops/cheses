@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./fourth.css">
 </head>
 <body>
-    <header class="bg-black flex z-10 fixed justify-around w-full h-24 border-b border-red-800">
+    <header class="bg-black flex z-10 fixed justify-around w-screen h-24 border-b border-red-800">
         <div class="flex  justify-between HeaderFle">
             <a href="./main.html" class="text-red-800 justify-start mt-5 HeaderKnopka">Главная</a>
             <a href="./main.html" class="logo"><img src="./imgs/TuneHavenLogo.png" class="Logo1"></a>
@@ -57,6 +57,82 @@
                             <a href="#HumanityHour1" class="ml-5 nav8">Humanity: Hour I</a>
                             <a href="#RockB" class="ml-5 nav9">Rock Believer</a>
                             </div>
+
+
+                            <div id="musicPlayer"
+                            class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                            <!-- Левая часть: Логотип -->
+                            <div class="flex items-center space-x-4">
+                                <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                    class="w-12 h-12 rounded-lg cursor-pointer">
+                                <div>
+                                    <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                    <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                </div>
+                            </div>
+
+                            <!-- Центральная часть: Элементы управления -->
+                            <div class="flex flex-col items-center w-1/2">
+                                <div class="flex items-center space-x-4 mb-2">
+                                    <button id="prevButton" class="text-gray-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                        </svg>
+                                    </button>
+                                    <button id="playPauseButton"
+                                        class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                        </svg>
+                                    </button>
+                                    <button id="nextButton" class="text-gray-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Прогресс-бар и время -->
+                                <div class="flex items-center space-x-2">
+                                    <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                    <input type="range" id="progressBar"
+                                        class="w-full bg-gray-600 rounded-lg appearance-none">
+                                    <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                </div>
+                            </div>
+
+                            <!-- Правая часть: Регулятор громкости -->
+                            <div class="flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                </svg>
+                                <input type="range" id="volumeControl"
+                                    class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                    step="0.1">
+                            </div>
+                        </div>
+
+                        <!-- Полупрозрачный фон для изображения -->
+                        <div id="fullscreenImageContainer"
+                            class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                            <button id="closeFullscreenImage"
+                                class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                X
+                            </button>
+                            <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                class="rounded-lg shadow-lg">
+                        </div>
+
+                        <script src="./Players/scriptSC.js"></script>
+                    </div>
                             
                     </div>
                 </div>
@@ -116,7 +192,7 @@
                         что Scorpions нашли свой уникальный стиль - необычайно 
                         мощные риффы, витиеватые гитарные соло и мелодические вокальные линии.<img class="Shortcut" id="Blackout">
                     </p>
-                    <div class="flex gap-5">
+                    <div class="flex gap-5 Kal">
                         <img src="./imgs/Scorpions/InTrance.jpg" alt="" width="300px" class="">
                         <img src="./imgs/Scorpions/VirginKiller.jpg" alt="" width="300px" class="">
                     </div>
