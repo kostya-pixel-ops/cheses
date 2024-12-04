@@ -8,139 +8,295 @@
     <link rel="stylesheet" href="./second.css">
 </head>
 <body>
-    <header class="bg-black flex z-10 fixed justify-around w-full h-28 ">
+                <!--вот тут основной в хэдере цвет-->                                                     <!--вот тут темнее основного цвета тоже-->
+    <header class="bg-purple-950 flex z-10 fixed justify-around w-screen h-24 border-b border-purple-500">
         <div class="flex  justify-between HeaderFle">
-            <a href="./main.html" class="text-slate-50  mt-7 justify-start HeaderKnopka">Главная</a>
+            <a href="./main.html" class="text-white justify-start mt-5 HeaderKnopka">Главная</a>
             <a href="#" class="logo"><img src="./imgs/TuneHavenLogo.png" class="Logo1"></a>
-            <a href="./main.html" class="text-slate-50 mt-7 HeaderKnopka">О нас</a>
+            <a href="#" class="text-white mt-5 HeaderKnopka">О нас</a>
         </div>
     </header>
-
-<main>
-    <div class="flex justify-around items-center">
-        <div class="back bg-zinc-800 border border-zinc-800 flex "> 
-            <div class="Maain">
-                <img src="./imgs/SkilletLogo.png" alt="" class="h-85 ml-24 Name4" id="Second">
-                    <div class="flex2 flex flex-col">
-                        <div class="mainInfo bg-purple-600 w-96 h-12 border border-purple-950 flex justify-center">
-                            <h1 class="font-semibold text-black text-2xl pt-1 ">Skillet</h1>
-                        </div>
-                        <div class="back2 bg-black w-96 border border-purple-950 float-right flex">
-                         <!-- СЮДА ФОТКУ ГРУППЫ -->
-                            <img src="https://i.pinimg.com/736x/10/14/e2/1014e2099ea3b4a5552b6847ef583be9.jpg" alt="Фото">
-                        </div>
-                        <div class="back4 bg-purple-600 w-96 h-12 border border-purple-950 text-center pt-2 text-black font-bold">
-                            <h1>Состав группы: текущий</h1>
-                        </div>
-                            <div class="back3 bg-black w-96 text-slate-50 border border-purple-950 justify-end">
-                                 <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
-                                    <p>• Джон Купер</p>
+    <main>
+        <div class="flex justify-around items-center">
+                                        <!--вот тут темнее основного цвета тоже-->
+            <div class="back  border border-purple-500"> 
+                <div class="Maaain">
+                                <!--тут лого группы или чела  -->
+                    <img src="./imgs/SkilletLogo.png" class="h-96 ml-24 Name2">
+                        <div class="BoxofMainBox">
+                            <div class="MainBox">
+                                                    <!--Тут цвет под исполнителя    а тут границу, немного темнее основного цвета-->
+                                <div class="mainInfo bg-purple-600 h-12 border border-purple-500 flex justify-center">
+                                    <h1 class="font-semibold text-white text-2xl pt-1">Skillet</h1>
+                                </div>
+                                <div class="back2 bg-black border border-purple-500">
+                                 <!-- СЮДА ФОТКУ -->
+                                                <!-- здесь картинка челов которая справа большая  -->
+                                    <img src="https://i.pinimg.com/736x/10/14/e2/1014e2099ea3b4a5552b6847ef583be9.jpg" width="332" class="Wiki">
+                                </div>
+                                                     <!-- тут ставишь цвет под исполнителя и границу темнее, ну как сверху короче  -->
+                                <div class="back4 bg-purple-600 h-12 border border-purple-500 text-center text-2xl pt-2 text-white font-bold">
+                                    <h1>Состав группы: текущий</h1>
+                                </div>
+                                <div class="back3  text-white  border border-purple-500 justify-end">
+                                    <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
+                                        <!--  если тут будет слишком много, будет уходить за границу класс back3 height меняй в css -->
+                                        <p>• Джон Купер</p>
                                     <p>• Кори Купер</p>
                                     <p>• Джен Леджер</p>
-                                    <p>• Сет Моррисон</p>
+                                    <p>• Сет Моррисон</p>       
+                                </div>
+                                <div class="back4 bg-purple-600 h-12 border border-purple-500 text-center text-2xl pt-2 text-white font-bold">
+                                    <h1>Бывшие участники</h1>
+                                </div>
+                                <div class="back3  text-white  border border-purple-500 justify-end">
+                                    <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
+                                        <!--  если тут будет слишком много, будет уходить за границу класс back3 height меняй в css -->
+                                        <p>• Кен Стюартс</p>
+                                        <p>• Кевин Халанд</p>
+                                        <p>• Бен Касика</p>
+                                        <p>• Джонатан Салас</p>
+                                        <p>• Трей МакЛаркин</p>
+                                        <p>• Лори Петерс</p>   
+                                </div>
+                                <div class="back4 bg-purple-600 h-12 border border-purple-500 text-center text-2xl pt-2 text-white font-bold">
+                                    <h1>Музыкальный стиль</h1>
+                                </div>
+                                <div class="back3  text-white  border border-purple-500 justify-end">
+                                    <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
+                                        <!--  если тут будет слишком много, будет уходить за границу класс back3 height меняй в css -->
+                                        <p>• Кен Стюартс</p>
+                                        <p>• Кевин Халанд</p>
+                                        <p>• Бен Касика</p>
+                                        <p>• Джонатан Салас</p>
+                                        <p>• Трей МакЛаркин</p>
+                                        <p>• Лори Петерс</p>   
+                                </div>
+
+
+                                        <!--  ну тут как выше цвета настраивай -->
+                                <div class="back5 bg-purple-600 h-12 border border-purple-500 text-center text-2xl pt-2 text-white font-bold">
+                                        <h1>Навигация</h1>
+                                </div>
+                                            <!-- в href после # пишешь id который поставила, ниже напишу побольше, а ну и цвет границы, если слишком много 
+                                             в навигации, класс Navig height меняй.  -->
+                                <div class="flex flex-col gap-4 pr-5  text-white border border-purple-500 Navig">
+                                     <a href="#Form" class="mt-3 ml-5 nav1">Формирование и первые альбомы</a>
+                                     <a href="#Invincible" class="ml-5 nav2">Invincible, Alien Youth </a>
+                                     <a href="#Collide" class="ml-5 nav3">Collide </a>
+                                     <a href="#Comatose" class="ml-5 nav4">Comatose</a>
+                                     <a href="#Awake" class="ml-5 nav5">Awake</a>
+                                     <a href="#Rise" class="ml-5 nav6">Rise</a>
+                                     <a href="#Unleashed" class="ml-5 nav7">Unleashed </a>
+                                     <a href="#Victorious" class="ml-5 nav8">Victorious</a>
+                                     <a href="#Dominion" class="ml-5 nav9">Dominion</a>
+                                     <a href="#Revolution" class="ml-5 nav10">Revolution</a>
+                                </div>
+
+                                <div id="musicPlayer"
+                                class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                                <!-- Левая часть: Логотип -->
+                                <div class="flex items-center space-x-4">
+                                    <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                        class="w-12 h-12 rounded-lg cursor-pointer">
+                                    <div>
+                                        <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                        <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                    </div>
+                                </div>
+
+                                <!-- Центральная часть: Элементы управления -->
+                                <div class="flex flex-col items-center w-1/2">
+                                    <div class="flex items-center space-x-4 mb-2">
+                                        <button id="prevButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                            </svg>
+                                        </button>
+                                        <button id="playPauseButton"
+                                            class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                            </svg>
+                                        </button>
+                                        <button id="nextButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Прогресс-бар и время -->
+                                    <div class="flex items-center space-x-2">
+                                        <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                        <input type="range" id="progressBar"
+                                            class="w-full bg-gray-600 rounded-lg appearance-none">
+                                        <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                    </div>
+                                </div>
+
+                                <!-- Правая часть: Регулятор громкости -->
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                    </svg>
+                                    <input type="range" id="volumeControl"
+                                        class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                        step="0.1">
                                 </div>
                             </div>
-                            <div class="back4 bg-purple-600 w-96 h-12 border border-purple-950 text-center pt-2 text-black font-bold">
-                                <h1>Бывшие участники</h1>
+
+                            <!-- Полупрозрачный фон для изображения -->
+                            <div id="fullscreenImageContainer"
+                                class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                                <button id="closeFullscreenImage"
+                                    class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                    X
+                                </button>
+                                <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                    class="rounded-lg shadow-lg">
                             </div>
-                                    <div class="back5 bg-black w-96 text-slate-50 border-purple-950 justify-end">
-                                        <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">                                            
-                                            <p>• Кен Стюартс</p>
-                                            <p>• Кевин Халанд</p>
-                                            <p>• Бен Касика</p>
-                                            <p>• Джонатан Салас</p>
-                                            <p>• Трей МакЛаркин</p>
-                                            <p>• Лори Петерс</p>
-                                        </div>
-                                    </div>
-                            <div class="back4 bg-purple-600 w-96 h-12 border border-purple-950 text-center pt-2 text-black font-bold">
-                                <h1>Музыкальный стиль</h1>
-                            </div>
-                                    <div class="back6 bg-black w-96 text-slate-50 border border-purple-950">
-                                        <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
-                                            <p>На протяжении всего существования группы стиль неоднократно менялся. 
-                                            Первые композиции написаны в стиле пост-гранж, затем группа сместилась в индастриал-метал. 
-                                            Последние четыре альбома были написаны в стиле альтернативный рок.</p>
-                                        </div> 
-                                    </div>
+
+                            <script src="./Players/scriptSkillet.js"></script>
                         </div>
+
+
+
+                            </div>      
+                         </div>  
                     </div>
-                    <div class="Text1 flex text-left flex-col text-white gap-5">
-                        <p class="font-light text-xl">Skillet — американская христианская рок-группа из города Мемфис, штат Теннесси, основанная в 1996 году. На данный момент группой выпущено одиннадцать студийных альбомов, четыре EP и два концертных альбома.
-                            Состав группы: Джон Купер (бас-гитара, вокал) и его жена Кори Купер (ритм-гитара, клавишные, бэк-вокал), а также Джен Леджер (ударные, бэк-вокал), Сет Моррисон (соло-гитара). За двадцать лет состав группы неоднократно менялся. Джон Купер — единственный участник группы первоначального состава.
-                            Альбом Collide в 2005 году был номинирован на премию Грэмми в номинации «Лучший рок госпел альбом», и в 2007 Comatose был номинирован на премию Грэмми за «Лучший рок госпел альбом».</p>
-                        <h1 class="font-bold text-3xl">Формирование и первые альбомы (1996—1999 годы)</h1>
-                        <p class="font-light text-xl">Основатели группы Skillet: бас-гитарист и вокалист Джон Купер и гитарист Кен Стюарт. 
-                            Изначально они играли в двух разных христианских группах: Seraph и Urgent Cry. 
-                            В 1996 году, по совету своего пастора, они вместе выступили на разогреве у группы Fold Zandura и записали несколько совместных демозаписей. 
-                            Позже, в качестве барабанщика, к Джону и Кену присоединился Трей Макларкин. 
-                            Примерно через месяц после того, как ребята стали играть вместе, ими заинтересовался лейбл ForeFront Records, и предложил им заключить контракт. 
-                            Кен и Джон согласились на это предложение, так как давно хотели играть вместе.</p>
-                        <p class="font-light text-xl">Название Skillet (рус. Сковородка) для группы предложил тот же самый пастор, который и посоветовал Кену и Джону создать группу. 
-                            Такое название должно было символизировать смесь различных музыкальных направлений воедино.</p>
-                        <h1 class="font-bold text-3xl">Invincible, Alien Youth (1999—2003)</h1>
-                        <p class="font-light text-xl">В 1999 году Кен покинул коллектив, чтобы больше времени проводить вместе с семьёй и поступить в колледж.</p>
-                        <p class="font-light text-xl">С этого момента Купер становится главным автором песен для группы. 
-                            Место Стюарта занял гитарист Кевин Халанд. Кори Купер решила остаться в Skillet на постоянной основе. 
-                            1 февраля 2000 года группа выпустила свой третий альбом, названный Invincible. 
-                            Вследствие изменений состава группы изменился и музыкальный стиль: качество пост-индастриала в аудиозаписях стало более явным и современным, также в альбоме присутствовали элементы техно и электронной музыки.</p>
-                    </div>
-                    <div class="Text2 flex text-left flex-col text-white gap-5">        
-                        <p class="font-light text-xl">После выхода Invincible Трей покинул коллектив. 
-                            На его место приходит барабанщица Лори Петерс, которая до этого играла вместе с Кори в христианской группе Alkeme. 
-                            Спустя семь месяцев после релиза Invincible Skillet выпустили свой первый концертный альбом Ardent Worship, который был записан в стиле богопочитание (worship music). 
-                            В альбом вошли 10 записей группы с концерта на Chi Music Room в Мемфисе. 
-                            В записи двух песен, «Safe With You» и «Shout to the Lord», приняли участие бывшие участники Skillet: МакЛаркин и Кен Стюартс. В 2001 году из Skillet уходит Кевин Халанд. 
-                            Через знакомство с Кори на место покинувшего коллектив Кевина, приходит Бен Касика.</p>
-                        <h1 class="font-bold text-3xl">Collide (2003—2005)</h1>
-                        <p class="font-light text-xl">С 2002 года Skillet собирали новый материал для записи следующего альбома. Первой песней стала «A Little More».
-                            Над записью альбома с музыкантами группы поработал Пол Эмберсолд, с которым они трудились над дебютом, в знак признательности за то, что они помогли ему в работе с группой Stir на Capital Records, а также помогли группе Dropline.
-                            Пол сам предложил Skillet перебраться на мейнстрим-лейбл Lava. На момент предложения у Skillet не было достаточно средств на новую аудиостудию, но Пола это не волновало. Он просто сам хотел раскрутить группу, которую любил уже несколько лет.</p>
-                        <p class="font-light text-xl">25 мая вышел переизданный альбом Collide специально для мейнстрима, с дополнительным треком Open Wounds, который стартовал сразу же со второго места в хит-параде R&R.
-                            Позже Skillet отправились в совместный тур с Saliva.
-                            Весной 2004 года Джон получил премию Dove awards за участие в мюзикле Hero The Rock Opera, постановщиком которого был Эдди Дегармо. Джон для подготовки к своей роли долго работал со знаменитым Питом Стюартом (Pete Stewart, Grammatrain, The Accidental Experiment). Hero The Rock Opera — одно из главных событий в христианской музыке 2003 года.</p>
-                        <h1 class="font-bold text-3xl">Comatose (2006—2008)</h1>
-                        <p class="font-light text-xl">На одном из фестивалей в 2006 году группа прямо со сцены анонсировала свой новый альбом Comatose, который вышел 3 октября 2006 года. 
+                            <!-- самое главное, text1 это тот текст, который идёт параллельно правой колонки, с инфой артиста, там всё настроено
+                             только надо писать по ГОСТу,  p - class="font-light text-xl", а ЗАГАЛОВКАМ надо h1 с классом class="font-bold text-2xl", 
+                             текст писать внутри div'а, очевидно, но всё же-->
+
+
+                             <!-- СОВЕТ! большие текста разбивайте на два или три, в смысле вместо одного p, добавьте два, разделите текст на два, и вторую часть во второй p, 
+                              референс: другие статьи-->
+                   
+                </div>   
+                <div class="Text1 flex text-left flex-col text-white gap-5">
+
+                   
+                    <p class="font-light text-xl" id="Form"> <b>Skillet — американская христианская рок-группа из города Мемфис, штат Теннесси, основанная в 1996 году. На данный момент группой выпущено одиннадцать студийных альбомов, четыре EP и два концертных альбома.
+                        Состав группы: Джон Купер (бас-гитара, вокал) и его жена Кори Купер (ритм-гитара, клавишные, бэк-вокал), а также Джен Леджер (ударные, бэк-вокал), Сет Моррисон (соло-гитара). За двадцать лет состав группы неоднократно менялся. Джон Купер — единственный участник группы первоначального состава.
+                        Альбом Collide в 2005 году был номинирован на премию Грэмми в номинации «Лучший рок госпел альбом», и в 2007 Comatose был номинирован на премию Грэмми за «Лучший рок госпел альбом».
+                   Формирование и первые альбомы (1996—1999 годы) </b></p>
+                    
+                    <h1 class="font-bold text-3xl"> Формирование и первые альбомы (1996—1999 годы)</h1>
+                            <p class="font-light text-xl" id="Invincible">
+                   
+                                Основатели группы Skillet: бас-гитарист и вокалист Джон Купер и гитарист Кен Стюарт. 
+                                Изначально они играли в двух разных христианских группах: Seraph и Urgent Cry. 
+                                В 1996 году, по совету своего пастора, они вместе выступили на разогреве у группы Fold Zandura и записали несколько совместных демозаписей. 
+                                Позже, в качестве барабанщика, к Джону и Кену присоединился Трей Макларкин. 
+                                Примерно через месяц после того, как ребята стали играть вместе, ими заинтересовался лейбл ForeFront Records, и предложил им заключить контракт. 
+                                Кен и Джон согласились на это предложение, так как давно хотели играть вместе.Название Skillet (рус. Сковородка) для группы предложил тот же самый пастор, который и посоветовал Кену и Джону создать группу. 
+                                Такое название должно было символизировать смесь различных музыкальных направлений воедино.
+                            </p>
+                    <h1 class="font-bold text-3xl">Invincible, Alien Youth (1999—2003)</h1>
+                    <p class="font-light text-xl" id="Collide">В 1999 году Кен покинул коллектив, чтобы больше времени проводить вместе с семьёй и поступить в колледж.С этого момента Купер становится главным автором песен для группы. 
+                        Место Стюарта занял гитарист Кевин Халанд. Кори Купер решила остаться в Skillet на постоянной основе. 
+                        1 февраля 2000 года группа выпустила свой третий альбом, названный Invincible. 
+                        Вследствие изменений состава группы изменился и музыкальный стиль: качество пост-индастриала в аудиозаписях стало более явным и современным, 
+                        также в альбоме присутствовали элементы техно и электронной музыки.После выхода Invincible Трей покинул коллектив. 
+                        На его место приходит барабанщица Лори Петерс, которая до этого играла вместе с Кори в христианской группе Alkeme. 
+                        Спустя семь месяцев после релиза Invincible Skillet выпустили свой первый концертный альбом Ardent Worship, который был записан в стиле богопочитание (worship music). 
+                        В альбом вошли 10 записей группы с концерта на Chi Music Room в Мемфисе. 
+                        В записи двух песен, «Safe With You» и «Shout to the Lord», приняли участие бывшие участники Skillet: МакЛаркин и Кен Стюартс. В 2001 году из Skillet уходит Кевин Халанд. 
+                        Через знакомство с Кори на место покинувшего коллектив Кевина, приходит Бен Касика.</p>
+               
+                </div>
+
+        
+                            <div class="Text12 flex text-left flex-col gap-5 text-white">
+                                
+                                <h1 class="font-bold text-3xl">Collide (2003—2005)</h1>
+                                
+                                <p class="font-light text-xl">
+                                    С 2002 года Skillet собирали новый материал для записи следующего альбома. Первой песней стала «A Little More».
+                                    Над записью альбома с музыкантами группы поработал Пол Эмберсолд, с которым они трудились над дебютом, в знак признательности за то, что они помогли ему в работе с группой Stir на Capital Records, а также помогли группе Dropline.
+                                    Пол сам предложил Skillet перебраться на мейнстрим-лейбл Lava. На момент предложения у Skillet не было достаточно средств на новую аудиостудию, но Пола это не волновало. Он просто сам хотел раскрутить группу, которую любил уже несколько лет.
+
+
+                                </p>
+                            </div>
+
+      
+                        <div class="Text2 flex text-left flex-col gap-5 text-white">
+           
+
+            
+                            <p class="text-xl font-light" id="Comatose">
+                                25 мая вышел переизданный альбом Collide специально для мейнстрима, с дополнительным треком Open Wounds, который стартовал сразу же со второго места в хит-параде R&R.
+                                Позже Skillet отправились в совместный тур с Saliva.
+                                Весной 2004 года Джон получил премию Dove awards за участие в мюзикле Hero The Rock Opera, постановщиком которого был Эдди Дегармо. Джон для подготовки к своей роли долго работал со знаменитым Питом Стюартом (Pete Stewart, Grammatrain, The Accidental Experiment). Hero The Rock Opera — одно из главных событий в христианской музыке 2003 года.
+                            </p>
+                            <h1 class="font-bold text-2xl" >  Comatose (2006—2008)</h1>
+                            <p class="text-xl font-light">
+                            На одном из фестивалей в 2006 году группа прямо со сцены анонсировала свой новый альбом Comatose, который вышел 3 октября 2006 года. 
                             Первыми песнями стали «Rebirthing», «Whispers In The Dark» и «The Last Night». 
                             Вот что сказал об альбоме Джон Купер: «Как только я оказываюсь на сцене, для меня не важно, сколько человек пришло на концерт, я все равно отдам им все, что смогу. 
-                            Я постараюсь сделать лучшее шоу, на которое только способен; сумасшедшее шоу. Я взорву их. Думаю, что нам удалось сохранить это чувство в альбоме».</p>
-                        <p class="font-light text-xl">В январе 2008 года Skillet объявили, что Лори Петерс покидает коллектив. Как она сама прокомментировала: «Для меня пришло время начать новую главу в своей жизни». На место Лори в декабре 2007 года приходит молодая барабанщица из Англии Джен Леджер (На момент прихода в Skillet Джен было всего 18 лет).
+                            Я постараюсь сделать лучшее шоу, на которое только способен; сумасшедшее шоу. Я взорву их. Думаю, что нам удалось сохранить это чувство в альбоме».
+                            </p>
+                            <p class="text-xl font-light" id="Awake">
+                            В январе 2008 года Skillet объявили, что Лори Петерс покидает коллектив. Как она сама прокомментировала: «Для меня пришло время начать новую главу в своей жизни». На место Лори в декабре 2007 года приходит молодая барабанщица из Англии Джен Леджер (На момент прихода в Skillet Джен было всего 18 лет).
                             21 октября 2008 года группа выпускает Comatose Comes Alive на CD и DVD (концертная запись 9 мая 2008, Чаттануга, Теннесси).
-                            В 2009 году Comatose был присуждён золотой статус.</p>
-                        <h1 class="font-bold text-3xl">Awake (2009—2011)</h1>
-                        <p class="font-light text-xl">Альбом «Awake» был выпущен 25 августа 2009 года. Он занял 2 место в хит-параде альбомов Billboard Top 200. 
-                            В первую неделю релиза альбома было продано более 68 тысяч копий. На текущий момент данный альбом является самым популярным альбомом группы.
-                            Джон Купер заявил, что «Hero» не была песней для этого альбома. Она была включена в альбом лишь в марте 2010 года. 
-                            Примерно в это же время альбом претерпел различные изменения. Так например, в сингле «Monster» добавили рычание, и были добавлены две дополнительные песни «Dead Inside» и «Would It Matter».</p>
-                        <p class="font-light text-xl">Awake имел значительную популярность не только у фанатов Skillet. Аудиозаписи «Hero» и «Monster» попадали в различные телепередачи, становились саундтреками для видео-игр. 
-                            «Hero» использовалась при рекламе первого футбольного матча NFL сезона 2009 года между Pittsburgh Steelers и Tennessee Titans. Также эта песня является саундтреком видеоигры WWE SmackDown vs. Raw 2010. 
-                            «Monster» была использована в эпизоде «Jason: The Pretty-Boy Bully» на MTV в «Bully Beatdown». Также она была темой для «Королевская битва (2010)» и «Ад в Клетке».</p>
-                        <h1 class="font-bold text-3xl">Rise (2012—2014)</h1>
+                            В 2009 году Comatose был присуждён золотой статус.
+                            </p>
+                            <h1 class="font-bold text-3xl">Awake (2009—2011)</h1>
+                            <p class="font-light text-xl">Альбом «Awake» был выпущен 25 августа 2009 года. Он занял 2 место в хит-параде альбомов Billboard Top 200. 
+                                В первую неделю релиза альбома было продано более 68 тысяч копий. На текущий момент данный альбом является самым популярным альбомом группы.
+                                Джон Купер заявил, что «Hero» не была песней для этого альбома. Она была включена в альбом лишь в марте 2010 года. 
+                                Примерно в это же время альбом претерпел различные изменения. Так например, в сингле «Monster» добавили рычание, и были добавлены две дополнительные песни «Dead Inside» и «Would It Matter».</p>
+                            <p class="font-light text-xl" id="Rise">Awake имел значительную популярность не только у фанатов Skillet. Аудиозаписи «Hero» и «Monster» попадали в различные телепередачи, становились саундтреками для видео-игр. 
+                                «Hero» использовалась при рекламе первого футбольного матча NFL сезона 2009 года между Pittsburgh Steelers и Tennessee Titans. Также эта песня является саундтреком видеоигры WWE SmackDown vs. Raw 2010. 
+                                «Monster» была использована в эпизоде «Jason: The Pretty-Boy Bully» на MTV в «Bully Beatdown». Также она была темой для «Королевская битва (2010)» и «Ад в Клетке».
+                            </p>
+                            <h1 class="font-bold text-3xl">Rise (2012—2014)</h1>
                         <p class="font-light text-xl">21 июня 2011 года Купер в своём Твиттере сообщил, что группа отрепетировала некоторые песни из ожидаемого альбома.
                             18 июля 2012 года в интервью для RadioU, Джон Купер сказал, что на момент интервью Skillet записали шестьдесят одну демо, и что запись альбома планируется на октябрь. 
                             14 декабря в Твиттере Джона появилась новость о том, что они уже закончили запись альбома и собираются начать миксовать его.</p>
-                        <p class="font-light text-xl">9 апреля был выпущен первый сингл из Rise, получивший название «Sick of It». Позднее за ним последовали «American Noise» (16 апреля), «Rise» (14 мая), «Not Gonna Die» (10 июня). На синглы из альбома также стали выходить клипы — 7 июня состоялась премьера клипа на «Sick of It», 3 июля — «American Noise», а 5 февраля 2014 года — «Not Gonna Die».
+                        <p class="font-light text-xl" id="Unleashed">9 апреля был выпущен первый сингл из Rise, получивший название «Sick of It». Позднее за ним последовали «American Noise» (16 апреля), «Rise» (14 мая), «Not Gonna Die» (10 июня). На синглы из альбома также стали выходить клипы — 7 июня состоялась премьера клипа на «Sick of It», 3 июля — «American Noise», а 5 февраля 2014 года — «Not Gonna Die».
                             20 июня альбом был доступен для онлайн-покупки, на физических носителях он был выпущен на пять дней позднее.
                             13 октября 2014 года был выпущен эксклюзивный для европейских стран сборник Vital Signs.
                             16 февраля 2015 года состоялся анонс девятого студийного альбома, выход которого был запланирован на 2016 год.</p>
-                        <h1 class="font-bold text-3xl">Unleashed (2016—2019)</h1>
-                        <p class="font-light text-xl">20 мая 2016 года был выпущен сингл «Feel Invincible» из девятого студийного альбома «Unleashed». В этот же день был опубликован список песен нового альбома. 
+
+
+
+                            <h1 class="font-bold text-3xl">Unleashed (2016—2019)</h1>
+                        <p class="font-light text-xl" id="Victorious">20 мая 2016 года был выпущен сингл «Feel Invincible» из девятого студийного альбома «Unleashed». В этот же день был опубликован список песен нового альбома. 
                             26 мая 2016 года был выпущен сингл «Stars», 29 июня 2016 состоялась премьера клипа на сингл «Feel Invincible», 8 июля 2016 года был выпущен сингл «Back From The Dead», 29 июля 2016 года — сингл «I Want To Live», 
                             5 августа 2016 года были опубликованы все песни альбома на канале группы на сайте YouTube. 9 сентября 2016 состоялась премьера клипа на сингл «Stars», 14 марта 2017 года — премьера клипа на сингл «Back From The Dead». 
                             17 ноября 2017 года была выпущена расширенная версия альбома Unleashed — Unleashed: Beyond.</p>
-                        <h1 class="font-bold text-3xl">Victorious (2019 — 2020)</h1>
+                        <h1 class="font-bold text-3xl" id="Dominion">Victorious (2019 — 2020)</h1>
                         <p class="font-light text-xl">7 мая 2019 года группа выпустила первый сингл «Legendary» из их десятого альбома Victorious, релиз которого был запланирован на Atlantic Records 2 августа 2019 года. 
                             14 июня 2019 года группа выпустила ещё два новых сингла: «Save Me» и «Anchor». 27 июня был выпущен ещё один сингл «You Ain’t Ready». Выпуск альбома состоялся 2 августа 2019 года.</p>
                         <h1 class="font-bold text-3xl">Dominion (2021 — 2023)</h1>
-                        <p class="font-light text-xl">15 сентября 2021 года группа анонсировала свой 11 студийный альбом Dominion, релиз которого состоялся 14 января 2022 года. Также состоялась премьера лид-сингла «Surviving The Game» и видеоклипа на него.
+                        <p class="font-light text-xl" id="Revolution">15 сентября 2021 года группа анонсировала свой 11 студийный альбом Dominion, релиз которого состоялся 14 января 2022 года. Также состоялась премьера лид-сингла «Surviving The Game» и видеоклипа на него.
                             В 2022 году Skillet в четвёртый раз возглавили тур Winter Jam.</p>
                         <p class="font-light text-xl">В 2023 году группа возглавила тур Rock Resurrection вместе с Theory of a Deadman и Saint Asonia. Весной 2023 года группа также отправилась в тур Day of Destiny по Европе с участием Like a Storm и Eva Under Fire.</p>
                         <h1 class="font-bold text-3xl">Revolution (2024 — ...)</h1>
                         <p class="font-light text-xl">9 Августа 2024 года группа выпустила новый сингл «Unpopular», вместе с этим произвела анонс нового альбома Revolution.</p>
-                    </div>
-            </div>                           
+                        </div>                  
+                        
+                        
+                        
+            </div>
         </div>
-    </div>
-</main>
+    </main>
+
+ 
+   
+
+                                
+
 </body>
 </html>
