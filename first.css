@@ -7,7 +7,7 @@ body
 
     @media (max-width: 768px) {
       
-      height: 34800px;
+      height: 12800px;
     };
     background-size: 1920px 4900px;
 
@@ -90,23 +90,31 @@ body
 }
 .HeaderFle
 {
-    width: 300px;
+    width: 900px;
+    @media (max-width: 768px) {
+      width: 300px;
+      
+    };
 }
 .back
 {
     position: absolute;
     margin-top: 0px;
-    height: 12000px;
-    @media (max-width: 768px) {
-      
-      height: 34800px;
-    };
+    height: 12000px; 
     width: 1200px;
+    top: 250px;
+    left: 400px;
     @media (max-width: 768px) {
       
+      height: 36200px;
       width: 100%;
+      position:unset;
+      margin-top: 250px;
     };
-    top: 250px;
+
+  
+    
+    
     
 }
 
@@ -140,7 +148,7 @@ body
     width: 1020px;
     @media (max-width: 768px) {
       
-      width: 320px;
+      width: 300px;
     };
     margin-left: 50px;
 }
@@ -159,7 +167,7 @@ body
     height: 50px;
 }
 .Logo1 {
-    height: 85px;
+    height: 80px;
     margin-top: 7px;
 }
 .HeaderKnopka:hover

@@ -6,10 +6,10 @@
 
 body
 {
-    height:2560px;
+    height:2000px;
     @media (max-width: 768px) {
       
-        height:3700px;
+        height:3000px;
       };
 }
 .animka1

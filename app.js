@@ -44,29 +44,45 @@ function updateText(index) {
 let startTouchY = 0;
 let endTouchY = 0;
 
-// Обработчик для начала жеста (свайп)
+// Обработчик для начала жеста
 window.addEventListener("touchstart", (event) => {
-    startTouchY = event.touches[0].clientY; // Получаем начальную позицию пальца
+    startTouchX = event.touches[0].clientX; // Получаем начальную позицию пальца
 });
 
-// Обработчик для движения пальца (свайп)
-window.addEventListener("touchmove", (event) => {
-    endTouchY = event.touches[0].clientY; // Получаем конечную позицию пальца
-});
 
-// Обработчик для завершения жеста (свайп)
-window.addEventListener("touchend", () => {
-    if (startTouchY - endTouchY > 50) { // Свайп вверх
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateText(currentIndex);
+// Обработчик для завершения жеста или нажатия
+window.addEventListener("touchend", (event) => {
+    // Если разница в положении пальца значительна (свайп)
+    if (Math.abs(startTouchX - endTouchX) > 50) {
+        if (startTouchX - endTouchX > 0) { // Свайп влево
+            if (currentIndex < texts.length - 1) {
+                currentIndex++;
+                updateText(currentIndex);
+            }
+        } else if (startTouchX - endTouchX < 0) { // Свайп вправо
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateText(currentIndex);
+            }
         }
-    } else if (endTouchY - startTouchY > 50) { // Свайп вниз
+    } else {
+        // Если свайпа не было, переключаем влево и вправо по очереди
         if (currentIndex < texts.length - 1) {
             currentIndex++;
-            updateText(currentIndex);
+        } else {
+            currentIndex = 0; // Возвращаемся к первому тексту
         }
+        updateText(currentIndex);
     }
+
+    // Сбрасываем позиции для следующего события
+    startTouchX = 0;
+    endTouchX = 0;
+});
+
+// Обработчик для движения пальца
+window.addEventListener("touchmove", (event) => {
+    endTouchX = event.touches[0].clientX; // Обновляем конечную позицию пальца
 });
 
 // Обработчик события прокрутки колесика мыши
@@ -113,6 +129,7 @@ window.addEventListener("wheel", (event) => {
         childList: true,    // Для отслеживания добавления/удаления дочерних узлов
         subtree: true       // Для отслеживания изменений в дочерних элементах
     });
+    
 
     
 
