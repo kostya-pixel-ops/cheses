@@ -3,7 +3,7 @@
 body
 {
  
-    height: 5500px;
+    height: 7500px;
 
     background-size: 1920px 4900px;
 
@@ -22,6 +22,45 @@ body
 #Up:hover {
     color: rgb(212, 35, 35);
 }
+#BlackoutL {
+    color: aquamarine;
+}
+#Sting {
+    color: black;
+    text-shadow: 0 0 2px white, 0 0 3px white, 0 0 2px white;
+    
+    transition: all 200ms ease;
+    font-style: bold;
+}
+#Sting:hover {
+    color: white;
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white;
+}
+#CW {
+    color: azure;
+    text-shadow: 0 0 3px white, 0 0 4px white, 0 0 5px white;
+    transition: all 450ms ease-in-out;
+}
+#CW:hover {
+    color: deepskyblue;
+    text-shadow: 0 0 3px green, 0 0 5px green, 0 0 7px skyblue;
+}
+#FTH {
+    color: brown;
+    transition: all 400ms ease-out;
+}
+#FTH:hover {
+    color: white;
+    text-shadow: 0 0 0.3em white, 0 0 0.4em white, 0 0 1em orange, 0 0 1.2em orange, 0 0 2em brown, 0 0 3em brown;
+}
+#Eye {
+    color: black;
+    text-shadow: 0 0 2px gainsboro, 0 0 2px gainsboro, 0 0 5px gainsboro;
+}
+#Fuchs {
+    color: slategray;
+    text-shadow: 0 0 1em darkblue;
+}
 
 .HeaderFle
 {
@@ -31,7 +70,7 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 5200px;
+    height: 7100px;
     width: 1200px;
     top: 250px;
     
