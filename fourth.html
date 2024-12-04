@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./fourth.css">
 </head>
 <body>
-    <header class="bg-black flex z-10 fixed justify-around w-full h-24 border-b border-red-800">
+    <header class="bg-black flex z-10 fixed justify-around w-screen h-24 border-b border-red-800">
         <div class="flex  justify-between HeaderFle">
             <a href="./main.html" class="text-red-800 justify-start mt-5 HeaderKnopka">Главная</a>
             <a href="./main.html" class="logo"><img src="./imgs/TuneHavenLogo.png" class="Logo1"></a>
@@ -57,6 +57,83 @@
                             <a href="#HumanityHour1" class="ml-5 nav8">Humanity: Hour I</a>
                             <a href="#RockB" class="ml-5 nav9">Rock Believer</a>
                             </div>
+
+
+                            <div id="musicPlayer"
+                            class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                            <!-- Левая часть: Логотип -->
+                            <div class="flex items-center space-x-4">
+                                <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                    class="w-12 h-12 rounded-lg cursor-pointer">
+                                <div>
+                                    <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                    <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                </div>
+                            </div>
+
+                            <!-- Центральная часть: Элементы управления -->
+                            <div class="flex flex-col items-center w-1/2">
+                                <div class="flex items-center space-x-4 mb-2">
+                                    <button id="prevButton" class="text-gray-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                        </svg>
+                                    </button>
+                                    <button id="playPauseButton"
+                                        class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                        </svg>
+                                    </button>
+                                    <button id="nextButton" class="text-gray-400 hover:text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Прогресс-бар и время -->
+                                <div class="flex items-center space-x-2">
+                                    <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                    <input type="range" id="progressBar"
+                                        class="w-full bg-gray-600 rounded-lg appearance-none">
+                                    <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                </div>
+                            </div>
+
+                            <!-- Правая часть: Регулятор громкости -->
+                            <div class="flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                </svg>
+                                <input type="range" id="volumeControl"
+                                    class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                    step="0.1">
+                            </div>
+                        </div>
+
+                        <!-- Полупрозрачный фон для изображения -->
+                        <div id="fullscreenImageContainer"
+                            class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                            <button id="closeFullscreenImage"
+                                class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                X
+                            </button>
+                            <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                class="rounded-lg shadow-lg">
+                        </div>
+
+                        <script src="./Players/scriptSC.js"></script>
+                    </div>
+                            
                     </div>
                 </div>
                 <div class="Text1 flex flex-col gap-5 text-left mt-10">
@@ -77,7 +154,7 @@
                         Основание группы
                     </h1>
                     <p class="font-light text-xl">
-                        Группа Scorpions была основана в 1965 году Рудольфом Шенкером. 
+                        <img src="./imgs/Scorpions/Scorpions1969.jpg" alt="" width="300px" class="left mt-5 mr-5">Группа Scorpions была основана в 1965 году Рудольфом Шенкером. 
                         В 1969 к ней присоединились младший брат основателя Михаэль 
                         Шенкер и вокалист Клаус Майне. По утверждению Майне, каждый 
                         заработанный ими пфенниг тратился на группу; из этих же соображений 
@@ -98,7 +175,7 @@
                     </p>
                     <p class="font-light text-xl">
                         На международной хард-рок сцене группа появилась в 1972 году, 
-                        когда выпустила свой первый альбом под названием <b>Lonesome Crow</b>. 
+                        когда выпустила свой первый альбом под названием<img src="./imgs/Scorpions/LonesomeCrow.jpg" alt="" width="300px" class="right ml-5 mt-5"> <b>Lonesome Crow</b>. 
                         Ближе к концу своего тура в 1973 году, где они сопровождали популярных 
                         в ФРГ лондонских хард-рокеров UFO, Михаэлю Шенкеру предложили стать 
                         гитаристом этой группы, и он согласился. Стать новым гитаристом Scorpions 
@@ -107,14 +184,18 @@
                         Розенталь (ударные). Рудольф Шенкер решил присоединиться к этой группе. 
                         Затем в неё пригласили и Клауса Майне. В итоге прежние Scorpions исчезли, 
                         а группа Dawn Road взяла себе это, уже известное в Германии, имя. 
-                        В обновлённом составе группа записала диск <b>Fly to the Rainbow</b>. 
+                        В обновлённом составе группа записала диск<img src="./imgs/Scorpions/FlyToTheRainbow.jpg" alt="" width="300px" class="left mr-5 mt-5"> <b>Fly to the Rainbow</b>. 
                         В 1974 году место Розенталя занял Руди Леннерс.
                     </p>
                     <p class="font-light text-xl">
                         Последующие альбомы <b>In Trance</b> и <b>Virgin Killer</b> показали, 
                         что Scorpions нашли свой уникальный стиль - необычайно 
-                        мощные риффы, витиеватые гитарные соло и мелодические вокальные линии.
+                        мощные риффы, витиеватые гитарные соло и мелодические вокальные линии.<img class="Shortcut" id="Blackout">
                     </p>
+                    <div class="flex gap-5 Kal">
+                        <img src="./imgs/Scorpions/InTrance.jpg" alt="" width="300px" class="">
+                        <img src="./imgs/Scorpions/VirginKiller.jpg" alt="" width="300px" class="">
+                    </div>
                 </div>
                 <div class="Text2 flex flex-col gap-5 text-left">
                     <h1 class="text-2xl ml-10 mt-10 font-bold">
@@ -125,8 +206,9 @@
                         выпущенный в 1982 году.
 
                         <b>Blackout</b> занял 62-ю позицию в рейтинге «100 лучших 
-                        рок-альбомов всех времён» по версии журнала Classic Rock. 
+                        рок-альбомов всех времён» по версии журнала Classic Rock.
                     </p>
+                    <img src="./imgs/Scorpions/Blackout.jpg" alt="" width="300px" class="left">
                     <p class="font-light text-xl">
                         Вокалист группы Клаус Майне потерял голос во время записи 
                         этого альбома, и было непонятно, сможет ли он завершить его, 
@@ -142,16 +224,16 @@
                     </p>
                     <p class="font-light text-xl">
                         Рудольф Шенкер не смог выбрать лучшее гитарное соло для 
-                        песни «China White», поэтому американский и европейский 
+                        песни <a href="https://www.youtube.com/watch?v=p0mEuIvfFCA" id="BlackoutL">«China White»</a>, поэтому американский и европейский 
                         релизы отличались этой деталью.
 
                         На обложке альбома изображён автопортрет художника 
                         Готфрида Хельнвайна. Впоследствии Рудольф Шенкер 
                         несколько раз изображал этого персонажа, например, 
-                        в клипе на песню «No One Like You» или во время исполнения 
+                        в клипе на песню <a href="https://www.youtube.com/watch?v=Yp5UHsnWolY" id="BlackoutL">«No One Like You»</a> или во время исполнения 
                         песни на фестивале «Live at Wacken Open Air 2006».
 
-                        В 1984 году альбом «Blackout» достиг максимального уровня 
+                        В 1984 году <img class="Shortcut" id="LaFS">альбом «Blackout» достиг максимального уровня 
                         продаж в США и Канаде, и ему был присвоен платиновый статус 
                         от RIAA и от CRIA за тиражи более 1 000 000 экземпляров и 
                         более 100 000 экземпляров соответственно. 
@@ -170,12 +252,12 @@
                         истории их карьеры; в Америке диск стал платиновым.
                         
                         Включает в себя такие известные хиты Scorpions, как 
-                        «Rock You Like a Hurricane», «Bad Boys Running Wild», 
-                        «Coming Home», «Big City Nights», а также одну из их 
-                        известнейших рок-баллад - «Still Loving You».
+                        <a href="https://www.youtube.com/watch?v=WnJFQEHsSrU" id="Sting">«Rock You Like a Hurricane»</a>, <a href="https://www.youtube.com/watch?v=lsEZRqBzuhw" id="Sting">«Bad Boys Running Wild»</a>, 
+                        <a href="https://www.youtube.com/watch?v=a9V7R7WoNys" id="Sting">«Coming Home»</a>, <a href="https://www.youtube.com/watch?v=-Q0Rq5DFdnE" id="Sting">«Big City Nights»</a>, а также одну из их 
+                        известнейших рок-баллад - <a href="https://www.youtube.com/watch?v=5nULVceKyG0" id="Sting">«Still Loving You»</a>.
                     </p>
                     <p class="font-light text-xl">
-                        Баллада «Still Loving You», написанная ещё в 1976 году, 
+                        <img src="./imgs/Scorpions/LoveAtFirstSting.jpg" alt="" width="300px" class="right ml-5 mt-5">Баллада «Still Loving You», написанная ещё в 1976 году, 
                         а вышедшая в свет только в 1984, стала международным 
                         рок-гимном. Во Франции этот сингл разошёлся тиражом 1 
                         млн. 700 тыс. копий. В память об этой песне, в 1985 
@@ -195,7 +277,7 @@
                     Для записи альбома были приглашены сессионные музыканты. 
                     По сути, все басовые партии сыграл басист DIO Джимми Бэйн 
                     (правда, сам басист Scorpions Франсис Бухгольц отрицает этот 
-                    факт). Барабанщик Бобби Рондинелли 
+                    факт). Барабанщик <img class="Shortcut" id="CrazyW">Бобби Рондинелли 
                     (Rainbow и Black Sabbath), играл с группой во время репетиции, 
                     пока барабанщик Scorpions Герман Раребелл восстанавливал своё 
                     здоровье. Также известно, что во время демозаписи этого альбома 
@@ -212,8 +294,8 @@
 
                             Многие критики оценивают этот альбом как один из 
                             лучших в творчестве группы. Именно в него вошли 
-                            такие известные композиции, как «Wind of Change» 
-                            (ставшая символом Перестройки) и «Send Me an Angel».
+                            такие известные композиции, как <a href="https://www.youtube.com/watch?v=Ukh1zoiV304" id="CW">«Wind of Change»</a> 
+                            (ставшая символом Перестройки) и <a href="https://www.youtube.com/watch?v=K9RKlz1qpQY" id="CW">«Send Me an Angel»</a>.
                             
                             Альбому был присвоен мультиплатиновый статус от RIAA 
                             за тираж более 2 000 000 экземпляров в августе 1995 
@@ -224,8 +306,8 @@
                         <p class="font-light text-xl">
                             «Wind of Change» - рок-баллада, одна из самых известных песен Scorpions, 
                             написанная её вокалистом Клаусом Майне. Изначально англоязычная песня, 
-                            также была записана группой на русском («Ветер перемен») и испанском 
-                            («Vientos de cambio») языках, посвящена Перестройке в СССР и 
+                            также была записана группой на русском <a href="https://www.youtube.com/watch?v=M_XLHP_gBIE" id="CW">(«Ветер перемен»)</a> и испанском 
+                            <a href="https://www.youtube.com/watch?v=gput32xnAWQ" id="CW">(«Vientos de cambio»)</a> языках, посвящена Перестройке в СССР и 
                             окончанию Холодной войны.
                         </p>
                         <p class="font-light text-xl">
@@ -235,7 +317,7 @@
                             1991 они уже исполнили её при Михаиле Горбачёве, президенте 
                             СССР, который являлся их поклонником и даже пригласил их в Кремль).
 
-                            Клаус Майне в 2017 году рассказал историю создания: 11 августа 
+                            <img src="./imgs/Scorpions/CrazyWorld.jpg" alt="" width="300px" class="left mr-5 mt-5">Клаус Майне в 2017 году рассказал историю создания: 11 августа 
                             1989 года, накануне первого концерта на стадионе «Лужники», вместе 
                             с другими музыкантами они совершали прогулку на теплоходе по Москва-реке, 
                             а затем заехали на барбекю в выездную акцию английского Hard Rock Cafe в 
@@ -246,8 +328,8 @@
                             объединял один язык — музыка». В этой атмосфере и родилась песня.
 
                             За год до релиза была разрушена Берлинская стена, а вскоре распался 
-                            СССР, поэтому «Wind of change» воспринимается в Европе как гимн 
-                            Перестройки, гласности и окончания холодной войны, как символ мира 
+                            СССР, поэтому <a href="https://www.youtube.com/watch?v=Ukh1zoiV304" id="CW">«Wind of change»</a> воспринимается в Европе как гимн 
+                            Перестройки, гласности и <img class="Shortcut" id="FaceTheHeat">окончания холодной войны, как символ мира 
                             между народами Германии и России. Рудольф Шенкер говорил: «выросло 
                             новое поколение немцев, которое не идет в Россию с танками и оружием. 
                             Оно идёт к вам с гитарами и рок-н-роллом»
@@ -276,14 +358,14 @@
                             но с более современным звучанием, которое подходило для музыкальной 
                             сцены того времени. "Face the Heat" стал более "тяжелым" и гитарным 
                             по сравнению с предыдущими работами группы. В нем были заметны элементы 
-                            гранжа и более агрессивного металла, что отражало влияние музыки того 
+                            <img src="./imgs/Scorpions/FaceTheHeat.jpg" alt="" width="300px" class="left mr-5 mt-5">гранжа и более агрессивного металла, что отражало влияние музыки того 
                             времени, включая популярность таких групп, как Nirvana и Pearl Jam. В песнях альбома 
                             звучат темы, такие как одиночество, борьба, сила духа и отношения 
-                            между людьми. Особенно это выражено в треках "Under the Same Sun" и 
-                            "Alien Nation", которые исследуют идеи глобализации, разобщенности и 
+                            между людьми. Особенно это выражено в треках <a href="" id="FTH">"Under the Same Sun"</a> и 
+                            <a href="" id="FTH">"Alien Nation"</a>, которые исследуют идеи глобализации, разобщенности и 
                             различий между людьми, но также и общего стремления к единству.
                             Хотя "Face the Heat" не стал таким культовым, как некоторые предыдущие 
-                            работы Scorpions, он оставил заметный след в музыкальной индустрии 
+                            работы Scorpions, он <img class="Shortcut" id="Eye2Eye">оставил заметный след в музыкальной индустрии 
                             и стал важным этапом в эволюции их творчества, показывая, что группа 
                             может адаптироваться к новым музыкальным трендам, оставаясь верной 
                             своим корням.
@@ -300,7 +382,7 @@
                             Тем не менее, тяжёлые гитарные риффы по-прежнему присутствуют.
                         </p>
                         <p class="font-light text-xl">
-                            На обложке на чёрном фоне изображены ветераны Scorpions: 
+                            На обложке на чёрном фоне изображены ветераны Scorpions: <img src="./imgs/Scorpions/EyeToEye.jpg" alt="" width="300px" class="right ml-5 mt-5">
                             Рудольф Шенкер, Клаус Майне и Маттиас Ябс.
 
                             Джеймс Коттак впервые принял участие в работе над 
@@ -312,10 +394,10 @@
                             благотворительном концерте «Майкл Джексон и друзья» 
                             («Michael Jackson and Friends») в Мюнхене.
 
-                            Композиция «Mysterious» заняла 26-е место в чарте 
+                            Композиция <b><a href="https://www.youtube.com/watch?v=KYOXZSiOs2A" id="Eye">«Mysterious»</a></b> заняла 26-е место в чарте 
                             Billboard Mainstream Rock. Впервые Scorpions выпустили 
-                            песню и на родном немецком языке — «Du bist so schmutzig» 
-                            (если не считать сингла 1975 года «Fuchs geh' voran» c 2 
+                            песню и на родном немецком <img class="Shortcut" id="HumanityHour1">языке — <b><a href="https://www.youtube.com/watch?v=65M9fP56nzc" id="Eye">«Du bist so schmutzig»</a></b>
+                            (если не считать сингла 1975 года <a href="https://www.youtube.com/watch?v=Cf-6KrVqYC8" id="Fuchs">«Fuchs geh' voran»</a> c 2 
                             кавер-песнями, записанными музыкантами группы, но выпущенным 
                             под псевдонимом The Hunters).
                         </p>
@@ -328,7 +410,7 @@
                             Humanity: Hour I - шестнадцатый студийный 
                             концептуальный альбом 
                             Scorpions, вышедший 14 мая 2007 года в Европе 
-                            и 28 августа 2007 года в США и Канаде. В интервью 
+                            <img src="./imgs/Scorpions/HumanityHour1.jpg" alt="" width="300px" class="left mr-5 mt-5">и 28 августа 2007 года в США и Канаде. В интервью 
                             малайзийской газете Malay Mail в 2006 году Рудольф Шенкер 
                             говорил о новом альбоме: 
                             «Думаю, он будет звучать свежо и зажигательно. 
@@ -350,7 +432,7 @@
                             тему «мальчики бегают за девочками». Humanity: Hour I, 
                             «быть может, не столько концептуальный альбом, сколько 
                             собрание песен, объединённых общей тематикой»: «Мы хотели 
-                            создать альбом с современным звучанием, не теряя при этом 
+                            создать альбом с современным звучанием, не <img class="Shortcut" id="RockB">теряя при этом 
                             стиля Scorpions — и, я думаю, это удалось. Это не означает, 
                             что мы пытались экспериментировать. Не классический рок, как 
                             в старые добрые времена; мы хотели создать запись с саундом 2007 года»
@@ -371,7 +453,7 @@
                         <p class="font-light text-xl">
                             25 июля 2020 года Scorpions вошли в студию Peppermint Park 
                             в Ганновере, чтобы возобновить работу над своим девятнадцатым 
-                            студийным альбомом. Сессии альбома, которые первоначально 
+                            студийным альбомом. <img src="./imgs/Scorpions/RockBeliever.jpg" alt="" width="300px" class="left mr-5 mt-5">Сессии альбома, которые первоначально 
                             должны были проходить в Лос-Анджелесе, проводились удалённо, 
                             при участии продюсера Грега Фидельмана через Zoom. 
                             29 сентября 2021 года стало известно, что новый альбом будет называться 

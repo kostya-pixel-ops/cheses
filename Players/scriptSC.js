@@ -1,36 +1,37 @@
 // Массив песен
 const songs = [
   
-{
-  name: "Alien Nation",
-  artist: "Scorpions",
-  file: "./music/04-Scorpions-Alien Nation.mp3",
-  image: "./Photo/Снимок экрана 2024-11-20 091212.png",
-  },
-{
-  name: "Still Loving You",
-  artist: "Scorpions",
-  file: "./music/AUDIO-2018-07-25-00-24-31.mp3",
-  image: "./Photo/Снимок экрана 2024-11-20 091321.png",
-  },
-{
-  name: "Wind of Change",
-  artist: "Scorpions",
-  file: "./music/Scorpions - Wind of Change.mp3",
-  image: "./Photo/Снимок экрана 2024-11-20 091351.png",
-  },
-{
-  name: "No One Like You",
-  artist: "Scorpions",
-  file: "./music/Scorpions_-_No_One_Like_You_56423876.mp3",
-  image: "./Photo/Снимок экрана 2024-11-20 091424.png",
-  },
-{
-  name: "Peacemaker",
-  artist: "Scorpions",
-  file: "./music/Scorpions_-_Peacemaker_(musmore.com).mp3",
-  image: "./Photo/Снимок экрана 2024-11-20 091510.png",
-  },
+  {
+    name: "Alien Nation",
+    artist: "Scorpions",
+    file: "./music/04-Scorpions-Alien Nation.mp3",
+    image: "./Photo/Снимок экрана 2024-11-20 091212.png",
+    },
+  {
+    name: "Still Loving You",
+    artist: "Scorpions",
+    file: "./music/AUDIO-2018-07-25-00-24-31.mp3",
+    image: "./Photo/Снимок экрана 2024-11-20 091321.png",
+    },
+  {
+    name: "Wind of Change",
+    artist: "Scorpions",
+    file: "./music/Scorpions - Wind of Change.mp3",
+    image: "./Photo/Снимок экрана 2024-11-20 091351.png",
+    },
+  {
+    name: "No One Like You",
+    artist: "Scorpions",
+    file: "./music/Scorpions_-_No_One_Like_You_56423876.mp3",
+    image: "./Photo/Снимок экрана 2024-11-20 091424.png",
+    },
+  {
+    name: "Peacemaker",
+    artist: "Scorpions",
+    file: "./music/Scorpions_-_Peacemaker_(musmore.com).mp3",
+    image: "./Photo/Снимок экрана 2024-11-20 091510.png",
+    },
+
 
 ];  
 let playedSongs = []; // Массив уже воспроизведенных песен
@@ -217,18 +218,7 @@ audio.addEventListener('ended', () => {
 });
 
 
-// Показать или скрыть плеер при нажатии на картинку
-showPlayerButton.addEventListener('click', () => {
-  if (musicPlayer.classList.contains('hidden')) {
-    musicPlayer.classList.remove('hidden');
-    musicPlayer.classList.add('show');
-  } else {
-    musicPlayer.classList.add('hidden');
-    musicPlayer.classList.remove('show');
-  }
-  audio.pause();
-  playIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />`;
-});
+
 
 // Воспроизведение/пауза
 playPauseButton.addEventListener('click', () => {
