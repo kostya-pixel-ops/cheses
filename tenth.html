@@ -77,15 +77,94 @@
                                             <!-- в href после # пишешь id который поставила, ниже напишу побольше, а ну и цвет границы, если слишком много 
                                              в навигации, класс Navig height меняй.  -->
                                 <div class="flex flex-col gap-4 pr-5 bg-sky-950 text-white border border-sky-500 Navig">
-                                     <a href="#Childhood" class="mt-3 ml-5 nav1">Детство и юность</a>
-                                     <a href="#Fame" class="ml-5 nav2">Восхождение к славе</a>
-                                     <a href="#ninefive" class="ml-5 nav3">Расцвет</a>
-                                     <a href="#ninefive" class="ml-5 nav4">Biggie и Junior M.A.F.I.A</a>
-                                     <a href="#Big" class="ml-5 nav5">Последние записи</a>
-                                     <a href="#last" class="ml-5 nav6">All Eyez on Me</a>
-                                     <a href="#posmet" class="ml-5 nav7">Посмертные альбомы</a>
-                                     <a href="#gibel" class="ml-5 nav8">Гибель</a>
+                                     <a href="#Childhood" class="mt-3 ml-5 nav1">Ранняя жизнь</a>
+                                     <a href="#Fame" class="ml-5 nav2">Начало карьеры</a>
+                                     <a href="#OVERLY" class="ml-5 nav3">Overly Dedicated Section.80 </a>
+                                     <a href="#GOODKID" class="ml-5 nav4">Good Kid, M.A.A.D City</a>
+                                     <a href="#PIMP" class="ml-5 nav5">To Pimp a Butterfly</a>
+                                     <a href="#DAMN" class="ml-5 nav6">DAMN.</a>
+                                     <a href="#SuperBowl" class="ml-5 nav7">Super Bowl LVI halftime show</a>
+                                     <a href="#GNX" class="ml-5 nav8">GNX</a>
                                 </div>
+
+                                <div id="musicPlayer"
+                                class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                                <!-- Левая часть: Логотип -->
+                                <div class="flex items-center space-x-4">
+                                    <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                        class="w-12 h-12 rounded-lg cursor-pointer">
+                                    <div>
+                                        <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                        <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                    </div>
+                                </div>
+
+                                <!-- Центральная часть: Элементы управления -->
+                                <div class="flex flex-col items-center w-1/2">
+                                    <div class="flex items-center space-x-4 mb-2">
+                                        <button id="prevButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                            </svg>
+                                        </button>
+                                        <button id="playPauseButton"
+                                            class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                            </svg>
+                                        </button>
+                                        <button id="nextButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Прогресс-бар и время -->
+                                    <div class="flex items-center space-x-2">
+                                        <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                        <input type="range" id="progressBar"
+                                            class="w-full bg-gray-600 rounded-lg appearance-none">
+                                        <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                    </div>
+                                </div>
+
+                                <!-- Правая часть: Регулятор громкости -->
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                    </svg>
+                                    <input type="range" id="volumeControl"
+                                        class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                        step="0.1">
+                                </div>
+                            </div>
+
+                            <!-- Полупрозрачный фон для изображения -->
+                            <div id="fullscreenImageContainer"
+                                class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                                <button id="closeFullscreenImage"
+                                    class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                    X
+                                </button>
+                                <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                    class="rounded-lg shadow-lg">
+                            </div>
+
+                            <script src="./Players/scriptKendric.js"></script>
+                        </div>
+
+
+
+
 
                             </div>      
                             </div>  
@@ -111,7 +190,7 @@
                               признание критиков и коммерческий успех, в том числе синглы Swimming Pools (Drank), Backseat Freestyle и Bitch, Don't Kill My Vibe. 
                         </p>
                         <h1 class="font-bold text-2xl" >Ранняя жизнь</h1>
-                            <p class="font-light text-xl" >
+                            <p class="font-light text-xl" id="Fame">
                                
                                 Кендрик Ламар Дакворт родился в Комптоне, Калифорния, 17 июня 1987 года, в семье пары из Чикаго. Хотя сам он не состоял в банде, 
                                 он вырос среди этого сообщества; его ближайшими друзьями были Westside Piru Bloods, а его отец, Кенни Дакворт, был учеником человека-гангстера. 
@@ -138,7 +217,7 @@
                                    
                     <div class="Text12 flex text-left flex-col gap-5 text-white">
                         
-                        <p class="font-light text-xl">
+                        <p class="font-light text-xl" id="OVERLY">
                             
                             Получив соавторство от Lil Wayne, Кендрик выпустил свой третий микстейп в 2009 году под названием C4,
                              который был сильно посвящен альбому Уэйна Tha Carter III. Вскоре после этого Кендрик решил больше не использовать сценический псевдоним K.Dot 
@@ -175,7 +254,7 @@
                                   сингл HiiiPoWeR, концепция которого заключалась в дальнейшем объяснении движения HiiiPoWeR. Песня была спродюсирована коллегой 
                                   - американским рэпером J. Cole, что стало их первым из нескольких совместных работ. 
                             </p>
-                            <p class="text-xl font-light">
+                            <p class="text-xl font-light" id="GOODKID">
                                 На вопрос о том, будет ли его следующий проект альбомом или микстейпом, Кендрик ответил: <b><i> "Я в любом случае отношусь к каждому проекту как к альбому. От этого ничего не останется. Я никогда не делаю ничего подобного. Это мои оставшиеся песни, вы все можете их взять. Я собираюсь выложиться на все сто. Мои лучшие усилия. Я пытаюсь найти альбом в 2012 году".</i></b>
                             </p>
                             
@@ -226,7 +305,7 @@
                              вместе со своими лучшими коллегами по лейблу Dawg Jay Rock, Schoolboy Q, Isaiah Rashad и Ab-Soul. В интервью XXL в октябре 2013
                               года Кендрик рассказал, что после тура Yeezus он приступит к работе над своим следующим альбомом. 
                            </p>
-                           <p class="text-xl font-light">
+                           <p class="text-xl font-light" id="PIMP">
                             Кендрик получил в общей сложности семь номинаций на Грэмми на 56-й ежегодной церемонии вручения премии Грэмми (2014), 
                             включая "Лучший новый исполнитель", "Альбом года" и "Лучшая рэп-песня", но не победил ни в одной категории.
                              Многие издания сочли, что Академия звукозаписи пренебрежительно отнеслась к Кендрику, а также к рэперу из Сиэтла Macklemore,
@@ -257,7 +336,7 @@
                                     трек No More Parties in L.A. на своем официальном SoundCloud, созданный совместно с Кендриком и спродюсированный Уэстом и Madlib. Кендрик также
                                      исполнил новую песню Untitled 2 на The Tonight Show Starring Jimmy Fallon в январе. 
                             </p>
-                            <p class="text-xl font-light"> 
+                            <p class="text-xl font-light" id="DAMN"> 
                                 4 марта 2016 года Кендрик выпустил сборник без Untitled Unmastered, содержащий восемь треков без названия, каждый датированный. Треки были незаконченными дэмо-записями с альбома To Pimp a Butterfly. Альбом-сборник дебютировал на вершине американского Billboard 200. 
                             </p>
                         <h1  class="font-bold text-2xl"> 2017-2018: DAMN., саундтрек к Черной пантере и перерыв</h1>
@@ -277,12 +356,12 @@
                                  участием Кендрика, Future и Джеймса Блейка. Третий сингл, Pray For Me, Кендрика и The Weeknd, был выпущен в феврале 2018 года, в преддверии выхода 
                                  альбома в том же месяце. Black Panther: The Album был выпущен 9 февраля 2018 года. 
                             </p>
-                            <p class="text-xl font-light">
+                            <p class="text-xl font-light" id="SuperBowl">
                                 В январе 2018 года истек срок действия контракта Кендрика на публикацию песен с Warner Chappell Music; TDE требовала от 20 до 40 миллионов долларов за каталог рэпера. Кендрик открыл 60-ю ежегодную премию Грэмми попурри из песен XXX, Lust, DNA, Humble, King's Dead и New Freezer рэпера Rich the Kid. Он также был номинирован на семь наград, включая "Альбом года" и "Лучший рэп-альбом", а также "Запись года", "Лучшее рэп-исполнение", "Лучшая рэп-песня" и "Лучшее музыкальное видео" за Humble и "Лучшее исполнение в рэп-исполнении" за Loyalty с Рианной. В конечном счете Кендрик получил пять наград на церемонии: за лучший рэп-альбом, лучшее рэп-исполнение, лучшую рэп-песню, лучшее музыкальное видео и лучшее рэп/спетое исполнение. После саундтрека к "Черной пантере" Кендрик не выпускал собственную музыку в течение четырех лет.
                             </p>
 
                         <h1 class="font-bold text-2xl">2020-2024 Super Bowl LVI halftime show</h1>
-                            <p class="text-xl font-light">
+                            <p class="text-xl font-light" id="GNX">
                                 13 февраля 2022 года Кендрик стал хедлайнером шоу Super Bowl LVI halftime show вместе с Dr. Dre, Snoop Dogg, Eminem, 50 Cent и Mary J. Blige, 
                                 которое принесло ему премию Primetime Emmy Award for Outstanding Variety Special (Live). 8 мая он выпустил промо-сингл The Heart Part 5. 
                                 Пятый студийный альбом Кендрика, Mr. Morale & The Big Steppers, был выпущен 13 мая. В преддверии его выхода он посетил Гану, чтобы снять 
