@@ -75,10 +75,11 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 1000px;
+    padding-top: 100px;
     margin-left: 50px;
     @media (max-width: 768px) {
         width: 320px;
+        padding-top: 1000px;
     }
 }
 .HeaderKnopka
