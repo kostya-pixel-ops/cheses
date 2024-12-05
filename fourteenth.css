@@ -5,7 +5,7 @@ body
     height: 6450px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    background: linear-gradient(109.6deg, rgba(214, 5, 5, 0.93) 44.2%, rgb(219, 135, 26) 55.8%);  
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
@@ -21,7 +21,7 @@ body
     height: 6050px;
     width: 1200px;
     top: 250px;
-    background-color: #8b896f;
+    background-color: #000000;
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
 .MainBox {
@@ -38,24 +38,30 @@ body
 .Text1
 {
     width: 666px;
-    padding-top: 172px;
+    padding-top: 185px;
     margin-left: 50px;
     height: 1200px;
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
+}
+.left {
+    float: left;
+    margin: 7px, 7px, 7px, 0;
 }
 .Text2
 {
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 20px;
-    margin-left: 50px;
+    margin-left: 470px;
+    padding-top: 11px;
+    float: left;
+    margin: 7px, 7px, 7px, 0;
 }
 .Text12
 {
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 50px;
+    padding-top: 18px;
     margin-left: 50px;
 }
 .HeaderKnopka
@@ -84,6 +90,10 @@ body
     margin-left: 1px;
     margin-top: 2px;
     height: 444px;
+}
+.Wiki2 {
+    margin-left: 50px;
+    padding-top: 18px;
 }
 .Navig
 {

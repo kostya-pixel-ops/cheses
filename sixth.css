@@ -139,57 +139,57 @@ body
 .nav1:hover
 {
     background-color: rgb(255, 255, 221);
-    width: 160px;
+
     color: black;
 }
 .nav2:hover
 {
     background-color:  rgb(255, 255, 221);
-    width: 270px;
+ 
     color: black;
 }
 .nav3:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 100px
+  
 }
 .nav4:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 300px
+  
 }
 .nav5:hover
 {
     background-color: rgb(255, 255, 221);
     color: black;
-    width: 300px
+
 }
 .nav6:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 130px
+ 
    
 }
 .nav7:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 70px;
+  
 }
 .nav8:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 175px;
+
 }
 .nav9:hover
 {
     background-color:  rgb(255, 255, 221);
     color: black;
-    width: 160px;
+
 }
 
 
@@ -197,38 +197,52 @@ body
 .nav1
 {
     transition: 0.35s;
+    width: 160px;
+
 }
 .nav2
 {
     transition: 0.35s;
+    width: 270px;
+
 }
 .nav3
 {
     transition: 0.35s;
+    width: 100px
+
 }
 .nav4
 {
     transition: 0.35s;
+    width: 300px
 }
 .nav5
 {
     transition: 0.35s;
+    width: 300px
+
 }
 .nav6
 {
     transition: 0.35s;
+    width: 130px
+
 }
 .nav7
 {
     transition: 0.35s;
+    width: 70px;
 }
 .nav8
 {
     transition: 0.35s;
+    width: 175px;
 }
 .nav9
 {
     transition: 0.35s;
+    width: 160px;
 }
 
 

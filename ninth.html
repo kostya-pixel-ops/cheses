@@ -9,7 +9,7 @@
 </head>
 <body>
                 <!--вот тут основной в хэдере цвет-->                                                     <!--вот тут темнее основного цвета тоже-->
-    <header class="bg-yellow-400 flex z-10 fixed justify-around w-full h-24 border-b border-yellow-300">
+    <header class="bg-yellow-400 flex z-10 fixed justify-around w-screen h-24 border-b border-yellow-300">
         <div class="flex  justify-between HeaderFle">
             <a href="./main.html" class="text-white justify-start mt-5 HeaderKnopka">Главная</a>
             <a href="#" class="logo"><img src="./imgs/TuneHavenLogo.png" class="Logo1"></a>
@@ -38,7 +38,7 @@
                                 <div class="back4 bg-amber-100 h-12 border border-yellow-300 text-center text-2xl pt-2 text-black font-bold">
                                     <h1>Информация</h1>
                                 </div>
-                                <div class="back3 bg-neutral-900 text-white  border border-yellow-300 justify-end">
+                                <div class="back3  text-white  border border-yellow-300 justify-end">
                                     <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
                                         <!--  если тут будет слишком много, будет уходить за границу класс back3 height меняй в css -->
                                         <p>• Имя при рождении: Lesane Parish Crooks</p>
@@ -52,7 +52,7 @@
                                 </div>
                                             <!-- в href после # пишешь id который поставила, ниже напишу побольше, а ну и цвет границы, если слишком много 
                                              в навигации, класс Navig height меняй.  -->
-                                <div class="flex flex-col gap-4 pr-5 bg-neutral-900 text-white border border-yellow-300 Navig">
+                                <div class="flex flex-col gap-4 pr-5  text-white border border-yellow-300 Navig">
                                      <a href="#Childhood" class="mt-3 ml-5 nav1">Детство и юность</a>
                                      <a href="#Fame" class="ml-5 nav2">Восхождение к славе</a>
                                      <a href="#ninefive" class="ml-5 nav3">Расцвет</a>
@@ -63,7 +63,83 @@
                                      <a href="#gibel" class="ml-5 nav8">Гибель</a>
                                 </div>
 
-                                
+                                <div id="musicPlayer"
+                                class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                                <!-- Левая часть: Логотип -->
+                                <div class="flex items-center space-x-4">
+                                    <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                        class="w-12 h-12 rounded-lg cursor-pointer">
+                                    <div>
+                                        <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                        <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                    </div>
+                                </div>
+
+                                <!-- Центральная часть: Элементы управления -->
+                                <div class="flex flex-col items-center w-1/2">
+                                    <div class="flex items-center space-x-4 mb-2">
+                                        <button id="prevButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                            </svg>
+                                        </button>
+                                        <button id="playPauseButton"
+                                            class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                            </svg>
+                                        </button>
+                                        <button id="nextButton" class="text-gray-400 hover:text-white">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Прогресс-бар и время -->
+                                    <div class="flex items-center space-x-2">
+                                        <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                        <input type="range" id="progressBar"
+                                            class="w-full bg-gray-600 rounded-lg appearance-none">
+                                        <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                    </div>
+                                </div>
+
+                                <!-- Правая часть: Регулятор громкости -->
+                                <div class="flex items-center space-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                    </svg>
+                                    <input type="range" id="volumeControl"
+                                        class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                        step="0.1">
+                                </div>
+                            </div>
+
+                            <!-- Полупрозрачный фон для изображения -->
+                            <div id="fullscreenImageContainer"
+                                class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                                <button id="closeFullscreenImage"
+                                    class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                    X
+                                </button>
+                                <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                    class="rounded-lg shadow-lg">
+                            </div>
+
+                            <script src="./Players/scriptpac.js"></script>
+                        </div>
+
+
+
                             </div>      
                          </div>  
                     </div>
@@ -126,7 +202,7 @@
                         </p>
                         <p class="font-light text-xl">
                             Зачастую он побеждал в рэп-состязаниях и считался лучшим рэпером своей школы. В школе Пола Лоренса Данбара
-                            он запомнился как один из самых популярных учеников из-за своего чувства юмора, рэпа, а также за умение находить общий язык с разными людьми.
+                            он запомнился как один из самых популярных учеников из-за <img src="./imgs/Tupac_Shakur_1988_Yearbook.jpg" class="right w-44"> своего чувства юмора, рэпа, а также за умение находить общий язык с разными людьми.
                             С детства вплоть до своей смерти Шакур являлся близким другом Джады Корен Пинкетт-Смит.В 1988 Шакур вместе со своей семьёй переезжает в Марин-Сити,
                             Калифорния. Вскоре он поступает в среднюю школу Тамалпэйс. Шакур внёс значительный вклад в развитие актёрского искусства в школе, осуществив 
                             несколько театральных представлений. Вдобавок он начал посещать курсы поэзии писательницы, поэта и педагога Лейлы Штейнберг. 
@@ -165,7 +241,7 @@
                                 </p>
                                 <p class="font-light text-xl">
                                     Зимой 1995 вышел первый сингл с альбома Me Against The World — Dear Mama. Сингл возглавил хит-парад самых горячих рэп-синглов, 
-                                    а также занял девятую строчку в хит-параде Billboard Hot 100. Летом того же года сингл стал платиновым и был поставлен Billboard на 51 место 
+                                    а также занял девятую строчку в хит-параде Billboard Hot 100. Летом того же года сингл <img src="./imgs/802827-tupac_0.jpeg" class="left w-72"> стал платиновым и был поставлен Billboard на 51 место 
                                     в списке лучших синглов 1995 года. Второй сингл, So Many Tears, был обнародован летом, спустя четыре месяца после выхода первого сингла. 
                                     So Many Tears достиг шестого места в хит-параде самых горячих рэп-синглов, а также поместился на 44-й позиции в Billboard Hot 100. Temptations 
                                     вышел осенью, став третьим и финальным синглом с альбома. Temptations стал менее коммерчески успешным, нежели первые два, заняв 13 строчку
@@ -193,7 +269,7 @@
                                      All Eyez on Me вышел на двух компакт-дисках и четырёх грампластинках. В первую неделю продаж альбом купили 566’000 раз. 
                                      К концу 1996 пластинка была продана тиражом в 5 миллионов экземпляров. На церемонии 1997 Soul Train Music Awards альбом ожидаемо победил 
                                      в категории «Лучший рэп-альбом года». Также на 24-й церемонии American Music Awards Шакур победил в номинации 
-                                     Favorite Rap/Hip-Hop Artist («Самый любимый хип-хоп-исполнитель года»).
+                                     Favorite Rap/Hip-Hop Artist («Самый любимый хип-хоп-исполнитель года»). <img src="./imgs/hitemup.jpg" class="right w-64">
                                     Осенью 1996 в свет вышел пятый, последний студийный альбом Шакура, The Don Killuminati: The 7 Day Theory. 
                                     Посмертный альбом вышел под новым сценическим именем Шакура — Makaveli. Альбом был записан за семь дней: три дня — на написание текстов 
                                     и четыре дня — на работу над альбомом в студии. В 2005 MTV включило альбом в список «Величайших хип-хоп альбомов за всю историю». 
@@ -205,7 +281,7 @@
                                     В 1995 году, когда Шакур сидел в тюрьме, его мать была на грани потери дома. C женой Шакура, Кейшей Моррис связался основатель Death Row Records, Сьюдж Найт в Лос-Анджелесе.
                                     Сообщается, что мать Шакура незамедлительно получила 15 000 долларов.
                                     После августовского визита в исправительное учреждение Клинтон на севере штата Нью-Йорк Найт отправился на юг, 
-                                    в Нью-Йорк, чтобы принять участие во 2-й ежегодной церемонии вручения наград Source Awards. 
+                                    в Нью-Йорк, чтобы принять участие во 2-й ежегодной церемонии вручения наград Source Awards. <img src="./imgs/Alleyezonme.jpg" class="left w-64">
                                     Тем временем между Death Row и Bad Boy Records назревало соперничество в хип–хопе между Восточным и Западным побережьями. In October 1995,
                                     В октябре 1995 года Найт снова навестил Шакура в тюрьме и внес залог в размере 1,4 миллиона долларов.
                                      Шакур вернулся в Лос-Анджелес и присоединился к камере смертников, поскольку апелляция на его приговор, 
@@ -244,7 +320,7 @@
                                      автомобиля и быстро произвёл несколько выстрелов. Четыре пули попали в Шакура — две пули угодили в грудную клетку (одна из них попала в правое лёгкое), 
                                      и по одной в руку и в бедро. Найт был ранен в голову осколком автомобильного стекла. Телохранитель Фрэнк Александр заявил, что собирался ехать
                                       в клуб в одной машине с Найтом и Шакуром, однако в последний момент Шакур попросил его пересесть в автомобиль своей невесты, Кидады Джонс, 
-                                      ссылаясь на то, что может не хватить транспорта для переезда из клуба в отель. 
+                                      ссылаясь на то, что может не хватить транспорта для переезда из клуба в отель. <img src="/imgs/tupacMurder.jpg" class="right w-64">
                                       В документальном фильме Before I Wake телохранитель сообщил, что одна из машин погналась за нападавшими, однако он [телохранитель] 
                                       никогда не слышал о тех, кто находился в белом «кадиллаке». Вскоре на место происшествия прибыли полицейские и медработники; 
                                       последние отвезли Найта и Шакура в университетский медицинский центр Южной Невады (UMC). 
