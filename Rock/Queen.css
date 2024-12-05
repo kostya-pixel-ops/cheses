@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 5450px;
+    height: 7450px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(135deg, rgb(104, 1, 1) 9%, rgba(165,1,7,1) 25%, rgba(91,2,12,1) 54%, rgba(61,1,8,1) 89%);
+    background: linear-gradient(133deg, rgba(2,14,52,1) 11%, rgba(1,17,69,1) 23%, rgba(4,25,94,1) 36%, rgba(0,26,110,1) 52%, rgba(6,49,182,1) 67%, rgba(6,63,241,1) 85%);
 
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
@@ -19,10 +19,14 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 5000px;
+    height: 7000px;
     width: 1200px;
     top: 250px;
-    background-color: #431f1f;
+    background-color: linear-gradient(0deg, rgba(58,12,227,1) 10%, rgba(6,14,158,1) 49%, rgba(76,40,236,1) 82%);;
+    @media (max-width: 768px) {
+      width: 100%;
+      height:13800px;
+    }
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
 .MainBox {
@@ -30,12 +34,16 @@ body
     float: right;
     margin-right: 108px;
     margin-top: 160px;
+    @media (max-width: 768px) {
+      margin-right: 30px;
+      margin-top: 180px;
+    }
 }
 .Name2 {
     position: absolute;
-    top: -112px;
-    left: 32px;
-    scale: 1.4;
+    top: -64px;
+    left: -206px;
+    scale: 0.6;
 }
 .Text1
 {
@@ -43,6 +51,9 @@ body
     padding-top: 172px;
     margin-left: 50px;
     height: 1200px;
+    @media (max-width: 768px) {
+        width: 320px;
+    }
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
 .Text2
@@ -51,14 +62,21 @@ body
     /* вот эту херну менять если заходит за верхний текст*/
     padding-top: 20px;
     margin-left: 50px;
+    @media (max-width: 768px) {
+      width: 320px;
+  }
 }
 .Text12
 {
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 310px;
-    margin-left: 50px;
+    padding-top: 20px;
+    margin-left: 0px;
+    @media (max-width: 768px) {
+      width: 320px;
+      padding-top: 2100px;
+  }
 }
 .HeaderKnopka
 {
@@ -93,7 +111,7 @@ body
     right: 108px;
     background-color: rgb(0, 0, 0);
     width: 336px;
-    height: 460px;
+    height: 590px;
     border-width: 1px;
 }
 
@@ -243,6 +261,10 @@ body
     z-index: 1;
     max-width: 400px; /* Фиксированная ширина для больших экранов */
     margin: 15px auto; /* Центрирование */
+    @media (max-width: 768px) {
+      left:35px;
+      bottom: 761.5rem
+  }
   }
   
   
@@ -331,7 +353,7 @@ body
   @media screen and (max-width: 480px) {
     #musicPlayer {
       padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
+      bottom: 761.5rem; /* Еще меньше отступ */
     }
   
     #musicPlayer img {
@@ -353,11 +375,12 @@ body
       height: 40px;
     }
   
+    
   
   @media screen and (max-width: 480px) {
     #musicPlayer {
       padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
+      bottom: 761.5rem; /* Еще меньше отступ */
     }
   
     #musicPlayer img {
