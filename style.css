@@ -449,18 +449,6 @@ footer
     color:rgb(255, 117, 129);
 }
 
-/* Подсветка с RGB-анимацией */
-.glowing-border {
-  animation: rgbGlow 3s infinite;
-}
-
-@keyframes rgbGlow {
-  0% { box-shadow: 0 0 20px #ff0000; }
-  33% { box-shadow: 0 0 20px #00ff00; }
-  66% { box-shadow: 0 0 20px #0000ff; }
-  100% { box-shadow: 0 0 20px #ff0000; }
-}
-
 /* Основной стиль для плеера */
 #musicPlayer {
   display: flex;
@@ -478,7 +466,16 @@ footer
   max-width: 900px; /* Фиксированная ширина для больших экранов */
   margin: 0 auto; /* Центрирование */
 }
-
+#trackName {
+    white-space: nowrap; /* Запрещаем перенос текста */
+    overflow: hidden; /* Обрезаем текст, выходящий за пределы */
+    text-overflow: ellipsis; /* Добавляем многоточие в конце */
+    max-width: 250px; /* Устанавливаем максимальную ширину для текста */
+}
+.volume-icon:hover {
+    transform: scale(1.2); /* Увеличение */
+    cursor: pointer;
+  }
 
 /* Стиль для кнопки закрытия полноэкранного изображения */
 #closeFullscreenImage {
@@ -539,6 +536,10 @@ footer
     max-width: calc(100% - 16px); /* Уменьшаем ширину */
   }
   
+  #trackName {
+    max-width: 140px; /* Устанавливаем максимальную ширину для текста */
+  }
+  
   /* Убираем громкость и прогресс-бар */
   #musicPlayer input[type="range"],
   #musicPlayer .flex.items-center.space-x-2 {
@@ -568,6 +569,10 @@ footer
     bottom: 0.5rem; /* Еще меньше отступ */
   }
 
+  #trackName {
+    max-width: 160px; /* Ещё меньше ширина текста для маленьких экранов */
+  }
+
   #musicPlayer img {
     width: 36px;
     height: 36px;
@@ -583,8 +588,8 @@ footer
   }
 
   #musicPlayer img {
-    width: 40px;
-    height: 40px;
+    width: 72px;
+    height: 72px;
   }
 
 
@@ -595,8 +600,8 @@ footer
   }
 
   #musicPlayer img {
-    width: 36px;
-    height: 36px;
+    width: 60px;
+    height: 60px;
   }
 
   #musicPlayer input[type="range"] {

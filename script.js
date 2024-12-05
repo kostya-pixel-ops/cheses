@@ -1223,6 +1223,10 @@ const musicPlayer = document.getElementById('musicPlayer');
 const nextButton = document.getElementById('nextButton');
 const prevButton = document.getElementById('prevButton');
 
+// Новые элементы для звука
+const volumeIcon = document.getElementById('volumeIcon');
+let isMuted = false;
+
 // Функция для выбора случайной песни
 function getRandomSongIndex() {
   if (playedSongs.length === songs.length) {
@@ -1385,7 +1389,6 @@ audio.addEventListener('ended', () => {
   playNextSong();
 });
 
-
 // Показать или скрыть плеер при нажатии на картинку
 showPlayerButton.addEventListener('click', () => {
   if (musicPlayer.classList.contains('hidden')) {
@@ -1415,9 +1418,18 @@ progressBar.addEventListener('input', (e) => {
   audio.currentTime = (e.target.value / 100) * audio.duration;
 });
 
-// Управление громкостью
+// Управление громкостью через ползунок
 volumeControl.addEventListener('input', (e) => {
-  audio.volume = e.target.value;
+  const volume = e.target.value;
+  audio.volume = volume;
+
+  if (volume == 0) {
+    volumeIcon.src = 'icons8-no-audio-48.png';
+    isMuted = true;
+  } else {
+    volumeIcon.src = 'icons8-звук-48.png';
+    isMuted = false;
+  }
 });
 
 // Обработчик для кнопки закрытия полноэкранного изображения
@@ -1434,9 +1446,27 @@ trackImage.addEventListener('click', () => {
   document.body.classList.add('no-scroll');  // Блокируем прокрутку страницы
 });
 
+// Обработчик клика по иконке звука
+volumeIcon.addEventListener('click', () => {
+  if (!isMuted) {
+    // Отключаем звук
+    audio.volume = 0;
+    volumeControl.value = 0;
+    // Меняем иконку на "звук отключен"
+    volumeIcon.src = 'icons8-no-audio-48.png';
+    isMuted = true;
+  } else {
+    // Включаем звук на 50%
+    audio.volume = 0.5;
+    volumeControl.value = 0.5;
+    // Меняем иконку на "звук включен"
+    volumeIcon.src = 'icons8-звук-48.png';
+    isMuted = false;
+  }
+});
+
 // Инициализация плеера при загрузке
 if (songs.length > 0) {
   loadSong(getRandomSongIndex());
-}
-
+} 
 
