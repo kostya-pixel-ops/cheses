@@ -76,7 +76,7 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 30px;
+    padding-top: 190px;
     margin-left: 50px;
     @media (max-width: 768px) {
         width: 320px;
@@ -247,45 +247,7 @@ body
 
 
 
-
-
-/* Стили для кнопки "Наверх" */
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    text-decoration: none;
-    background-color: #808080; /* Серый фон */
-    color: white; /* Белая стрелка */
-    width: 60px; /* Увеличиваем ширину кнопки */
-    height: 60px; /* Увеличиваем высоту кнопки */
-    border-radius: 50%; /* Делаем кнопку круглой */
-    font-size: 49px; /* Увеличиваем размер стрелки */
-    line-height: 55px; /* Выравниваем стрелку по центру по вертикали */
-    text-align: center; /* Выравниваем стрелку по центру по горизонтали */
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, background-color 0.3s;
-  }
-  
-  .scroll-to-top.show {
-    display: block;
-    opacity: 1;
-  }
-  
-  .scroll-to-top.hide {
-    opacity: 0;
-  }
-  
-  /* Эффект при наведении */
-  .scroll-to-top:hover {
-    background-color: #606060; /* Темнее серый фон при наведении */
-    cursor: pointer;
-  }
-
-
-  .glowing-border {
+.glowing-border {
     animation: rgbGlow 3s infinite;
   }
   
@@ -304,12 +266,15 @@ body
     margin-right: 500px;
     background-color: #f9f9f9;
     padding: 12px;
-
+    
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
     z-index: 1000;
-    max-width: 400px; /* Фиксированная ширина для больших экранов */
+    max-width: 336px; /* Фиксированная ширина для больших экранов */
     margin: 15px auto; /* Центрирование */
+    position: absolute;
+    bottom:443rem;
+    margin-right: 80px;
   }
   
   
@@ -318,6 +283,7 @@ body
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 1000;
   }
   
   #closeFullscreenImage:hover {
@@ -424,7 +390,8 @@ body
   @media screen and (max-width: 480px) {
     #musicPlayer {
       padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
+      bottom: 695rem; /* Еще меньше отступ */
+      margin-right: 0px;
     }
   
     #musicPlayer img {
@@ -466,12 +433,3 @@ body
     transition: transform 0.3s ease-in-out; /* Плавная анимация */
   }
   
-  /* Оставляем стиль для плеера при показе */
-  #musicPlayer.show {
-    display: flex;
-  }
-  
-  /* Убираем скрытый плеер */
-  #musicPlayer {
-    display: none;
-  }

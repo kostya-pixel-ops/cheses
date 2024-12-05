@@ -237,192 +237,188 @@ body
 
 
 .glowing-border {
-    animation: rgbGlow 3s infinite;
-  }
-  
-  @keyframes rgbGlow {
-    0% { box-shadow: 0 0 20px #ff0000; }
-    33% { box-shadow: 0 0 20px #00ff00; }
-    66% { box-shadow: 0 0 20px #0000ff; }
-    100% { box-shadow: 0 0 20px #ff0000; }
-  }
-  
-  /* Основной стиль для плеера */
-  #musicPlayer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 500px;
-    background-color: #f9f9f9;
-    padding: 12px;
+  animation: rgbGlow 3s infinite;
+}
 
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
-    z-index: 1000;
-    max-width: 400px; /* Фиксированная ширина для больших экранов */
-    margin: 15px auto; /* Центрирование */
-  }
+@keyframes rgbGlow {
+  0% { box-shadow: 0 0 20px #ff0000; }
+  33% { box-shadow: 0 0 20px #00ff00; }
+  66% { box-shadow: 0 0 20px #0000ff; }
+  100% { box-shadow: 0 0 20px #ff0000; }
+}
+
+/* Основной стиль для плеера */
+#musicPlayer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 500px;
+  background-color: #f9f9f9;
+  padding: 12px;
   
-  
-  /* Стиль для кнопки закрытия полноэкранного изображения */
-  #closeFullscreenImage {
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  #closeFullscreenImage:hover {
-    background-color: #333;
-  }
-  
-  
-  /* Фиксируем размеры для внутренних элементов */
-  #musicPlayer img {
-    width: 48px;
-    height: 48px;
-  }
-  
-  #musicPlayer .flex {
-    flex: 1;
-    max-width: 100%;
-  }
-  
-  /* Центрируем контролы */
-  #musicPlayer .audio-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-  
-  /* Громкость и прогресс бар */
-  #musicPlayer input[type="range"] {
-    width: 100%;
-    max-width: 200px;
-    appearance: none;
-    background-color: #fff6f6;
-    border-radius: 4px;
-    height: 4px;
-  }
-  
-  #musicPlayer input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  
-  /* Адаптивность для маленьких экранов */
-  @media screen and (max-width: 768px) {
-    #musicPlayer {
-      flex-direction: row; /* Горизонтальная ориентация */
-      padding: 10px; /* Меньше отступов */
-      max-width: calc(100% - 16px); /* Уменьшаем ширину */
-    }
-    
-    /* Убираем громкость и прогресс-бар */
-    #musicPlayer input[type="range"],
-    #musicPlayer .flex.items-center.space-x-2 {
-      display: none;
-    }
-  
-    /* Смещаем кнопки паузы и навигации вправо */
-    #musicPlayer .flex.items-center.space-x-4.mb-2 {
-      justify-content: flex-end;
-      width: 100%;
-    }
-  
-    /* Адаптируем размеры для маленьких экранов */
-    #musicPlayer img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    #musicPlayer .audio-controls {
-      gap: 8px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    #musicPlayer {
-      padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
-    }
-  
-    #musicPlayer img {
-      width: 36px;
-      height: 36px;
-    }
-  }
-  
-    #musicPlayer .audio-controls {
-      gap: 8px;
-    }
-  
-    #musicPlayer input[type="range"] {
-      max-width: 120px;
-    }
-  
-    #musicPlayer img {
-      width: 40px;
-      height: 40px;
-    }
-  
-  
-  @media screen and (max-width: 480px) {
-    #musicPlayer {
-      padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
-    }
-  
-    #musicPlayer img {
-      width: 36px;
-      height: 36px;
-    }
-  
-    #musicPlayer input[type="range"] {
-      max-width: 100px;
-    }
-  }
-  /* Полный экран изображения */
-  #fullscreenImage {
-    transition: transform 0.3s ease-in-out;
-    width: auto;
-    height: auto;
-    max-width: 50%; /* Изображение для больших экранов */
-    max-height: 90%;
-  }
-  /* Полный экран изображения */
-  #fullscreenImage {
-    transition: transform 0.3s ease-in-out;
-    width: auto;
-    height: 1000px;
-    max-width: 40%; /* Уменьшено до 40% экрана */
-    max-height: 50%; /* Уменьшено до 70% высоты экрана */
-  }
-  
-  @media screen and (max-width: 768px) {
-    #fullscreenImage {
-      max-width: 70%; /* Для телефонов */
-      max-height: 40%;
-    }
-  }
-  /* Стили для картинки, которая будет открывать плеер */
-  #showPlayerButton {
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Плавная анимация */
-  }
-  
-  /* Оставляем стиль для плеера при показе */
-  #musicPlayer.show {
-    display: flex;
-  }
-  
-  /* Убираем скрытый плеер */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
+  z-index: 1000;
+  max-width: 336px; /* Фиксированная ширина для больших экранов */
+  margin: 15px auto; /* Центрирование */
+  position: absolute;
+  bottom:601rem;
+  margin-right: 80px;
+}
+
+
+/* Стиль для кнопки закрытия полноэкранного изображения */
+#closeFullscreenImage {
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+#closeFullscreenImage:hover {
+  background-color: #333;
+}
+
+
+/* Фиксируем размеры для внутренних элементов */
+#musicPlayer img {
+  width: 48px;
+  height: 48px;
+}
+
+#musicPlayer .flex {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* Центрируем контролы */
+#musicPlayer .audio-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* Громкость и прогресс бар */
+#musicPlayer input[type="range"] {
+  width: 100%;
+  max-width: 200px;
+  appearance: none;
+  background-color: #fff6f6;
+  border-radius: 4px;
+  height: 4px;
+}
+
+#musicPlayer input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Адаптивность для маленьких экранов */
+@media screen and (max-width: 768px) {
   #musicPlayer {
+    flex-direction: row; /* Горизонтальная ориентация */
+    padding: 10px; /* Меньше отступов */
+    max-width: calc(100% - 16px); /* Уменьшаем ширину */
+  }
+  
+  /* Убираем громкость и прогресс-бар */
+  #musicPlayer input[type="range"],
+  #musicPlayer .flex.items-center.space-x-2 {
     display: none;
   }
+
+  /* Смещаем кнопки паузы и навигации вправо */
+  #musicPlayer .flex.items-center.space-x-4.mb-2 {
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  /* Адаптируем размеры для маленьких экранов */
+  #musicPlayer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #musicPlayer .audio-controls {
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #musicPlayer {
+    padding: 8px;
+    bottom: 0.5rem; /* Еще меньше отступ */
+  }
+
+  #musicPlayer img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+  #musicPlayer .audio-controls {
+    gap: 8px;
+  }
+
+  #musicPlayer input[type="range"] {
+    max-width: 120px;
+  }
+
+  #musicPlayer img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+@media screen and (max-width: 480px) {
+  #musicPlayer {
+    padding: 8px;
+    bottom: 600rem; /* Еще меньше отступ */
+    margin-right: 0px;
+  }
+
+  #musicPlayer img {
+    width: 36px;
+    height: 36px;
+  }
+
+  #musicPlayer input[type="range"] {
+    max-width: 100px;
+  }
+}
+/* Полный экран изображения */
+#fullscreenImage {
+  transition: transform 0.3s ease-in-out;
+  width: auto;
+  height: auto;
+  max-width: 50%; /* Изображение для больших экранов */
+  max-height: 90%;
+}
+/* Полный экран изображения */
+#fullscreenImage {
+  transition: transform 0.3s ease-in-out;
+  width: auto;
+  height: 1000px;
+  max-width: 40%; /* Уменьшено до 40% экрана */
+  max-height: 50%; /* Уменьшено до 70% высоты экрана */
+}
+
+@media screen and (max-width: 768px) {
+  #fullscreenImage {
+    max-width: 70%; /* Для телефонов */
+    max-height: 40%;
+  }
+}
+/* Стили для картинки, которая будет открывать плеер */
+#showPlayerButton {
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Плавная анимация */
+}
+

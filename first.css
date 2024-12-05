@@ -138,11 +138,14 @@ body
 }
 .Text1 {
     width: 666px;
+    margin-top: 1px;
+    margin-left: 50px;
     @media (max-width: 768px) {
       
       width: 320px;
+      padding-top: 150px;
     };
-    margin-left: 50px;
+    
 }
 .Text2 {
     width: 1020px;
@@ -303,12 +306,15 @@ body
     margin-right: 500px;
     background-color: #f9f9f9;
     padding: 12px;
-
+    
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(255, 238, 238, 0.973);
     z-index: 1000;
-    max-width: 400px; /* Фиксированная ширина для больших экранов */
+    max-width: 336px; /* Фиксированная ширина для больших экранов */
     margin: 15px auto; /* Центрирование */
+    position: absolute;
+    bottom:650rem;
+    margin-right: 80px;
   }
   
   
@@ -317,6 +323,7 @@ body
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 1000;
   }
   
   #closeFullscreenImage:hover {
@@ -423,7 +430,8 @@ body
   @media screen and (max-width: 480px) {
     #musicPlayer {
       padding: 8px;
-      bottom: 0.5rem; /* Еще меньше отступ */
+      bottom: -68rem; /* Еще меньше отступ */
+      margin-right: 0px;
     }
   
     #musicPlayer img {
@@ -465,12 +473,3 @@ body
     transition: transform 0.3s ease-in-out; /* Плавная анимация */
   }
   
-  /* Оставляем стиль для плеера при показе */
-  #musicPlayer.show {
-    display: flex;
-  }
-  
-  /* Убираем скрытый плеер */
-  #musicPlayer {
-    display: none;
-  }
