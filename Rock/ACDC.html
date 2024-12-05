@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./ACDC.css">
+</head>
+
+<body >
+    <header class="bg-black flex z-10 fixed justify-around w-full h-24 border-b border-slate-500">
+        <div class="flex  justify-between HeaderFle">
+            <a href="../main.html" class="text-slate-300 justify-start mt-5 HeaderKnopka">Главная</a>
+            <a>
+                <img id="showPlayerButton" src="../imgs/TuneHavenLogo.png" alt="Музыка"
+                    class="cursor-pointer hover:opacity-80 transition-opacity duration-300 Logo1">
+            </a>
+            <a href="#" class="text-slate-300 mt-5 HeaderKnopka">О нас</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex justify-around items-center">
+            <div class="back bg-black border-slate-500 border-2 ">
+                <div class="Maaain">
+                    <img src="../imgs/AC DCLog.png" alt="" class="h-32 ml-5 md:ml-24 Name2" id="First">
+                    <div class="md:flex-nowrap">
+                       
+                        <div class="BoxofMainBox">
+                            <div class="MainBox">
+                                <div class="mainInfo bg-black h-12 border border-slate-500 flex justify-center">
+                                    <h1 class="font-semibold text-slate-300 text-2xl pt-1">AC/DC</h1>
+                                </div>
+                                <div class="back2 bg-black border border-slate-500">
+                                    <!-- СЮДА ФОТКУ -->
+                                    <img src="../imgs/ACDC/ACDCBand.jpg" width="332" class="Wiki">
+                                </div>
+                                <div
+                                    class="back4 bg-black h-12 border border-slate-500 text-center text-2xl pt-2 text-slate-300 font-bold">
+                                    <h1>Информация</h1>
+                                </div>
+                                <div class="back3 bg-black text-slate-50 border border-slate-500 justify-end">
+                                    <div class="flex flex-col gap-1 ml-5 mt-2 mb-2 font-light justify-center">
+                                        <p>• Год образования: 1973 год</p>
+                                        <p>• Действующие участники:</p>
+                                        <p>• Ангус Янг (1973 - наст. время)</p>
+                                        <p>• Стиви Янг (1988 - 2010, 2014 - наст. время)</p>
+                                        <p>• Брайан Джонсон (1980 - 2016, 2020 - наст. время)</p>
+                                        <p>• Фил Радд (1975 - 1983, 1995 - наст. время)</p>
+                                        <p>• Клифф Уильямс (1977 - 2016, 2020 - наст. время)</p>                       
+                                    </div>
+
+
+                                    
+                                    <div
+                                        class="back5 bg-black h-12 border border-slate-500 text-center text-2xl pt-2 text-slate-300 font-bold">
+                                        <h1>Навигация</h1>
+                                    </div>
+                                    <div
+                                        class="flex flex-col gap-4 pr-5 bg-black text-slate-50 border border-slate-500 Navig">
+                                        <a href="#First" class="mt-3 ml-5 nav1">Начало группы</a>
+                                        <a href="#Master" class="ml-5 nav2">High Voltage</a>
+                                        <a href="#Cliff" class="ml-5 nav3">Dirty Deeds Done Dirt Cheap</a>
+                                        <a href="#Justice" class="ml-5 nav4">Highway to Hell</a>
+                                        <a href="#Metallica" class="ml-5 nav5">Back in Black</a>
+                                        <a href="#LoadReload" class="ml-5 nav6">The Razor's Edge</a>
+                                        <a href="#Garage" class="ml-5 nav7">Black Ice</a>
+                                        <a href="#Anger" class="ml-5 nav8">Power Up</a>
+                                    </div>
+
+
+                                    <div id="musicPlayer"
+                                        class=" show bottom-4 left-8 right-8 bg-gray-800 rounded-lg shadow-lg flex items-center justify-between p-4 glowing-border">
+                                        <!-- Левая часть: Логотип -->
+                                        <div class="flex items-center space-x-4">
+                                            <img id="trackImage" src="track1.jpg" alt="Track Image"
+                                                class="w-12 h-12 rounded-lg cursor-pointer">
+                                            <div>
+                                                <p id="trackName" class="text-lg font-bold">Track 1</p>
+                                                <p id="trackArtist" class="text-sm text-gray-400">Artist 1</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Центральная часть: Элементы управления -->
+                                        <div class="flex flex-col items-center w-1/2">
+                                            <div class="flex items-center space-x-4 mb-2">
+                                                <button id="prevButton" class="text-gray-400 hover:text-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                                    </svg>
+                                                </button>
+                                                <button id="playPauseButton"
+                                                    class="text-white bg-gray-600 hover:bg-gray-500 p-3 rounded-full">
+                                                    <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M14.752 11.168l-6.291 3.745a1 1 0 01-1.461-.878V9.965a1 1 0 011.461-.878l6.291 3.745a1 1 0 010 1.756z" />
+                                                    </svg>
+                                                </button>
+                                                <button id="nextButton" class="text-gray-400 hover:text-white">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <!-- Прогресс-бар и время -->
+                                            <div class="flex items-center space-x-2">
+                                                <span id="currentTime" class="text-sm text-gray-400">0:00</span>
+                                                <input type="range" id="progressBar"
+                                                    class="w-full bg-gray-600 rounded-lg appearance-none">
+                                                <span id="totalTime" class="text-sm text-gray-400">0:00</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Правая часть: Регулятор громкости -->
+                                        <div class="flex items-center space-x-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" class="w-6 h-6 text-gray-400">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 8l-6 4m0 0l6 4m-6-4H5" />
+                                            </svg>
+                                            <input type="range" id="volumeControl"
+                                                class="w-20 bg-gray-600 rounded-lg appearance-none" min="0" max="1"
+                                                step="0.1">
+                                        </div>
+                                    </div>
+
+                                    <!-- Полупрозрачный фон для изображения -->
+                                    <div id="fullscreenImageContainer"
+                                        class="hidden fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center">
+                                        <button id="closeFullscreenImage"
+                                            class="absolute top-4 right-4 text-white bg-gray-930 hover:bg-gray-600 p-2 rounded-full">
+                                            X
+                                        </button>
+                                        <img id="fullscreenImage" src="" alt="Fullscreen Track Image"
+                                            class="rounded-lg shadow-lg">
+                                    </div>
+
+                                    <script src="./Players/scriptMet.js"></script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Text1 flex flex-col gap-5 text-left">
+                            <p class="font-light text-xl">
+                                <b>AC/DC</b> - австралийская рок-группа, сформированная в 
+                                Сиднее в ноябре 1973 года выходцами из Шотландии, 
+                                братьями Малькольмом и Ангусом Янгами.
+
+                                Наряду с такими группами, как Led Zeppelin, Deep Purple, 
+                                Queen, Iron Maiden, Scorpions, Black Sabbath, Uriah Heep, 
+                                Judas Priest и Motörhead, AC/DC часто рассматриваются как 
+                                пионеры хард-рока и хеви-метала. Сами же музыканты 
+                                классифицировали свою музыку как рок-н-ролл, поскольку 
+                                в её основе лежит ритм-н-блюз с сильно искажённым звучанием 
+                                ритмической и соло-гитар.
+                            </p>
+                            <p class="font-light text-xl">
+                                «AC/DC» — аббревиатура от «переменный ток/постоянный ток» 
+                                (англ. «alternating current/direct current»). Старшая сестра 
+                                Малькольма и Ангуса Янгов, Маргарет, предложила название для 
+                                группы после того, как увидела надпись «AC/DC» на задней стороне 
+                                швейной машинки (именно Маргарет предложила Ангусу выступать на 
+                                сцене в школьной форме).
+                            </p>
+                        </div>
+                        <div class="Text1 flex flex-col gap-5 text-left">
+                            <h1 class="text-2xl ml-10 mt-10 font-bold">
+                                История группы
+                            </h1>
+                            <p class="font-light text-xl">
+                                Братья Ангус, Малькольм и Джордж Янг - родились в Глазго 
+                                 (Шотландия), но в 1963 году вместе с большей частью семьи уехали 
+                                 в Сидней. Джордж начал играть на гитаре первым и стал членом самой 
+                                 успешной австралийской группы 1960-х, The Easybeats. Малькольм вскоре последовал 
+                                 по стопам брата, став гитаристом группы из Ньюкасла «The Velvet 
+                                 Underground».
+                            </p>
+                            <p class="font-light text-xl">
+                                К братьям-гитаристам Малькольму и 
+                                Ангусу Янгам в ноябре 1973-го добавились вокалист Дэйв Эванс 
+                                , бас-гитарист Ларри Ван Кридт 
+                                и барабанщик Колин Берджесс. Дебют квинтета состоялся 
+                                30 декабря 1973 года в сиднейском баре Chequers. Первоначальный состав 
+                                часто менялся - группа сменила нескольких барабанщиков и басистов в течение 
+                                1974 года. В сентябре 1974 года AC/DC заменили Дэйва Эванса на харизматичного 
+                                Бона Скотта, знакомого Джорджа 
+                                Янга и имевшего опыт вокалиста. Ранее Бон был шофёром у AC/DC. С этого события и 
+                                начался путь группы к успеху. Ещё с Эвансом были записаны 2 песни: 
+                                «Can I Sit Next to You Girl» и «Rockin’ in the Parlour». «Can I Sit Next to You Girl» была 
+                                затем перезаписана с вокалом Скотта.
+                            </p>
+                        </div>
+                        <div class="Text1 flex flex-col gap-5 text-left">
+                            <h1 class="text-2xl ml-10 mt-10 font-bold">
+                                High Voltage
+                            </h1>
+                            <p class="font-light text-xl">
+                                <b>High Voltage</b> - дебютный международный и третий студийный 
+                                альбом AC/DC. Первоначальное 
+                                издание, выпущенное Atlantic Records, оказалось популярным, 
+                                и только в Соединённых Штатах продажи альбома составили 
+                                3 миллиона копий. Однако первоначально альбом был низко оценён 
+                                некоторыми критиками после своего выхода. Так обозреватель журнала 
+                                Rolling Stone сказал что в данной записи тяжёлый рок достиг 
+                                «рекордно низкого уровня». High Voltage был переиздан в 
+                                2003 году как часть серии AC/DC Remasters. Альбом достиг 
+                                максимального уровня продаж в США и ему был присвоен трижды 
+                                платиновый статус от RIAA за тираж более 3 000 000 экземпляров 
+                                в мае 2005 года.
+                            </p>
+                        </div>
+                        <div class="Text2 flex flex-col gap-5 text-left">
+                            <h1 class="text-2xl ml-10 mt-10 font-bold">
+                                Dirty Deeds Done Dirt Cheap
+                            </h1>
+                            <p class="font-light text-xl">
+                                Студийный альбом австралийской хард-рок-группы AC/DC, третий - 
+                                вышедший в Австралии и второй — международный - <b>Dirty Deeds Done Dirt Cheap</b>. Релиз 
+                                австралийской версии состоялся 20 сентября 1976 года, 
+                                международной — 17 декабря того же года. В США альбом 
+                                был издан в апреле 1981 года.
+                            </p>
+                            <p class="font-light text-xl">
+                                Песня «Jailbreak» вышла синглом до релиза альбома (в июне 1976 года). 
+                                Видеоклип на данную композицию был снят в марте 1976 года 
+                                для австралийского телешоу «Обратный отсчёт» (Countdown); в 2005 году он 
+                                вошёл в сборник видео Family Jewels. Композиция «Ride On» также вошла в 
+                                альбом Who Made Who, который был выпущен в 1986 году как саундтрек к фильму 
+                                Стивена Кинга «Максимальное ускорение».
+
+                                Во время записи альбома также была записана песня «I’m a Rebel», 
+                                автором которой является старший брат Ангуса и Малькольма Янгов, 
+                                Александр Янг. Однако ни в одну из версий альбома композиция не вошла 
+                                и никогда не издавалась в исполнении AC/DC. В 1980 году немецкая 
+                                хеви-метал-группа Accept выпустила одноименный альбом, заглавным 
+                                треком которого стала эта песня.
+
+                                Альбом получил платиновый статус в США и был продан тиражом 6 млн экземпляров.
+                            </p>
+                            <p class="font-light text-xl">
+                                7 из 9-ти треков международного издания совпадают с австралийским, 
+                                также туда добавлена песня «Rocker» из альбома T.N.T. и изданная 
+                                впервые «Love at First Feel». На международной версии альбома 
+                                отсутствуют песни «R.I.P. (Rock in Peace)» и «Jailbreak» из 
+                                австралийской версии (последняя была издана в 1984 на мини-альбоме 
+                                ’74 Jailbreak). Композиция «R.I.P. (Rock in Peace)» долгое время 
+                                являлась одной из немногих песен AC/DC, не изданных официально для 
+                                международной аудитории, пока в 2009 году не вошла в сборник 
+                                Backtracks. На международном издании альбома песни 
+                                «Dirty Deeds Done Dirt Cheap», «Ain’t No Fun 
+                                (Waiting ’Round to Be a Millionaire)» и «Rocker» изданы в 
+                                сокращённом варианте, по сравнению со своими оригинальными 
+                                версиями, однако, на переизданной в 1994 году версии альбома 
+                                присутствуют обе версии этих песен.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="Text2 flex flex-col gap-5 text-left">
+                        <div class="flex flex-col gap-5 text-left knopkaaa">
+                            <p class="font-light text-xl w-5">
+                                <b><a href="#" id="Up">Вверх</a></b>
+                            </p>
+                            
+
+                        </div>
+                    </div>
+        <!--    <div class="Text2 flex flex-col gap-5 text-left">
+                    <h1 class="text-2xl ml-10 mt-10 font-bold">
+                        
+                    </h1>
+                    <p class="font-light text-xl">
+                       
+                    </p>
+                    <p class="font-light text-xl">
+                        
+                    </p>
+                </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
