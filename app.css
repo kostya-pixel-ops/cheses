@@ -29,10 +29,7 @@ html, body {
 }
 .ButtonN
 {
-    @media(min-width: 360px)
-    {
-        margin-top: 250px;
-    }
+   
     margin-top: 170px;
     opacity: 0;
     visibility: hidden;
@@ -49,6 +46,9 @@ html, body {
     border-width: 1px;
     border-style: solid;
     transition: 0.25s;
+    @media (max-width: 768px) {
+        margin-top: 350px;
+}
 }
 .ButtonDiv
 {
