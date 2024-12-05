@@ -5,7 +5,8 @@ body
     height: 7450px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(133deg, rgba(2,14,52,1) 11%, rgba(1,17,69,1) 23%, rgba(4,25,94,1) 36%, rgba(0,26,110,1) 52%, rgba(26,54,140,1) 67%, rgba(23,52,144,1) 86%);
+    background: linear-gradient(133deg, rgba(2,14,52,1) 11%, rgba(1,17,69,1) 23%, rgba(4,25,94,1) 36%, rgba(0,26,110,1) 52%, rgba(6,49,182,1) 67%, rgba(6,63,241,1) 85%);
+
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
