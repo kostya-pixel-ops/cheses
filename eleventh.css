@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 6450px;
+    height: 1000px;
  
-    background-size: 1920px 6450px;
-    background: linear-gradient(0deg, #92865f 0%, #e9e7bc 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
   
@@ -18,10 +18,10 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 6050px;
+    height: 12000px;
     width: 1200px;
     top: 250px;
-    background-color: #8b896f;
+    background-color: #42b6ff;
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
 .MainBox {
@@ -55,7 +55,7 @@ body
    
     width: 1020px;
     /* вот эту херну менять если заходит за верхний текст*/
-    padding-top: 50px;
+    padding-top: 280px;
     margin-left: 50px;
 }
 .HeaderKnopka
@@ -76,7 +76,7 @@ body
 }
 .HeaderKnopka:hover
 {
-    color:black
+    color:rgb(0, 0, 0)
      /*  тут стилизуйте под группу*/
 }
 .Wiki
@@ -376,4 +376,44 @@ body
     display: none;
   }
   
-  
+.img-left
+{
+    float: right;
+    margin-right: 25px;
+}
+.img-right
+{
+    float: left;
+    margin-left: 25px;
+}
+.img-mm
+{
+    float: right;
+    margin-left: 25px;
+}
+.img-rr
+{
+    float: right;
+    margin-left: 25px;
+}
+.img-nn
+{
+    float: left;
+    margin-left: 25px;
+}
+.img-hh
+{
+    float: left;
+    margin-left: 25px;
+}
+.img-ii
+{
+    float: right;
+    margin-left: 25px;
+}
+.Text3{
+    width: 1020px;
+/* вот эту херну менять если заходит за верхний текст*/
+padding-top: 20px;
+margin-left: 50px;
+}
