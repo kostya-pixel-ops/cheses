@@ -8,7 +8,9 @@ body
     background: linear-gradient(133deg, rgba(2,14,52,1) 11%, rgba(1,17,69,1) 23%, rgba(4,25,94,1) 36%, rgba(0,26,110,1) 52%, rgba(26,54,140,1) 67%, rgba(23,52,144,1) 86%);
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
-  
+     @media (max-width: 768px) {
+      height:20200px;
+    }
 }
 .HeaderFle
 {
@@ -24,7 +26,7 @@ body
     background-color: linear-gradient(0deg, rgba(58,12,227,1) 10%, rgba(6,14,158,1) 49%, rgba(76,40,236,1) 82%);;
     @media (max-width: 768px) {
       width: 100%;
-      height:13800px;
+      height:19626px;
     }
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
@@ -43,6 +45,11 @@ body
     top: -64px;
     left: -206px;
     scale: 0.6;
+    @media (max-width: 768px) {
+      top: 0px;
+    left: -97px;
+    scale: 1;
+    }
 }
 .Text1
 {
@@ -52,6 +59,7 @@ body
     height: 1200px;
     @media (max-width: 768px) {
         width: 320px;
+        padding-top: 20px;
     }
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
@@ -74,7 +82,7 @@ body
     margin-left: 0px;
     @media (max-width: 768px) {
       width: 320px;
-      padding-top: 2100px;
+      padding-top: 8px;
   }
 }
 .HeaderKnopka
@@ -318,115 +326,4 @@ body
   }
   
   
-  /* Адаптивность для маленьких экранов */
-  @media screen and (max-width: 768px) {
-    #musicPlayer {
-      flex-direction: row; /* Горизонтальная ориентация */
-      padding: 10px; /* Меньше отступов */
-      max-width: calc(100% - 16px); /* Уменьшаем ширину */
-    }
-    
-    /* Убираем громкость и прогресс-бар */
-    #musicPlayer input[type="range"],
-    #musicPlayer .flex.items-center.space-x-2 {
-      display: none;
-    }
-  
-    /* Смещаем кнопки паузы и навигации вправо */
-    #musicPlayer .flex.items-center.space-x-4.mb-2 {
-      justify-content: flex-end;
-      width: 100%;
-    }
-  
-    /* Адаптируем размеры для маленьких экранов */
-    #musicPlayer img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    #musicPlayer .audio-controls {
-      gap: 8px;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    #musicPlayer {
-      padding: 8px;
-      bottom: 761.5rem; /* Еще меньше отступ */
-    }
-  
-    #musicPlayer img {
-      width: 36px;
-      height: 36px;
-    }
-  }
-  
-    #musicPlayer .audio-controls {
-      gap: 8px;
-    }
-  
-    #musicPlayer input[type="range"] {
-      max-width: 120px;
-    }
-  
-    #musicPlayer img {
-      width: 40px;
-      height: 40px;
-    }
-  
-    
-  
-  @media screen and (max-width: 480px) {
-    #musicPlayer {
-      padding: 8px;
-      bottom: 761.5rem; /* Еще меньше отступ */
-    }
-  
-    #musicPlayer img {
-      width: 36px;
-      height: 36px;
-    }
-  
-    #musicPlayer input[type="range"] {
-      max-width: 100px;
-    }
-  }
-  /* Полный экран изображения */
-  #fullscreenImage {
-    transition: transform 0.3s ease-in-out;
-    width: auto;
-    height: auto;
-    max-width: 50%; /* Изображение для больших экранов */
-    max-height: 90%;
-  }
-  /* Полный экран изображения */
-  #fullscreenImage {
-    transition: transform 0.3s ease-in-out;
-    width: auto;
-    height: 1000px;
-    max-width: 40%; /* Уменьшено до 40% экрана */
-    max-height: 50%; /* Уменьшено до 70% высоты экрана */
-  }
-  
-  @media screen and (max-width: 768px) {
-    #fullscreenImage {
-      max-width: 70%; /* Для телефонов */
-      max-height: 40%;
-    }
-  }
-  /* Стили для картинки, которая будет открывать плеер */
-  #showPlayerButton {
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out; /* Плавная анимация */
-  }
-  
-  /* Оставляем стиль для плеера при показе */
-  #musicPlayer.show {
-    display: flex;
-  }
-  
-  /* Убираем скрытый плеер */
-  #musicPlayer {
-    display: none;
-  }
+ 

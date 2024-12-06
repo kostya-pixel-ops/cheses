@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Zen+Kaku+Gothic+New&display=swap');
 body
 {
-    height: 6450px;
+    height: 7900px;
  
     background-size: 1920px 6450px;
-    background: linear-gradient(133deg, rgba(185,12,237,1) 9%, rgba(128,0,186,1) 25%, rgba(126,0,171,1) 39%, rgba(153,5,207,1) 59%, rgba(126,0,161,1) 78%, rgba(109,4,144,1) 88%);
+    background: linear-gradient(96deg, rgba(255,91,87,1) 0%, rgba(254,236,0,1) 42%, rgba(1,156,95,1) 70%, rgba(112,50,253,1) 90%, rgba(171,106,251,1) 100%);
 
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
@@ -19,10 +19,10 @@ body
 {
     position: absolute;
     margin-top: 0px;
-    height: 6000px;
+    height: 7550px;
     width: 1200px;
     top: 250px;
-    background-color: radial-gradient(circle, rgba(207,4,237,1) 0%, rgba(56,2,69,1) 100%);
+    background-color: rgba(0, 0, 0, 0.751);
     @media (max-width: 768px) {
       width: 100%;
       height:13800px;
@@ -41,9 +41,9 @@ body
 }
 .Name2 {
     position: absolute;
-    top: -8px;
-    left: 42px;
-    scale: 1.6;
+    top: -104px;
+    left: -216px;
+    scale: 0.5;
 }
 .Text1
 {
@@ -111,7 +111,7 @@ body
     right: 108px;
     background-color: rgb(0, 0, 0);
     width: 336px;
-    height: 525px;
+    height: 590px;
     border-width: 1px;
 }
 
