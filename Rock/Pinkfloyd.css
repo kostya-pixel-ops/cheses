@@ -3,13 +3,16 @@
 body
 {
     height: 7900px;
+    
  
     background-size: 1920px 6450px;
     background: linear-gradient(96deg, rgba(255,91,87,1) 0%, rgba(254,236,0,1) 42%, rgba(1,156,95,1) 70%, rgba(112,50,253,1) 90%, rgba(171,106,251,1) 100%);
 
     /* тут фон всей странички, если будешь делать градиент, то меняй background-size: на 1920px а второй под то,
      сколько height, чтобы он не обрезалчя */
-  
+     @media (max-width: 768px) {
+      height: 22350px;
+     }
 }
 .HeaderFle
 {
@@ -25,7 +28,7 @@ body
     background-color: rgba(0, 0, 0, 0.751);
     @media (max-width: 768px) {
       width: 100%;
-      height:13800px;
+      height:21750px;
     }
 /* тут  цвет главной херни по середине, которая самая большая*/
 }
@@ -44,6 +47,11 @@ body
     top: -104px;
     left: -216px;
     scale: 0.5;
+    @media (max-width: 768px) {
+        top: -31px;
+      left: -92px;
+      scale: 0.7; 
+    }
 }
 .Text1
 {
@@ -53,6 +61,7 @@ body
     height: 1200px;
     @media (max-width: 768px) {
         width: 320px;
+        padding-top: 40px;
     }
     /* если текст не влазит, можно height побольше поставить или поменьше если всё влезло*/
 }
@@ -75,7 +84,7 @@ body
     margin-left: 0px;
     @media (max-width: 768px) {
       width: 320px;
-      padding-top: 2100px;
+      padding-top: 8px;
   }
 }
 .HeaderKnopka
